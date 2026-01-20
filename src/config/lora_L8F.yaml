@@ -1,0 +1,10 @@
+inherits: base.yaml
+experiment_id: L8-F
+rag:
+  use_lora: true
+lora:
+  rank: 8
+  target_modules:
+    - attention
+  target_layers: all
+  data_fraction: 1.0

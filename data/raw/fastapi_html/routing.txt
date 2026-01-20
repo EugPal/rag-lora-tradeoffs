@@ -1,0 +1,1 @@
+You can declare routes with decorators like @app.get and @app.post to bind path operations.

@@ -1,0 +1,4 @@
+inherits: base.yaml
+experiment_id: baseline
+rag:
+  use_lora: false

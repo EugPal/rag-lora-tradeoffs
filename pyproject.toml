@@ -1,0 +1,23 @@
+[project]
+name = "rag-lora-thesis"
+version = "0.1.0"
+description = "RAG + LoRA trade-off study scaffold"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<2.0",
+    "faiss-cpu>=1.7.4",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "transformers>=4.40",
+    "torch>=2.1",
+    "accelerate>=0.29",
+    "bitsandbytes>=0.43",
+    "sentence-transformers>=2.5",
+    "scikit-learn>=1.4",
+    "bert-score>=0.3.13",
+    "pandas>=2.0,<2.2",
+    "beautifulsoup4>=4.12",
+]
+
+[tool.ruff]
+line-length = 100

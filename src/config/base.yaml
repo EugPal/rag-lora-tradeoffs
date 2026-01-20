@@ -1,0 +1,16 @@
+project_name: rag-lora-thesis
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  data_embeddings: data/embeddings
+  experiments: experiments
+  notebooks: notebooks
+retrieval:
+  embedding_dim: 384
+  top_k: 4
+prompt:
+  system: "You are a technical documentation assistant. Answer using the provided context."
+  max_context_chunks: 4
+generation:
+  max_tokens: 256
+  temperature: 0.0
