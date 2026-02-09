@@ -18,6 +18,7 @@ class RagConfig:
     top_k: int = 8
     prompt_system: str = "You are a technical documentation assistant."
     use_hf_generator: bool = True
+    lora_adapter_dir: Path | None = None
 
 
 def build_prompt(system: str, query: str, contexts: list[str]) -> str:
@@ -56,7 +57,13 @@ class RagPipeline:
             self.generator = generator
         elif self.config.use_hf_generator:
             self.generator = HFGenerator(
-                GenerationConfig(max_tokens=128, temperature=0.0)
+                GenerationConfig(
+                    max_tokens=128,
+                    temperature=0.0,
+                    lora_adapter_dir=str(self.config.lora_adapter_dir)
+                    if self.config.lora_adapter_dir
+                    else None,
+                )
             )
         else:
             self.generator = BaseGenerator(

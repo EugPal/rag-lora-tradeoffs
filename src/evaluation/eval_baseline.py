@@ -11,6 +11,7 @@ from tqdm import tqdm
 
 from src.evaluation.metrics import bertscore_f1, embedding_cosine, exact_match, f1_score
 from src.evaluation.judge import JudgeConfig, LLMJudge
+from src.rag.generator import GenerationConfig, HFGenerator
 from src.rag.rag_pipeline import RagConfig, RagPipeline
 from src.utils.io_utils import read_jsonl, write_jsonl
 from src.utils.logging_utils import setup_logging
@@ -36,6 +37,12 @@ def main() -> None:
         default=200,
         help="Limit judge scoring to first N samples (use -1 for all).",
     )
+    parser.add_argument(
+        "--lora-adapter",
+        type=str,
+        default=None,
+        help="Path to a PEFT LoRA adapter directory to load for generation.",
+    )
     parser.add_argument("--top-k", type=int, default=8)
     args = parser.parse_args()
 
@@ -45,7 +52,10 @@ def main() -> None:
         logger.warning("No QA test data found at %s", args.test_file)
         return
 
-    pipeline = RagPipeline(RagConfig(top_k=args.top_k))
+    generator = None
+    if args.lora_adapter:
+        generator = HFGenerator(GenerationConfig(lora_adapter_dir=args.lora_adapter))
+    pipeline = RagPipeline(RagConfig(top_k=args.top_k), generator=generator)
     em_scores = []
     f1_scores = []
     embed_scores = []
@@ -206,6 +216,7 @@ def main() -> None:
                 "bertscore_f1": None,
                 "quote_supported": quote_supported[-1],
                 "judge": judge_result,
+                "lora_adapter": args.lora_adapter,
             }
         )
 
@@ -220,6 +231,7 @@ def main() -> None:
             item["bertscore_f1"] = score
 
     results = {
+        "lora_adapter": args.lora_adapter,
         "em": sum(em_scores) / len(em_scores),
         "f1": sum(f1_scores) / len(f1_scores),
         "embed_cosine": sum(embed_scores) / len(embed_scores),

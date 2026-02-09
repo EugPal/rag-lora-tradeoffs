@@ -12,6 +12,7 @@ class GenerationConfig:
     temperature: float = 0.0
     top_p: float = 0.9
     model_name: str = "meta-llama/Llama-3.2-3B-Instruct"
+    lora_adapter_dir: str | None = None
 
 
 class BaseGenerator:
@@ -43,6 +44,11 @@ class HFGenerator:
             quantization_config=quant_config,
             device_map="auto",
         )
+        # Optional: attach a PEFT LoRA adapter.
+        if self.config.lora_adapter_dir:
+            from peft import PeftModel
+
+            self.model = PeftModel.from_pretrained(self.model, self.config.lora_adapter_dir)
         if self.tokenizer.pad_token_id is None:
             self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
 

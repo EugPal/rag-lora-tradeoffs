@@ -17,6 +17,7 @@ dependencies = [
     "bert-score>=0.3.13",
     "pandas>=2.0,<2.2",
     "beautifulsoup4>=4.12",
+    "peft>=0.10.0",
 ]
 
 [tool.ruff]

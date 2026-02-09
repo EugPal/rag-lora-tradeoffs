@@ -1,1 +1,8 @@
-{"em": 0.0, "f1": 0.0, "samples": 0}
+{
+  "preset": "L4-S",
+  "status": "training_completed",
+  "model_name": "meta-llama/Llama-3.2-3B-Instruct",
+  "train_rows": 3,
+  "val_rows": 1,
+  "train_loss": 1.9250257015228271
+}
