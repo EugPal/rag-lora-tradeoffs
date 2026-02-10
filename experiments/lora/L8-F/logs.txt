@@ -1,1 +1,1 @@
-LoRA L8-F logs will be stored here.
+Training completed.

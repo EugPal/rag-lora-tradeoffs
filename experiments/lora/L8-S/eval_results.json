@@ -1,0 +1,17 @@
+{
+  "lora_adapter": "experiments/lora/L8-S/adapter",
+  "em": 0.0,
+  "f1": 0.4490306706053439,
+  "embed_cosine": 0.6742513430745978,
+  "bertscore_f1": null,
+  "retrieval_hit_rate": 0.7894736842105263,
+  "retrieval_hit_rate_page": 1.0,
+  "retrieval_mrr": 0.6105889724310777,
+  "retrieval_mrr_page": 0.781203007518797,
+  "quote_support_rate": 0.7368421052631579,
+  "judge_correctness_avg": 3.3157894736842106,
+  "judge_groundedness_avg": 2.473684210526316,
+  "judge_scored": 19,
+  "qualitative_check": "manual spot-check recommended",
+  "samples": 19
+}

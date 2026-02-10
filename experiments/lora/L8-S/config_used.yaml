@@ -1,2 +1,5 @@
-preset: L8-S
-status: placeholder
+rank: 8
+target_modules:
+- attention
+target_layers: all
+data_fraction: 0.25
