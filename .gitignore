@@ -1,0 +1,38 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
+.cursor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# DataSphere local job logs/artifacts
+.dslogs_*/
+
+# Local experiment outputs (regenerable)
+experiments/datasphere/
+experiments/pilot/
+
+# Project configs
+config*.yaml
+recommendations/

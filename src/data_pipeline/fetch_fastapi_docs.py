@@ -6,7 +6,8 @@ import sys
 import time
 from pathlib import Path
 from urllib.parse import urlparse
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 
 from tqdm import tqdm
 
@@ -30,8 +31,22 @@ def slugify_url(url: str) -> str:
 def fetch(url: str, out_dir: Path, logger) -> Path:
     filename = slugify_url(url)
     target = out_dir / filename
-    with urlopen(url) as response:
-        html = response.read().decode("utf-8", errors="ignore")
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urlopen(req) as response:
+            html = response.read().decode("utf-8", errors="ignore")
+    except HTTPError as exc:
+        # Handle permanent redirects explicitly for environments where 308 isn't auto-followed.
+        if exc.code in (301, 302, 307, 308):
+            redirect_to = exc.headers.get("Location")
+            if redirect_to:
+                req2 = Request(redirect_to, headers={"User-Agent": "Mozilla/5.0"})
+                with urlopen(req2) as response2:
+                    html = response2.read().decode("utf-8", errors="ignore")
+            else:
+                raise
+        else:
+            raise
     target.write_text(html, encoding="utf-8")
     logger.info("Saved %s", target)
     return target
@@ -57,7 +72,10 @@ def main() -> None:
     urls = load_urls(args.urls_file)[: args.max_pages]
     pbar = tqdm(urls, desc="fetch_fastapi_docs", unit="page", disable=not sys.stderr.isatty())
     for url in pbar:
-        fetch(url, out_dir, logger)
+        try:
+            fetch(url, out_dir, logger)
+        except Exception as exc:
+            logger.warning("Failed to fetch %s: %s", url, exc)
         time.sleep(args.sleep)
 
 

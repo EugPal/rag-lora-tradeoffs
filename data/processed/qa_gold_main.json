@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "qa-tutorial_path-params-numeric-validations-5",
+    "question": "What does FastAPI use to determine the role of a parameter if their order changes?",
+    "answer": "names, types, and defaults",
+    "source_chunk": "tutorial_path-params-numeric-validations-5",
+    "source_page": "tutorial_path-params-numeric-validations",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "can re-order them, and have the value without a default (the query parameter q ) first. It doesn't matter for FastAPI . It will detect the parameters by their names, types and default declarations ( Query , Path , etc), it doesn't care about the order. So, you can declare your function as: from fastapi import FastAPI , Path app = FastAPI () @app . get ( \"/items/ {item_id} \" ) async def read_items ( q : str , item_id : int = Path ( title = \"The ID of the item to get\" )): results = { \"item_id\" : item_id } if q : results . update ({ \"q\" : q }) return results"
+  },
+  {
+    "id": "qa-advanced_dataclasses-0",
+    "question": "What library is FastAPI built on top of?",
+    "answer": "FastAPI is built on top of Pydantic",
+    "source_chunk": "advanced_dataclasses-0",
+    "source_page": "advanced_dataclasses",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Using Dataclasses ¶ FastAPI is built on top of Pydantic , and I have been showing you how to use Pydantic models to declare requests and responses. But FastAPI also supports using dataclasses the same way: from dataclasses import dataclass from fastapi import FastAPI @dataclass class Item : name : str price : float description : str | None = None tax : float | None = None app = FastAPI () @app . post ( \"/items/\" ) async def create_item ( item : Item ): return item This is still supported thanks to Pydantic , as it has internal support for dataclasses ."
+  },
+  {
+    "id": "qa-deployment_concepts-16",
+    "question": "What are multiple processes of the same API program commonly called?",
+    "answer": "workers",
+    "source_chunk": "deployment_concepts-16",
+    "source_page": "deployment_concepts",
+    "section": "deployment",
+    "category": "endpoints_routing",
+    "source_chunk_text": "will want to run several worker processes at the same time. Multiple Processes - Workers ¶ If you have more clients than what a single process can handle (for example if the virtual machine is not too big) and you have multiple cores in the server's CPU, then you could have multiple processes running with the same application at the same time, and distribute all the requests among them. When you run multiple processes of the same API program, they are commonly called workers . Worker Processes and Ports ¶ Remember from the docs About HTTPS that only one process can be listening on one combination of port and IP address in a server? This is still true."
+  },
+  {
+    "id": "qa-reference_middleware-7",
+    "question": "Which middleware automatically compresses responses in FastAPI?",
+    "answer": "GZipMiddleware",
+    "source_chunk": "qa-reference_middleware-7",
+    "source_page": "reference_middleware",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-features-6",
+    "question": "What system does FastAPI include for managing dependencies?",
+    "answer": "Dependency Injection",
+    "source_chunk": "features-6",
+    "source_page": "features",
+    "section": "general",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Headers. Query parameters. Cookies, etc. Plus all the security features from Starlette (including session cookies ). All built as reusable tools and components that are easy to integrate with your systems, data stores, relational and NoSQL databases, etc. Dependency Injection ¶ FastAPI includes an extremely easy to use, but extremely powerful Dependency Injection system. Even dependencies can have dependencies, creating a hierarchy or \"graph\" of dependencies . All automatically handled by the framework. All the dependencies can require data from requests and augment the path operation constraints and automatic documentation. Automatic validation even for path operation parameters defined in dependencies. Support for complex user authentication systems, database connections , etc. No compromise with databases, frontends, etc. But easy integration with all of them. Unlimited \"plug-ins\" ¶"
+  },
+  {
+    "id": "qa-tutorial_response-model-7",
+    "question": "Which one takes priority if both a return type and response_model are declared?",
+    "answer": "response_model",
+    "source_chunk": "tutorial_response-model-7",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "checks in your editor, mypy, etc, you can declare the function return type as Any . That way you tell the editor that you are intentionally returning anything. But FastAPI will still do the data documentation, validation, filtering, etc. with the response_model . response_model Priority ¶ If you declare both a return type and a response_model , the response_model will take priority and be used by FastAPI. This way you can add correct type annotations to your functions even when you are returning a type different than the response model, to be used by the editor and tools like mypy. And still you can have FastAPI do the data validation, documentation, etc. using the response_model ."
+  },
+  {
+    "id": "qa-tutorial_response-status-code-1",
+    "question": "What kind of value can status_code receive besides a number?",
+    "answer": "IntEnum",
+    "source_chunk": "tutorial_response-status-code-1",
+    "source_page": "tutorial_response-status-code",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "status code. Info status_code can alternatively also receive an IntEnum , such as Python's http.HTTPStatus . It will: Return that status code in the response. Document it as such in the OpenAPI schema (and so, in the user interfaces): Some response codes (see the next section) indicate that the response does not have a body. FastAPI knows this, and will produce OpenAPI docs that state there is no response body. About HTTP status codes ¶ If you already know what HTTP status codes are, skip to the next section. In HTTP, you send a numeric status code of 3 digits as part of the response. These status codes have a name associated to recognize them, but the important part is the number. In short:"
+  },
+  {
+    "id": "qa-reference_request-0",
+    "question": "Which FastAPI type gives direct access to the raw HTTP request object?",
+    "answer": "Request",
+    "source_chunk": "reference_request-0",
+    "source_page": "reference_request",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Request class ¶ You can declare a parameter in a path operation function or dependency to be of type Request and then you can access the raw request object directly, without any validation, etc. Read more about it in the FastAPI docs about using Request directly You can import it directly from fastapi : from fastapi import Request Tip When you want to define dependencies that should be compatible with both HTTP and WebSockets, you can define a parameter that takes an HTTPConnection instead of a Request or a WebSocket . fastapi.Request ¶ Request ( scope , receive = empty_receive , send = empty_send ) Bases: HTTPConnection [ StateT ] 211 212 213 214 215 216 217 218"
+  },
+  {
+    "id": "qa-how-to_separate-openapi-schemas-7",
+    "question": "In which FastAPI version was added support for separate_input_output_schemas?",
+    "answer": "0.102.0",
+    "source_chunk": "how-to_separate-openapi-schemas-7",
+    "source_page": "how-to_separate-openapi-schemas",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "yet, you probably will want to do it at some point, but maybe not right now. In that case, you can disable this feature in FastAPI , with the parameter separate_input_output_schemas=False . Info Support for separate_input_output_schemas was added in FastAPI 0.102.0 . 🤓"
+  },
+  {
+    "id": "qa-reference_security-8",
+    "question": "Which FastAPI security class extracts API keys from HTTP request headers?",
+    "answer": "APIKeyHeader",
+    "source_chunk": "reference_security-8",
+    "source_page": "reference_security",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": ": \"APIKey\" }, ) check_api_key ¶ check_api_key ( api_key ) 45 46 47 48 49 50 def check_api_key ( self , api_key : str | None ) -> str | None : if not api_key : if self . auto_error : raise self . make_not_authenticated_error () return None return api_key fastapi.security.APIKeyHeader ¶ APIKeyHeader ( * , name , scheme_name = None , description = None , auto_error = True ) API key authentication using a header."
+  },
+  {
+    "id": "qa-deployment_https-0",
+    "question": "What type of files does a server need to enable HTTPS?",
+    "answer": "certificates' generated by a third party",
+    "source_chunk": "deployment_https-0",
+    "source_page": "deployment_https",
+    "section": "deployment",
+    "category": "endpoints_routing",
+    "source_chunk_text": "About HTTPS ¶ It is easy to assume that HTTPS is something that is just \"enabled\" or not. But it is way more complex than that. Tip If you are in a hurry or don't care, continue with the next sections for step by step instructions to set everything up with different techniques. To learn the basics of HTTPS , from a consumer perspective, check https://howhttps.works/ . Now, from a developer's perspective , here are several things to keep in mind while thinking about HTTPS: For HTTPS, the server needs to have \"certificates\" generated by a third party . Those certificates are actually acquired from the third party, not \"generated\". Certificates have a lifetime . They expire ."
+  },
+  {
+    "id": "qa-reference_middleware-8",
+    "question": "Which middleware redirects requests to HTTPS in FastAPI?",
+    "answer": "HTTPSRedirectMiddleware",
+    "source_chunk": "qa-reference_middleware-8",
+    "source_page": "reference_middleware",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-tutorial_response-model-29",
+    "question": "Which parameter can be used as a quick shortcut to keep only selected attributes in the output?",
+    "answer": "response_model_include",
+    "source_chunk": "tutorial_response-model-29",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "explicitly (instead of taken from the defaults). So, they will be included in the JSON response. Notice that the default values can be anything, not only None . They can be a list ( [] ), a float of 10.5 , etc. response_model_include and response_model_exclude ¶ You can also use the path operation decorator parameters response_model_include and response_model_exclude . They take a set of str with the name of the attributes to include (omitting the rest) or to exclude (including the rest). This can be used as a quick shortcut if you have only one Pydantic model and want to remove some data from the output. But it is still recommended to use the ideas above, using multiple classes, instead of these parameters."
+  },
+  {
+    "id": "qa-advanced_path-operation-advanced-configuration-4",
+    "question": "How can you extend the OpenAPI schema for a path operation in FastAPI?",
+    "answer": "You can extend the OpenAPI schema for a path operation using the openapi_extra parameter",
+    "source_chunk": "advanced_path-operation-advanced-configuration-4",
+    "source_page": "advanced_path-operation-advanced-configuration",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "in the documentation, but other tools (such as Sphinx) will be able to use the rest. from fastapi import FastAPI from pydantic import BaseModel app = FastAPI () class Item ( BaseModel ): name : str description : str | None = None price : float tax : float | None = None tags : set [ str ] = set () @app . post ( \"/items/\" , summary = \"Create an item\" ) async def create_item ( item : Item ) -> Item : \"\"\" Create an item with all the information: - **name**: each item must have a name - **description**: a long description - **price**: required - **tax**: if the item doesn't have tax, you can omit this - **tags**: a set of unique tag strings for this item \\f :param item: User input. \"\"\" return item"
+  },
+  {
+    "id": "qa-tutorial_security-1",
+    "question": "Which specification defines several ways to handle authentication and authorization?",
+    "answer": "OAuth2",
+    "source_chunk": "tutorial_security-1",
+    "source_page": "tutorial_security",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "authentication based on username and password right now , skip to the next chapters. OAuth2 ¶ OAuth2 is a specification that defines several ways to handle authentication and authorization. It is quite an extensive specification and covers several complex use cases. It includes ways to authenticate using a \"third party\". That's what all the systems with \"login with Facebook, Google, X (Twitter), GitHub\" use underneath. OAuth 1 ¶ There was an OAuth 1, which is very different from OAuth2, and more complex, as it included direct specifications on how to encrypt the communication. It is not very popular or used nowadays. OAuth2 doesn't specify how to encrypt the communication, it expects you to have your application served with HTTPS. Tip"
+  },
+  {
+    "id": "qa-reference_encoders-5",
+    "question": "Which parameter skips SQLAlchemy internal attributes that start with _sa?",
+    "answer": "sqlalchemy_safe",
+    "source_chunk": "reference_encoders-5",
+    "source_page": "reference_encoders",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 def jsonable_encoder ( obj : Annotated [ Any , Doc ( \"\"\" The input object to convert to JSON. \"\"\" ), ], include : Annotated [ IncEx | None , Doc ( \"\"\" Pydantic's `include` parameter, passed to Pydantic models to set the fields to include. \"\"\" ), ] = None , exclude : Annotated [ IncEx | None , Doc ( \"\"\" Pydantic's `exclude` parameter, passed to Pydantic models to set the fields to exclude. \"\"\" ), ] = None , by_alias : Annotated [ bool , Doc ( \"\"\" Pydantic's `by_alias` parameter, passed to Pydantic models to define if the output should use the alias names (when provided) or the Python attribute names. In an API, if you set an alias, it's probably because you want to use it in the result, so you probably want to leave this set to `True`. \"\"\" ), ] = True , exclude_unset : Annotated [ bool , Doc ( \"\"\" Pydantic's `exclude_unset` parameter, passed to Pydantic models to define if it should exclude from the output the fields that were not explicitly set (and that only had their default values). \"\"\" ), ] = False , exclude_defaults : Annotated [ bool , Doc ( \"\"\" Pydantic's `exclude_defaults` parameter, passed to Pydantic models to define if it should exclude from the output the fields that had the same default value, even when they were explicitly set. \"\"\" ), ] = False , exclude_none : Annotated [ bool , Doc ( \"\"\" Pydantic's `exclude_none` parameter, passed to Pydantic models to define if it should exclude from the output any fields that have a `None` value. \"\"\" ), ] = False , custom_encoder : Annotated [ dict [ Any , Callable [[ Any ], Any ]] | None , Doc ( \"\"\" Pydantic's `custom_encoder` parameter, passed to Pydantic models to define a custom encoder. \"\"\" ), ] = None , sqlalchemy_safe : Annotated [ bool , Doc ( \"\"\" Exclude from the output any fields that start with the name `_sa`. This is mainly a hack for compatibility with SQLAlchemy objects, they store internal SQLAlchemy-specific state in attributes named with `_sa`, and those objects can't (and shouldn't be) serialized to JSON. \"\"\" ), ] = True , ) -> Any : \"\"\" Convert any object to something that can be encoded in JSON. This is used internally by FastAPI to make sure anything you return can be encoded as JSON before it is sent to the client. You can also use it yourself, for example to convert objects before saving them in a database that supports only JSON. Read more about it in the [FastAPI docs for JSON Compatible Encoder](https://fastapi.tiangolo.com/tutorial/encoder/). \"\"\" custom_encoder = custom_encoder or {} if custom_encoder : if type ( obj ) in custom_encoder : return custom_encoder [ type ( obj )]( obj ) else : for encoder_type , encoder_instance in custom_encoder . items (): if isinstance ( obj , encoder_type ): return encoder_instance ( obj ) if include is not None and not isinstance ( include , ( set , dict )): include = set ( include ) # type: ignore[assignment] if exclude is not None and not isinstance ( exclude , ( set , dict )): exclude = set ( exclude ) # type: ignore[assignment] if isinstance ( obj , BaseModel ): obj_dict = obj . model_dump ( mode = \"json\" , include = include , exclude = exclude , by_alias = by_alias , exclude_unset = exclude_unset , exclude_none = exclude_none , exclude_defaults = exclude_defaults , ) return jsonable_encoder ( obj_dict , exclude_none = exclude_none , exclude_defaults = exclude_defaults , sqlalchemy_safe = sqlalchemy_safe , ) if dataclasses . is_dataclass ( obj ): assert not isinstance ( obj , type ) obj_dict = dataclasses . asdict ( obj ) return jsonable_encoder ( obj_dict , include = include , exclude = exclude , by_alias = by_alias , exclude_unset = exclude_unset , exclude_defaults = exclude_defaults , exclude_none = exclude_none , custom_encoder = custom_encoder , sqlalchemy_safe = sqlalchemy_safe , ) if isinstance ( obj , Enum ): return obj . value if isinstance ( obj , PurePath ): return str ( obj ) if isinstance ( obj , ( str , int , float , type ( None ))): return obj if isinstance ( obj , PydanticUndefinedType ): return None if isinstance ( obj , dict ): encoded_dict = {} allowed_keys = set ( obj . keys ()) if include is not None : allowed_keys &= set ( include ) if exclude is not None : allowed_keys -= set ( exclude ) for key , value in obj . items (): if ( ( not sqlalchemy_safe or ( not isinstance ( key , str )) or ( not key . startswith ( \"_sa\" )) ) and ( value is not None or not exclude_none ) and key in allowed_keys ): encoded_key = jsonable_encoder ( key , by_alias = by_alias , exclude_unset = exclude_unset , exclude_none = exclude_none , custom_encoder = custom_encoder , sqlalchemy_safe = sqlalchemy_safe , ) encoded_value = jsonable_encoder ( value , by_alias = by_alias , exclude_unset = exclude_unset , exclude_none = exclude_none , custom_encoder = custom_encoder , sqlalchemy_safe = sqlalchemy_safe , ) encoded_dict [ encoded_key ] = encoded_value return encoded_dict if isinstance ( obj , ( list , set , frozenset , GeneratorType , tuple , deque )): encoded_list = [] for item in obj : encoded_list . append ( jsonable_encoder ( item , include = include , exclude = exclude , by_alias = by_alias , exclude_unset = exclude_unset , exclude_defaults = exclude_defaults , exclude_none = exclude_none , custom_encoder = custom_encoder , sqlalchemy_safe = sqlalchemy_safe , ) ) return encoded_list if type ( obj ) in ENCODERS_BY_TYPE : return ENCODERS_BY_TYPE [ type ( obj )]( obj ) for encoder , classes_tuple in encoders_by_class_tuples . items (): if isinstance ( obj , classes_tuple ): return encoder ( obj ) if is_pydantic_v1_model_instance ( obj ): raise PydanticV1NotSupportedError ( \"pydantic.v1 models are no longer supported by FastAPI.\" f \" Please update the model { obj !r} .\" ) try : data = dict ( obj ) except Exception as e : errors : list [ Exception ] = [] errors . append ( e ) try : data = vars ( obj ) except Exception as e : errors . append ( e ) raise ValueError ( errors ) from e return jsonable_encoder ( data , include = include , exclude = exclude , by_alias = by_alias , exclude_unset = exclude_unset , exclude_defaults = exclude_defaults , exclude_none = exclude_none , custom_encoder = custom_encoder , sqlalchemy_safe = sqlalchemy_safe , )"
+  },
+  {
+    "id": "qa-tutorial_first-steps-3",
+    "question": "Which standard does FastAPI use to define the schema of an API?",
+    "answer": "OpenAPI",
+    "source_chunk": "tutorial_first-steps-3",
+    "source_page": "tutorial_first-steps",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "to http://127.0.0.1:8000/redoc . You will see the alternative automatic documentation (provided by ReDoc ): OpenAPI ¶ FastAPI generates a \"schema\" with all your API using the OpenAPI standard for defining APIs. \"Schema\" ¶ A \"schema\" is a definition or description of something. Not the code that implements it, but just an abstract description. API \"schema\" ¶ In this case, OpenAPI is a specification that dictates how to define a schema of your API. This schema definition includes your API paths, the possible parameters they take, etc. Data \"schema\" ¶ The term \"schema\" might also refer to the shape of some data, like a JSON content. In that case, it would mean the JSON attributes, and data types they have, etc. OpenAPI and JSON Schema ¶"
+  },
+  {
+    "id": "qa-deployment_concepts-2",
+    "question": "What component usually provides HTTPS for a FastAPI deployment?",
+    "answer": "TLS Termination Proxy",
+    "source_chunk": "deployment_concepts-2",
+    "source_page": "deployment_concepts",
+    "section": "deployment",
+    "category": "endpoints_routing",
+    "source_chunk_text": "These concepts also apply to any other type of web API. 💡 Security - HTTPS ¶ In the previous chapter about HTTPS we learned about how HTTPS provides encryption for your API. We also saw that HTTPS is normally provided by a component external to your application server, a TLS Termination Proxy . And there has to be something in charge of renewing the HTTPS certificates , it could be the same component or it could be something different. Example Tools for HTTPS ¶ Some of the tools you could use as a TLS Termination Proxy are: Traefik Automatically handles certificates renewals ✨ Caddy Nginx With an external component like Certbot for certificate renewals HAProxy Kubernetes with an Ingress Controller like Nginx"
+  },
+  {
+    "id": "qa-advanced_websockets-9",
+    "question": "What exception is raised when a WebSocket connection is closed?",
+    "answer": "WebSocketDisconnect",
+    "source_chunk": "advanced_websockets-9",
+    "source_page": "advanced_websockets",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "can connect the WebSocket and then send and receive messages: Handling disconnections and multiple clients ¶ When a WebSocket connection is closed, the await websocket.receive_text() will raise a WebSocketDisconnect exception, which you can then catch and handle like in this example."
+  },
+  {
+    "id": "qa-tutorial_query-params-5",
+    "question": "How does FastAPI distinguish path parameters from query parameters when both are declared together?",
+    "answer": "by name",
+    "source_chunk": "tutorial_query-params-5",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "} ) return item In this case, if you go to: http://127.0.0.1:8000/items/foo?short=1 or http://127.0.0.1:8000/items/foo?short=True http://127.0.0.1:8000/items/foo?short=on http://127.0.0.1:8000/items/foo?short=yes or any other case variation (uppercase, first letter in uppercase, etc), your function will see the parameter short with a bool value of True . Otherwise as False . Multiple path and query parameters ¶ You can declare multiple path parameters and query parameters at the same time, FastAPI knows which is which. And you don't have to declare them in any specific order. They will be detected by name:"
+  },
+  {
+    "id": "qa-advanced_response-headers-3",
+    "question": "What prefix is commonly used for custom HTTP headers?",
+    "answer": "Custom HTTP headers are commonly added using the X- prefix.",
+    "source_chunk": "advanced_response-headers-3",
+    "source_page": "advanced_response-headers",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "a convenience for you, the developer. But most of the available responses come directly from Starlette. And as the Response can be used frequently to set headers and cookies, FastAPI also provides it at fastapi.Response . Custom Headers ¶ Keep in mind that custom proprietary headers can be added using the X- prefix . But if you have custom headers that you want a client in a browser to be able to see, you need to add them to your CORS configurations (read more in CORS (Cross-Origin Resource Sharing) ), using the parameter expose_headers documented in Starlette's CORS docs ."
+  },
+  {
+    "id": "qa-advanced_response-headers-1",
+    "question": "How can you add headers when returning a Response directly in FastAPI?",
+    "answer": "You can add headers by returning a Response such as JSONResponse and passing the headers parameter.",
+    "source_chunk": "advanced_response-headers-1",
+    "source_page": "advanced_response-headers",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "a response_model , it will still be used to filter and convert the object you returned. FastAPI will use that temporal response to extract the headers (also cookies and status code), and will put them in the final response that contains the value you returned, filtered by any response_model . You can also declare the Response parameter in dependencies, and set headers (and cookies) in them. Return a Response directly ¶ You can also add headers when you return a Response directly. Create a response as described in Return a Response Directly and pass the headers as an additional parameter:"
+  },
+  {
+    "id": "qa-help-fastapi-7",
+    "question": "What should GitHub Discussions users mark if your reply solved their problem?",
+    "answer": "the answer",
+    "source_chunk": "help-fastapi-7",
+    "source_page": "help-fastapi",
+    "section": "help",
+    "category": "endpoints_routing",
+    "source_chunk_text": "and it might be better to ask them to clarify the problem first. Suggest solutions ¶ After being able to understand the question, you can give them a possible answer . In many cases, it's better to understand their underlying problem or use case , because there might be a better way to solve it than what they are trying to do. Ask to close ¶ If they reply, there's a high chance you would have solved their problem, congrats, you're a hero ! 🦸 Now, if that solved their problem, you can ask them to: In GitHub Discussions: mark the comment as the answer . In GitHub Issues: close the issue. Watch the GitHub repository ¶"
+  },
+  {
+    "id": "qa-tutorial_header-param-models-5",
+    "question": "What automatic transformation happens to underscores in FastAPI header parameter names?",
+    "answer": "They are converted to hyphens",
+    "source_chunk": "tutorial_header-param-models-5",
+    "source_page": "tutorial_header-param-models",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "If a client tries to send some extra headers , they will receive an error response. For example, if the client tries to send a tool header with a value of plumbus , they will receive an error response telling them that the header parameter tool is not allowed: { \"detail\" : [ { \"type\" : \"extra_forbidden\" , \"loc\" : [ \"header\" , \"tool\" ], \"msg\" : \"Extra inputs are not permitted\" , \"input\" : \"plumbus\" , } ] } Disable Convert Underscores ¶ The same way as with regular header parameters, when you have underscore characters in the parameter names, they are automatically converted to hyphens ."
+  },
+  {
+    "id": "qa-tutorial_security-3",
+    "question": "Which open specification is FastAPI based on for API definitions?",
+    "answer": "OpenAPI",
+    "source_chunk": "tutorial_security-3",
+    "source_page": "tutorial_security",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "OpenID Connect , but was not based on OAuth2. So, it was a complete additional system. OpenAPI ¶ OpenAPI (previously known as Swagger) is the open specification for building APIs (now part of the Linux Foundation). FastAPI is based on OpenAPI . That's what makes it possible to have multiple automatic interactive documentation interfaces, code generation, etc. OpenAPI has a way to define multiple security \"schemes\". By using them, you can take advantage of all these standard-based tools, including these interactive documentation systems. OpenAPI defines the following security schemes: apiKey : an application specific key that can come from: A query parameter. A header. A cookie. http : standard HTTP authentication systems, including:"
+  },
+  {
+    "id": "qa-tutorial_response-model-4",
+    "question": "Which decorator parameter can be used instead of a return type when the returned object has a different type?",
+    "answer": "response_model",
+    "source_chunk": "tutorial_response-model-4",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "data documentation, validation, etc. for the object that you returned (e.g. a dictionary or database object). If you added the return type annotation, tools and editors would complain with a (correct) error telling you that your function is returning a type (e.g. a dict) that is different from what you declared (e.g. a Pydantic model). In those cases, you can use the path operation decorator parameter response_model instead of the return type. You can use the response_model parameter in any of the path operations : @app.get() @app.post() @app.put() @app.delete() etc."
+  },
+  {
+    "id": "qa-tutorial_dependencies_sub-dependencies-3",
+    "question": "Which dependency provides the value assigned to parameter q in the example?",
+    "answer": "query_extractor",
+    "source_chunk": "tutorial_dependencies_sub-dependencies-3",
+    "source_page": "tutorial_dependencies_sub-dependencies",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "declares an optional query parameter q as a str , and then it just returns it. This is quite simple (not very useful), but will help us focus on how the sub-dependencies work. Second dependency, \"dependable\" and \"dependant\" ¶ Then you can create another dependency function (a \"dependable\") that at the same time declares a dependency of its own (so it is a \"dependant\" too): Let's focus on the parameters declared: Even though this function is a dependency (\"dependable\") itself, it also declares another dependency (it \"depends\" on something else). It depends on the query_extractor , and assigns the value returned by it to the parameter q . It also declares an optional last_query cookie, as a str ."
+  },
+  {
+    "id": "qa-advanced_path-operation-advanced-configuration-0",
+    "question": "How can you set the OpenAPI operationId for a path operation in FastAPI?",
+    "answer": "You can set the OpenAPI operationId for a path operation using the operation_id parameter",
+    "source_chunk": "advanced_path-operation-advanced-configuration-0",
+    "source_page": "advanced_path-operation-advanced-configuration",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Path Operation Advanced Configuration ¶ OpenAPI operationId ¶ Warning If you are not an \"expert\" in OpenAPI, you probably don't need this. You can set the OpenAPI operationId to be used in your path operation with the parameter operation_id . You would have to make sure that it is unique for each operation. from fastapi import FastAPI app = FastAPI () @app . get ( \"/items/\" , operation_id = \"some_specific_id_you_define\" ) async def read_items (): return [{ \"item_id\" : \"Foo\" }] Using the path operation function name as the operationId ¶ If you want to use your APIs' function names as operationId s, you can iterate over all of them and override each path operation's operation_id using their APIRoute.name ."
+  },
+  {
+    "id": "qa-how-to_migrate-from-pydantic-v1-to-pydantic-v2-8",
+    "question": "From which module can you import FastAPI parameter utilities like Body and Query when using Pydantic v1 during migration?",
+    "answer": "fastapi.temp_pydantic_v1_params",
+    "source_chunk": "how-to_migrate-from-pydantic-v1-to-pydantic-v2-8",
+    "source_page": "how-to_migrate-from-pydantic-v1-to-pydantic-v2",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "the output model (defined in response_model=ItemV2 ) is a Pydantic v2 model. Pydantic v1 parameters ¶ If you need to use some of the FastAPI-specific tools for parameters like Body , Query , Form , etc. with Pydantic v1 models, you can import them from fastapi.temp_pydantic_v1_params while you finish the migration to Pydantic v2: from typing import Annotated from fastapi import FastAPI from fastapi.temp_pydantic_v1_params import Body from pydantic.v1 import BaseModel class Item ( BaseModel ): name : str description : str | None = None size : float app = FastAPI () @app . post ( \"/items/\" ) async def create_item ( item : Annotated [ Item , Body ( embed = True )]) -> Item : return item Migrate in steps ¶ Tip"
+  },
+  {
+    "id": "qa-advanced_websockets-5",
+    "question": "How do you receive text messages from a WebSocket client in FastAPI?",
+    "answer": "Use websocket.receive_text().",
+    "source_chunk": "advanced_websockets-5",
+    "source_page": "advanced_websockets",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Header Path Query They work the same way as for other FastAPI endpoints/ path operations : from typing import Annotated from fastapi import ( Cookie , Depends , FastAPI , Query , WebSocket , WebSocketException , status , ) from fastapi.responses import HTMLResponse app = FastAPI () html = \"\"\" <!DOCTYPE html> <html> <head> <title>Chat</title> </head> <body> <h1>WebSocket Chat</h1> <form action=\"\" onsubmit=\"sendMessage(event)\"> <label>Item ID: <input type=\"text\" id=\"itemId\" autocomplete=\"off\" value=\"foo\"/></label> <label>Token: <input type=\"text\" id=\"token\" autocomplete=\"off\" value=\"some-key-token\"/></label> <button onclick=\"connect(event)\">Connect</button> <hr> <label>Message: <input type=\"text\" id=\"messageText\" autocomplete=\"off\"/></label> <button>Send</button> </form> <ul id='messages'> </ul> <script> var ws = null; function connect(event) { var itemId = document.getElementById(\"itemId\") var token = document.getElementById(\"token\") ws = new WebSocket(\"ws://localhost:8000/items/\" + itemId.value + \"/ws?token=\" + token.value); ws.onmessage = function(event) { var messages = document.getElementById('messages') var message = document.createElement('li') var content = document.createTextNode(event.data) message.appendChild(content) messages.appendChild(message) }; event.preventDefault() } function sendMessage(event) { var input = document.getElementById(\"messageText\") ws.send(input.value) input.value = '' event.preventDefault() } </script> </body> </html> \"\"\" @app . get ( \"/\" ) async def get (): return HTMLResponse ( html ) async def get_cookie_or_token ( websocket : WebSocket , session : Annotated [ str | None , Cookie ()] = None , token : Annotated [ str | None , Query ()] = None , ): if session is None and token is None : raise WebSocketException ( code = status . WS_1008_POLICY_VIOLATION ) return session or token @app . websocket ( \"/items/ {item_id} /ws\" ) async def websocket_endpoint ( * , websocket : WebSocket , item_id : str , q : int | None = None , cookie_or_token : Annotated [ str , Depends ( get_cookie_or_token )], ): await websocket . accept () while True : data = await websocket . receive_text () await websocket . send_text ( f \"Session cookie or query token value is: { cookie_or_token } \" ) if q is not None : await websocket . send_text ( f \"Query parameter q is: { q } \" ) await websocket . send_text ( f \"Message text was: { data } , for item ID: { item_id } \" )"
+  },
+  {
+    "id": "qa-reference_middleware-0",
+    "question": "Which middleware is used in FastAPI to handle Cross-Origin Resource Sharing?",
+    "answer": "CORSMiddleware",
+    "source_chunk": "qa-reference_middleware-0",
+    "source_page": "reference_middleware",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-how-to_general-1",
+    "question": "What attribute lets you mark a FastAPI path operation as no longer recommended?",
+    "answer": "Deprecation",
+    "source_chunk": "how-to_general-1",
+    "source_page": "how-to_general",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Tutorial - Path Operation Configurations - Summary and Description . Documentation Response description - OpenAPI ¶ To define the description of the response, shown in the docs UI, read the docs for Tutorial - Path Operation Configurations - Response description . Documentation Deprecate a Path Operation - OpenAPI ¶ To deprecate a path operation , and show it in the docs UI, read the docs for Tutorial - Path Operation Configurations - Deprecation . Convert any Data to JSON-compatible ¶ To convert any data to JSON-compatible, read the docs for Tutorial - JSON Compatible Encoder . OpenAPI Metadata - Docs ¶ To add metadata to your OpenAPI schema, including a license, version, contact, etc, read the docs for Tutorial - Metadata and Docs URLs ."
+  },
+  {
+    "id": "qa-advanced_response-directly-1",
+    "question": "What happens when you return a Response object directly in FastAPI?",
+    "answer": "When you return a Response, FastAPI passes it directly without performing data conversion with Pydantic models.",
+    "source_chunk": "advanced_response-directly-1",
+    "source_page": "advanced_response-directly",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "a Response ¶ In fact, you can return any Response or any sub-class of it. Tip JSONResponse itself is a sub-class of Response . And when you return a Response , FastAPI will pass it directly. It won't do any data conversion with Pydantic models, it won't convert the contents to any type, etc. This gives you a lot of flexibility. You can return any data type, override any data declaration or validation, etc. Using the jsonable_encoder in a Response ¶ Because FastAPI doesn't make any changes to a Response you return, you have to make sure its contents are ready for it."
+  },
+  {
+    "id": "qa-how-to_migrate-from-pydantic-v1-to-pydantic-v2-2",
+    "question": "How can I automate the migration from Pydantic v1 to v2?",
+    "answer": "use bump-pydantic",
+    "source_chunk": "how-to_migrate-from-pydantic-v1-to-pydantic-v2-2",
+    "source_page": "how-to_migrate-from-pydantic-v1-to-pydantic-v2",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Make sure you have tests for your app and you run them on continuous integration (CI). This way, you can do the upgrade and make sure everything is still working as expected. bump-pydantic ¶ In many cases, when you use regular Pydantic models without customizations, you will be able to automate most of the process of migrating from Pydantic v1 to Pydantic v2. You can use bump-pydantic from the same Pydantic team. This tool will help you to automatically change most of the code that needs to be changed. After this, you can run the tests and check if everything works. If it does, you are done. 😎 Pydantic v1 in v2 ¶"
+  },
+  {
+    "id": "qa-tutorial_request-forms-1",
+    "question": "In OAuth2 password flow, what format must be used to send username and password?",
+    "answer": "form fields",
+    "source_chunk": "tutorial_request-forms-1",
+    "source_page": "tutorial_request-forms",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "()]): return { \"username\" : username } Tip Prefer to use the Annotated version if possible. from fastapi import FastAPI , Form app = FastAPI () @app . post ( \"/login/\" ) async def login ( username : str = Form (), password : str = Form ()): return { \"username\" : username } Define Form parameters ¶ Create form parameters the same way you would for Body or Query : For example, in one of the ways the OAuth2 specification can be used (called \"password flow\") it is required to send a username and password as form fields. The spec requires the fields to be exactly named username and password , and to be sent as form fields, not JSON."
+  },
+  {
+    "id": "qa-tutorial_response-model-0",
+    "question": "What can you annotate to declare the type used for a response in FastAPI?",
+    "answer": "return type",
+    "source_chunk": "tutorial_response-model-0",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Response Model - Return Type ¶ You can declare the type used for the response by annotating the path operation function return type . You can use type annotations the same way you would for input data in function parameters , you can use Pydantic models, lists, dictionaries, scalar values like integers, booleans, etc."
+  },
+  {
+    "id": "qa-advanced_events-0",
+    "question": "What FastAPI parameter is used to define startup and shutdown logic for the whole application?",
+    "answer": "lifespan",
+    "source_chunk": "advanced_events-0",
+    "source_page": "advanced_events",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Lifespan Events ¶ You can define logic (code) that should be executed before the application starts up . This means that this code will be executed once , before the application starts receiving requests . The same way, you can define logic (code) that should be executed when the application is shutting down . In this case, this code will be executed once , after having handled possibly many requests . Because this code is executed before the application starts taking requests, and right after it finishes handling requests, it covers the whole application lifespan (the word \"lifespan\" will be important in a second 😉)."
+  },
+  {
+    "id": "qa-tutorial_response-model-22",
+    "question": "What kind of type annotation fails in the example Response | dict case?",
+    "answer": "union",
+    "source_chunk": "tutorial_response-model-22",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "one or more of them are not valid Pydantic types, for example this would fail 💥: from fastapi import FastAPI , Response from fastapi.responses import RedirectResponse app = FastAPI () @app . get ( \"/portal\" ) async def get_portal ( teleport : bool = False ) -> Response | dict : if teleport : return RedirectResponse ( url = \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\" ) return { \"message\" : \"Here's your interdimensional portal.\" } ...this fails because the type annotation is not a Pydantic type and is not just a single Response class or subclass, it's a union (any of the two) between a Response and a dict . Disable Response Model ¶"
+  },
+  {
+    "id": "qa-async-26",
+    "question": "How do you declare a function that supports await expressions?",
+    "answer": "declare it with async def",
+    "source_chunk": "async-26",
+    "source_page": "async",
+    "section": "general",
+    "category": "endpoints_routing",
+    "source_chunk_text": "these new Python features, you can code it like: burgers = await get_burgers ( 2 ) The key here is the await . It tells Python that it has to wait ⏸ for get_burgers(2) to finish doing its thing 🕙 before storing the results in burgers . With that, Python will know that it can go and do something else 🔀 ⏯ in the meanwhile (like receiving another request). For await to work, it has to be inside a function that supports this asynchronicity. To do that, you just declare it with async def : async def get_burgers ( number : int ): # Do some asynchronous stuff to create the burgers return burgers ...instead of def :"
+  },
+  {
+    "id": "qa-reference_background-1",
+    "question": "Which method schedules a function to run in the background in FastAPI?",
+    "answer": "add_task",
+    "source_chunk": "qa-reference_background-1",
+    "source_page": "reference_background",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-tutorial_query-params-1",
+    "question": "What type are query parameter values naturally in a URL before FastAPI converts them?",
+    "answer": "strings",
+    "source_chunk": "tutorial_query-params-1",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "parameters are: skip : with a value of 0 limit : with a value of 10 As they are part of the URL, they are \"naturally\" strings. But when you declare them with Python types (in the example above, as int ), they are converted to that type and validated against it. All the same process that applied for path parameters also applies for query parameters: Editor support (obviously) Data \"parsing\" Data validation Automatic documentation Defaults ¶ As query parameters are not a fixed part of a path, they can be optional and can have default values. In the example above they have default values of skip=0 and limit=10 . So, going to the URL: http://127.0.0.1:8000/items/ would be the same as going to:"
+  },
+  {
+    "id": "qa-help-fastapi-0",
+    "question": "Which platform can you follow @fastapi on to get the latest FastAPI news?",
+    "answer": "X (Twitter)",
+    "source_chunk": "help-fastapi-0",
+    "source_page": "help-fastapi",
+    "section": "help",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Help FastAPI - Get Help ¶ Do you like FastAPI ? Would you like to help FastAPI, other users, and the author? Or would you like to get help with FastAPI ? There are very simple ways to help (several involve just one or two clicks). And there are several ways to get help too. News about FastAPI and friends 🚀 Guides 📝 Features ✨ Breaking changes 🚨 Tips and tricks ✅ Follow FastAPI on X (Twitter) ¶ Follow @fastapi on X (Twitter) to get the latest news about FastAPI . 🐦 Star FastAPI in GitHub ¶ You can \"star\" FastAPI in GitHub (clicking the star button at the top right): https://github.com/fastapi/fastapi . ⭐️"
+  },
+  {
+    "id": "qa-tutorial_header-params-1",
+    "question": "How are parameters interpreted if you don't use Header when declaring headers?",
+    "answer": "query parameters",
+    "source_chunk": "tutorial_header-params-1",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Header ( default = None )): return { \"User-Agent\" : user_agent } Declare Header parameters ¶ Then declare the header parameters using the same structure as with Path , Query and Cookie . You can define the default value as well as all the extra validation or annotation parameters: Technical Details Header is a \"sister\" class of Path , Query and Cookie . It also inherits from the same common Param class. But remember that when you import Query , Path , Header , and others from fastapi , those are actually functions that return special classes. Info To declare headers, you need to use Header , because otherwise the parameters would be interpreted as query parameters. Automatic conversion ¶"
+  },
+  {
+    "id": "qa-tutorial_first-steps-7",
+    "question": "What class is instantiated to create the main FastAPI application object?",
+    "answer": "FastAPI",
+    "source_chunk": "tutorial_first-steps-7",
+    "source_page": "tutorial_first-steps",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "can use all the Starlette functionality with FastAPI too. Step 2: create a FastAPI \"instance\" ¶ Here the app variable will be an \"instance\" of the class FastAPI . This will be the main point of interaction to create all your API. Step 3: create a path operation ¶ Path ¶ \"Path\" here refers to the last part of the URL starting from the first / . So, in a URL like: https://example.com/items/foo ...the path would be: /items/foo Info A \"path\" is also commonly called an \"endpoint\" or a \"route\". While building an API, the \"path\" is the main way to separate \"concerns\" and \"resources\". Operation ¶ \"Operation\" here refers to one of the HTTP \"methods\". One of: POST GET PUT DELETE ...and the more exotic ones: OPTIONS"
+  },
+  {
+    "id": "qa-reference_encoders-2",
+    "question": "Which parameter excludes fields with None values in jsonable_encoder?",
+    "answer": "exclude_none",
+    "source_chunk": "reference_encoders-2",
+    "source_page": "reference_encoders",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "result, so you probably want to leave this set to True . TYPE: bool DEFAULT: True Pydantic's exclude_unset parameter, passed to Pydantic models to define if it should exclude from the output the fields that were not explicitly set (and that only had their default values). TYPE: bool DEFAULT: False Pydantic's exclude_defaults parameter, passed to Pydantic models to define if it should exclude from the output the fields that had the same default value, even when they were explicitly set. Pydantic's exclude_none parameter, passed to Pydantic models to define if it should exclude from the output any fields that have a None value. Pydantic's custom_encoder parameter, passed to Pydantic models to define a custom encoder."
+  },
+  {
+    "id": "qa-tutorial_query-param-models-0",
+    "question": "What kind of model can you create to group related query parameters in FastAPI?",
+    "answer": "Pydantic model",
+    "source_chunk": "tutorial_query-param-models-0",
+    "source_page": "tutorial_query-param-models",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Query Parameter Models ¶ If you have a group of query parameters that are related, you can create a Pydantic model to declare them. This would allow you to re-use the model in multiple places and also to declare validations and metadata for all the parameters at once. 😎 Note This is supported since FastAPI version 0.115.0 . 🤓 Query Parameters with a Pydantic Model ¶ Declare the query parameters that you need in a Pydantic model , and then declare the parameter as Query :"
+  },
+  {
+    "id": "qa-advanced_path-operation-advanced-configuration-1",
+    "question": "How can you exclude a path operation from the generated OpenAPI schema in FastAPI?",
+    "answer": "You can exclude a path operation from the generated OpenAPI schema by setting the include_in_schema parameter to False",
+    "source_chunk": "advanced_path-operation-advanced-configuration-1",
+    "source_page": "advanced_path-operation-advanced-configuration",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "can iterate over all of them and override each path operation's operation_id using their APIRoute.name . You should do it after adding all your path operations . from fastapi import FastAPI from fastapi.routing import APIRoute app = FastAPI () @app . get ( \"/items/\" ) async def read_items (): return [{ \"item_id\" : \"Foo\" }] def use_route_names_as_operation_ids ( app : FastAPI ) -> None : \"\"\" Simplify operation IDs so that generated API clients have simpler function names. Should be called only after all routes have been added. \"\"\" for route in app . routes : if isinstance ( route , APIRoute ): route . operation_id = route . name # in this case, 'read_items' use_route_names_as_operation_ids ( app ) Tip"
+  },
+  {
+    "id": "qa-features-5",
+    "question": "Which library handles data validation in FastAPI?",
+    "answer": "Pydantic",
+    "source_chunk": "features-5",
+    "source_page": "features",
+    "section": "general",
+    "category": "endpoints_routing",
+    "source_chunk_text": "( list ) defining item types. String ( str ) fields, defining min and max lengths. Numbers ( int , float ) with min and max values, etc. Validation for more exotic types, like: URL. Email. UUID. ...and others. All the validation is handled by the well-established and robust Pydantic . Security and authentication ¶ Security and authentication integrated. Without any compromise with databases or data models. All the security schemes defined in OpenAPI, including: HTTP Basic. OAuth2 (also with JWT tokens ). Check the tutorial on OAuth2 with JWT . API keys in: Headers. Query parameters. Cookies, etc. Plus all the security features from Starlette (including session cookies )."
+  },
+  {
+    "id": "qa-tutorial_header-params-2",
+    "question": "What character does FastAPI automatically convert underscores into for header names?",
+    "answer": "hyphen",
+    "source_chunk": "tutorial_header-params-2",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "use Header , because otherwise the parameters would be interpreted as query parameters. Automatic conversion ¶ Header has a little extra functionality on top of what Path , Query and Cookie provide. Most of the standard headers are separated by a \"hyphen\" character, also known as the \"minus symbol\" ( - ). But a variable like user-agent is invalid in Python. So, by default, Header will convert the parameter names characters from underscore ( _ ) to hyphen ( - ) to extract and document the headers. Also, HTTP headers are case-insensitive, so, you can declare them with standard Python style (also known as \"snake_case\")."
+  },
+  {
+    "id": "qa-tutorial_request-forms-0",
+    "question": "Which FastAPI helper should you use to receive form fields instead of JSON?",
+    "answer": "Form",
+    "source_chunk": "tutorial_request-forms-0",
+    "source_page": "tutorial_request-forms",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Form Data ¶ When you need to receive form fields instead of JSON, you can use Form . Info To use forms, first install python-multipart . Make sure you create a virtual environment , activate it, and then install it, for example: $ pip install python-multipart Import Form ¶ Import Form from fastapi : from typing import Annotated from fastapi import FastAPI , Form app = FastAPI () @app . post ( \"/login/\" ) async def login ( username : Annotated [ str , Form ()], password : Annotated [ str , Form ()]): return { \"username\" : username } Tip Prefer to use the Annotated version if possible."
+  },
+  {
+    "id": "qa-advanced_events-1",
+    "question": "What kind of shared resource is used as an example in the lifespan use case?",
+    "answer": "machine learning model",
+    "source_chunk": "advanced_events-1",
+    "source_page": "advanced_events",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "it covers the whole application lifespan (the word \"lifespan\" will be important in a second 😉). This can be very useful for setting up resources that you need to use for the whole app, and that are shared among requests, and/or that you need to clean up afterwards. For example, a database connection pool, or loading a shared machine learning model. Use Case ¶ Let's start with an example use case and then see how to solve it with this. Let's imagine that you have some machine learning models that you want to use to handle requests. 🤖 The same models are shared among requests, so, it's not one model per request, or one per user or something similar."
+  },
+  {
+    "id": "qa-tutorial_response-model-2",
+    "question": "Which schema format does FastAPI add for a response in the OpenAPI path operation?",
+    "answer": "JSON Schema",
+    "source_chunk": "tutorial_response-model-2",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "name = \"Plumbus\" , price = 32.0 ), ] FastAPI will use this return type to: Validate the returned data. If the data is invalid (e.g. you are missing a field), it means that your app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected. Add a JSON Schema for the response, in the OpenAPI path operation . This will be used by the automatic docs . It will also be used by automatic client code generation tools. But most importantly: It will limit and filter the output data to what is defined in the return type."
+  },
+  {
+    "id": "qa-tutorial_response-status-code-2",
+    "question": "What is the default HTTP success status code in FastAPI responses?",
+    "answer": "200",
+    "source_chunk": "tutorial_response-status-code-2",
+    "source_page": "tutorial_response-status-code",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "have a name associated to recognize them, but the important part is the number. In short: 100 - 199 are for \"Information\". You rarely use them directly. Responses with these status codes cannot have a body. 200 - 299 are for \"Successful\" responses. These are the ones you would use the most. 200 is the default status code, which means everything was \"OK\". Another example would be 201 , \"Created\". It is commonly used after creating a new record in the database. A special case is 204 , \"No Content\". This response is used when there is no content to return to the client, and so the response must not have a body."
+  },
+  {
+    "id": "qa-tutorial_response-model-19",
+    "question": "Which base class makes returning JSONResponse and RedirectResponse valid with a response annotation?",
+    "answer": "Response",
+    "source_chunk": "tutorial_response-model-19",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "common case would be returning a Response directly as explained later in the advanced docs . from fastapi import FastAPI , Response from fastapi.responses import JSONResponse , RedirectResponse app = FastAPI () @app . get ( \"/portal\" ) async def get_portal ( teleport : bool = False ) -> Response : if teleport : return RedirectResponse ( url = \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\" ) return JSONResponse ( content = { \"message\" : \"Here's your interdimensional portal.\" }) This simple case is handled automatically by FastAPI because the return type annotation is the class (or a subclass of) Response . And tools will also be happy because both RedirectResponse and JSONResponse are subclasses of Response , so the type annotation is correct. Annotate a Response Subclass ¶"
+  },
+  {
+    "id": "qa-advanced_testing-websockets-0",
+    "question": "How can you test WebSocket endpoints in FastAPI?",
+    "answer": "You can test WebSocket endpoints using TestClient and connecting with websocket_connect.",
+    "source_chunk": "advanced_testing-websockets-0",
+    "source_page": "advanced_testing-websockets",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Testing WebSockets ¶ You can use the same TestClient to test WebSockets. For this, you use the TestClient in a with statement, connecting to the WebSocket:"
+  },
+  {
+    "id": "qa-tutorial_query-params-7",
+    "question": "How do you make a query parameter required in FastAPI?",
+    "answer": "omit the default value",
+    "source_chunk": "tutorial_query-params-7",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "an amazing item that has a long description\" } ) return item Required query parameters ¶ When you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required. If you don't want to add a specific value but just make it optional, set the default as None . But when you want to make a query parameter required, you can just not declare any default value: from fastapi import FastAPI app = FastAPI () @app . get ( \"/items/ {item_id} \" ) async def read_user_item ( item_id : str , needy : str ): item = { \"item_id\" : item_id , \"needy\" : needy } return item"
+  },
+  {
+    "id": "qa-how-to_migrate-from-pydantic-v1-to-pydantic-v2-0",
+    "question": "FastAPI 0.119.0",
+    "answer": "If you have an old FastAPI app with Pydantic v1, here I'll show you how to migrate it to Pydantic v2, and the features in FastAPI 0.119.0 to help you with a gradual migration.",
+    "source_chunk": "how-to_migrate-from-pydantic-v1-to-pydantic-v2-0",
+    "source_page": "how-to_migrate-from-pydantic-v1-to-pydantic-v2",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Migrate from Pydantic v1 to Pydantic v2 ¶ If you have an old FastAPI app, you might be using Pydantic version 1. FastAPI version 0.100.0 had support for either Pydantic v1 or v2. It would use whichever you had installed. FastAPI version 0.119.0 introduced partial support for Pydantic v1 from inside of Pydantic v2 (as pydantic.v1 ), to facilitate the migration to v2. FastAPI 0.126.0 dropped support for Pydantic v1, while still supporting pydantic.v1 for a little while. Warning The Pydantic team stopped support for Pydantic v1 for the latest versions of Python, starting with Python 3.14 . This includes pydantic.v1 , which is no longer supported in Python 3.14 and above."
+  },
+  {
+    "id": "qa-advanced_additional-responses-4",
+    "question": "Which parameter can I use to add different media types for the same main response?.",
+    "answer": "You can use this same responses parameter",
+    "source_chunk": "advanced_additional-responses-4",
+    "source_page": "advanced_additional-responses",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": ", that has as the value the JSON Schema from the model, here's the correct place. FastAPI adds a reference here to the global JSON Schemas in another place in your OpenAPI instead of including it directly. This way, other applications and clients can use those JSON Schemas directly, provide better code generation tools, etc. The generated responses in the OpenAPI for this path operation will be:"
+  },
+  {
+    "id": "qa-tutorial_header-params-0",
+    "question": "Which FastAPI helper is used to declare header parameters?",
+    "answer": "Header",
+    "source_chunk": "tutorial_header-params-0",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Header Parameters ¶ You can define Header parameters the same way you define Query , Path and Cookie parameters. Import Header ¶ First import Header : from typing import Annotated from fastapi import FastAPI , Header app = FastAPI () @app . get ( \"/items/\" ) async def read_items ( user_agent : Annotated [ str | None , Header ()] = None ): return { \"User-Agent\" : user_agent } Tip Prefer to use the Annotated version if possible. from fastapi import FastAPI , Header app = FastAPI () @app . get ( \"/items/\" ) async def read_items ( user_agent : str | None = Header ( default = None )): return { \"User-Agent\" : user_agent } Declare Header parameters ¶"
+  },
+  {
+    "id": "qa-tutorial_first-steps-4",
+    "question": "Which standard defines the data schemas used inside an OpenAPI specification?",
+    "answer": "JSON Schema",
+    "source_chunk": "tutorial_first-steps-4",
+    "source_page": "tutorial_first-steps",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "would mean the JSON attributes, and data types they have, etc. OpenAPI and JSON Schema ¶ OpenAPI defines an API schema for your API. And that schema includes definitions (or \"schemas\") of the data sent and received by your API using JSON Schema , the standard for JSON data schemas. Check the openapi.json ¶ If you are curious about how the raw OpenAPI schema looks like, FastAPI automatically generates a JSON (schema) with the descriptions of all your API. You can see it directly at: http://127.0.0.1:8000/openapi.json . It will show a JSON starting with something like:"
+  },
+  {
+    "id": "qa-advanced_response-cookies-1",
+    "question": "Can cookies be set inside dependencies in FastAPI?",
+    "answer": "You can declare a Response parameter in dependencies and set cookies in them.",
+    "source_chunk": "advanced_response-cookies-1",
+    "source_page": "advanced_response-cookies",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "a response_model , it will still be used to filter and convert the object you returned. FastAPI will use that temporal response to extract the cookies (also headers and status code), and will put them in the final response that contains the value you returned, filtered by any response_model . You can also declare the Response parameter in dependencies, and set cookies (and headers) in them. Return a Response directly ¶ You can also create cookies when returning a Response directly in your code. To do that, you can create a response as described in Return a Response Directly . Then set Cookies in it, and then return it:"
+  },
+  {
+    "id": "qa-tutorial_middleware-1",
+    "question": "Which decorator is used to create an HTTP middleware in FastAPI?",
+    "answer": "@app.middleware(\"http\")",
+    "source_chunk": "qa-tutorial_middleware-1",
+    "source_page": "tutorial_middleware",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-tutorial_middleware-0",
+    "question": "What is a function that runs before every request and after every response in FastAPI called?",
+    "answer": "middleware",
+    "source_chunk": "qa-tutorial_middleware-0",
+    "source_page": "tutorial_middleware",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-advanced_dataclasses-2",
+    "question": "How to make nested data structures?",
+    "answer": "combine dataclasses with other type annotations",
+    "source_chunk": "advanced_dataclasses-2",
+    "source_page": "advanced_dataclasses",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "this is a nice trick to use them to power a web API using FastAPI. 🤓 Dataclasses in response_model ¶ You can also use dataclasses in the response_model parameter: from dataclasses import dataclass , field from fastapi import FastAPI @dataclass class Item : name : str price : float tags : list [ str ] = field ( default_factory = list ) description : str | None = None tax : float | None = None app = FastAPI () @app . get ( \"/items/next\" , response_model = Item ) async def read_next_item (): return { \"name\" : \"Island In The Moon\" , \"price\" : 12.99 , \"description\" : \"A place to be playin' and havin' fun\" , \"tags\" : [ \"breater\" ], }"
+  },
+  {
+    "id": "qa-tutorial_dependencies_sub-dependencies-5",
+    "question": "How many times will a shared sub-dependency be executed per request by default?",
+    "answer": "once",
+    "source_chunk": "tutorial_dependencies_sub-dependencies-5",
+    "source_page": "tutorial_dependencies_sub-dependencies",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "TB query_extractor([\"query_extractor\"]) query_or_cookie_extractor([\"query_or_cookie_extractor\"]) read_query[\"/items/\"] query_extractor --> query_or_cookie_extractor --> read_query Using the same dependency multiple times ¶ If one of your dependencies is declared multiple times for the same path operation , for example, multiple dependencies have a common sub-dependency, FastAPI will know to call that sub-dependency only once per request. And it will save the returned value in a \"cache\" and pass it to all the \"dependants\" that need it in that specific request, instead of calling the dependency multiple times for the same request. In an advanced scenario where you know you need the dependency to be called at every step (possibly multiple times) in the same request instead of using the \"cached\" value, you can set the parameter use_cache=False when using Depends :"
+  },
+  {
+    "id": "qa-advanced_response-headers-0",
+    "question": "How can you set response headers in a FastAPI path operation?",
+    "answer": "You can declare a parameter of type Response in the path operation and set headers on that response object.",
+    "source_chunk": "advanced_response-headers-0",
+    "source_page": "advanced_response-headers",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Response Headers ¶ Use a Response parameter ¶ You can declare a parameter of type Response in your path operation function (as you can do for cookies). And then you can set headers in that temporal response object. from fastapi import FastAPI , Response app = FastAPI () @app . get ( \"/headers-and-object/\" ) def get_headers ( response : Response ): response . headers [ \"X-Cat-Dog\" ] = \"alone in the world\" return { \"message\" : \"Hello World\" } And then you can return any object you need, as you normally would (a dict , a database model, etc). And if you declared a response_model , it will still be used to filter and convert the object you returned."
+  },
+  {
+    "id": "qa-reference_security-13",
+    "question": "Which FastAPI security class retrieves API keys from query parameters?",
+    "answer": "APIKeyQuery",
+    "source_chunk": "reference_security-13",
+    "source_page": "reference_security",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "= name , scheme_name = scheme_name , description = description , auto_error = auto_error , ) fastapi.security.APIKeyQuery ¶ APIKeyQuery ( * , name , scheme_name = None , description = None , auto_error = True ) API key authentication using a query parameter. This defines the name of the query parameter that should be provided in the request with the API key and integrates that into the OpenAPI documentation. It extracts the key value sent in the query parameter automatically and provides it as the dependency result. But it doesn't define how to send that API key to the client."
+  },
+  {
+    "id": "qa-how-to_general-0",
+    "question": "What can you use to group path operations in the FastAPI documentation interface?",
+    "answer": "tags",
+    "source_chunk": "how-to_general-0",
+    "source_page": "how-to_general",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "General - How To - Recipes ¶ Here are several pointers to other places in the docs, for general or frequent questions. Filter Data - Security ¶ To ensure that you don't return more data than you should, read the docs for Tutorial - Response Model - Return Type . Documentation Tags - OpenAPI ¶ To add tags to your path operations , and group them in the docs UI, read the docs for Tutorial - Path Operation Configurations - Tags . Documentation Summary and Description - OpenAPI ¶ To add a summary and description to your path operations , and show them in the docs UI, read the docs for Tutorial - Path Operation Configurations - Summary and Description . Documentation Response description - OpenAPI ¶"
+  },
+  {
+    "id": "qa-deployment_https-1",
+    "question": "At what level the encryption of the connection happens?",
+    "answer": "TCP level",
+    "source_chunk": "deployment_https-1",
+    "source_page": "deployment_https",
+    "section": "deployment",
+    "category": "endpoints_routing",
+    "source_chunk_text": "actually acquired from the third party, not \"generated\". Certificates have a lifetime . They expire . And then they need to be renewed , acquired again from the third party. The encryption of the connection happens at the TCP level . That's one layer below HTTP . So, the certificate and encryption handling is done before HTTP . TCP doesn't know about \"domains\" . Only about IP addresses. The information about the specific domain requested goes in the HTTP data . The HTTPS certificates \"certify\" a certain domain , but the protocol and encryption happen at the TCP level, before knowing which domain is being dealt with. By default , that would mean that you can only have one HTTPS certificate per IP address ."
+  },
+  {
+    "id": "qa-advanced_response-cookies-0",
+    "question": "How can you set cookies in a FastAPI path operation?",
+    "answer": "You can set cookies by declaring a Response parameter in the path operation function.",
+    "source_chunk": "advanced_response-cookies-0",
+    "source_page": "advanced_response-cookies",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Response Cookies ¶ Use a Response parameter ¶ You can declare a parameter of type Response in your path operation function . And then you can set cookies in that temporal response object. from fastapi import FastAPI , Response app = FastAPI () @app . post ( \"/cookie-and-object/\" ) def create_cookie ( response : Response ): response . set_cookie ( key = \"fakesession\" , value = \"fake-cookie-session-value\" ) return { \"message\" : \"Come to the dark side, we have cookies\" } And then you can return any object you need, as you normally would (a dict , a database model, etc). And if you declared a response_model , it will still be used to filter and convert the object you returned."
+  },
+  {
+    "id": "qa-tutorial_response-status-code-0",
+    "question": "Which decorator parameter is used to set the HTTP status code for a path operation?",
+    "answer": "status_code",
+    "source_chunk": "tutorial_response-status-code-0",
+    "source_page": "tutorial_response-status-code",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Response Status Code ¶ The same way you can specify a response model, you can also declare the HTTP status code used for the response with the parameter status_code in any of the path operations : @app.get() @app.post() @app.put() @app.delete() etc. from fastapi import FastAPI app = FastAPI () @app . post ( \"/items/\" , status_code = 201 ) async def create_item ( name : str ): return { \"name\" : name } Note Notice that status_code is a parameter of the \"decorator\" method ( get , post , etc). Not of your path operation function , like all the parameters and body. The status_code parameter receives a number with the HTTP status code. Info status_code can alternatively also receive an IntEnum , such as Python's http.HTTPStatus ."
+  },
+  {
+    "id": "qa-tutorial_path-params-numeric-validations-10",
+    "question": "Which FastAPI helpers can be used to declare number constraints?",
+    "answer": "Query and Path",
+    "source_chunk": "tutorial_path-params-numeric-validations-10",
+    "source_page": "tutorial_path-params-numeric-validations",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "and you probably won't need to use * . Number validations: greater than or equal ¶ With Query and Path (and others you'll see later) you can declare number constraints. Here, with ge=1 , item_id will need to be an integer number \" g reater than or e qual\" to 1 . from typing import Annotated from fastapi import FastAPI , Path app = FastAPI () @app . get ( \"/items/ {item_id} \" ) async def read_items ( item_id : Annotated [ int , Path ( title = \"The ID of the item to get\" , ge = 1 )], q : str ): results = { \"item_id\" : item_id } if q : results . update ({ \"q\" : q }) return results"
+  },
+  {
+    "id": "qa-advanced_additional-responses-5",
+    "question": "Which parameters allow combining response information from multiple places in FastAPI?",
+    "answer": "You can also combine response information from multiple places, including the response_model, status_code, and responses parameters",
+    "source_chunk": "advanced_additional-responses-5",
+    "source_page": "advanced_additional-responses",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "code generation tools, etc. The generated responses in the OpenAPI for this path operation will be: { \"responses\" : { \"404\" : { \"description\" : \"Additional Response\" , \"content\" : { \"application/json\" : { \"schema\" : { \"$ref\" : \"#/components/schemas/Message\" } } } }, \"200\" : { \"description\" : \"Successful Response\" , \"content\" : { \"application/json\" : { \"schema\" : { \"$ref\" : \"#/components/schemas/Item\" } } } }, \"422\" : { \"description\" : \"Validation Error\" , \"content\" : { \"application/json\" : { \"schema\" : { \"$ref\" : \"#/components/schemas/HTTPValidationError\" } } } } } } The schemas are referenced to another place inside the OpenAPI schema:"
+  },
+  {
+    "id": "qa-reference_staticfiles-12",
+    "question": "Which StaticFiles helper function checks if an HTTP Not Modified response can be returned?",
+    "answer": "is_not_modified",
+    "source_chunk": "reference_staticfiles-12",
+    "source_page": "reference_staticfiles",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "( f \"StaticFiles path ' { self . directory } ' is not a directory.\" ) is_not_modified ¶ is_not_modified ( response_headers , request_headers ) Given the request and response headers, return True if an HTTP \"Not Modified\" response could be returned instead. 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217"
+  },
+  {
+    "id": "qa-tutorial_response-model-23",
+    "question": "What value disables response model generation in FastAPI?",
+    "answer": "response_model=None",
+    "source_chunk": "tutorial_response-model-23",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "union (any of the two) between a Response and a dict . Disable Response Model ¶ Continuing from the example above, you might not want to have the default data validation, documentation, filtering, etc. that is performed by FastAPI. But you might want to still keep the return type annotation in the function to get the support from tools like editors and type checkers (e.g. mypy). In this case, you can disable the response model generation by setting response_model=None :"
+  },
+  {
+    "id": "qa-deployment_concepts-0",
+    "question": "What are some of the important concepts when deploying a FastAPI application?",
+    "answer": "Security - HTTPS Running on startup Restarts Replication Memory",
+    "source_chunk": "deployment_concepts-0",
+    "source_page": "deployment_concepts",
+    "section": "deployment",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Deployments Concepts ¶ When deploying a FastAPI application, or actually, any type of web API, there are several concepts that you probably care about, and using them you can find the most appropriate way to deploy your application . Some of the important concepts are: Security - HTTPS Running on startup Restarts Replication (the number of processes running) Memory Previous steps before starting We'll see how they would affect deployments . In the end, the ultimate objective is to be able to serve your API clients in a way that is secure , to avoid disruptions , and to use the compute resources (for example remote servers/virtual machines) as efficiently as possible. 🚀"
+  },
+  {
+    "id": "qa-help-fastapi-15",
+    "question": "Which chat platform can you join to talk with the FastAPI community?",
+    "answer": "Discord",
+    "source_chunk": "help-fastapi-15",
+    "source_page": "help-fastapi",
+    "section": "help",
+    "category": "endpoints_routing",
+    "source_chunk_text": "others with questions in GitHub (see the section above). Review Pull Requests (see the section above). Those two tasks are what consume time the most . That's the main work of maintaining FastAPI. If you can help me with that, you are helping me maintain FastAPI and making sure it keeps advancing faster and better . 🚀 Join the chat ¶ Join the 👥 Discord chat server 👥 and hang out with others in the FastAPI community. Tip For questions, ask them in GitHub Discussions , there's a much better chance you will receive help by the FastAPI Experts . Use the chat only for other general conversations. Don't use the chat for questions ¶"
+  },
+  {
+    "id": "qa-reference_request-3",
+    "question": "Where can the url_for method be used in FastAPI?",
+    "answer": "Starlette application or router",
+    "source_chunk": "reference_request-3",
+    "source_page": "reference_request",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "¶ url_for ( name , / , ** path_params ) 192 193 194 195 196 197 def url_for ( self , name : str , / , ** path_params : Any ) -> URL : url_path_provider : Router | Starlette | None = self . scope . get ( \"router\" ) or self . scope . get ( \"app\" ) if url_path_provider is None : raise RuntimeError ( \"The `url_for` method can only be used inside a Starlette application or with a router.\" ) url_path = url_path_provider . url_path_for ( name , ** path_params ) return url_path . make_absolute_url ( base_url = self . base_url ) stream async ¶ stream ()"
+  },
+  {
+    "id": "qa-async-0",
+    "question": "What syntax is used to define an asynchronous path operation function in FastAPI?",
+    "answer": "async def.",
+    "source_chunk": "async-0",
+    "source_page": "async",
+    "section": "general",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Concurrency and async / await ¶ Details about the async def syntax for path operation functions and some background about asynchronous code, concurrency, and parallelism. In a hurry? ¶ TL;DR: If you are using third party libraries that tell you to call them with await , like: results = await some_library () Then, declare your path operation functions with async def like: @app . get ( '/' ) async def read_results (): results = await some_library () return results Note You can only use await inside of functions created with async def ."
+  },
+  {
+    "id": "qa-reference_security-0",
+    "question": "From which module can you import FastAPI security utilities like HTTPBasic and OAuth2PasswordBearer?",
+    "answer": "fastapi.security",
+    "source_chunk": "reference_security-0",
+    "source_page": "reference_security",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Security Tools ¶ When you need to declare dependencies with OAuth2 scopes you use Security() . But you still need to define what is the dependable, the callable that you pass as a parameter to Depends() or Security() . There are multiple tools that you can use to create those dependables, and they get integrated into OpenAPI so they are shown in the automatic docs UI, they can be used by automatically generated clients and SDKs, etc. You can import them from fastapi.security : from fastapi.security import ( APIKeyCookie , APIKeyHeader , APIKeyQuery , HTTPAuthorizationCredentials , HTTPBasic , HTTPBasicCredentials , HTTPBearer , HTTPDigest , OAuth2 , OAuth2AuthorizationCodeBearer , OAuth2PasswordBearer , OAuth2PasswordRequestForm , OAuth2PasswordRequestFormStrict , OpenIdConnect , SecurityScopes , )"
+  },
+  {
+    "id": "qa-tutorial_header-param-models-0",
+    "question": "What type of model can be used to group related header parameters in FastAPI?",
+    "answer": "Pydantic model",
+    "source_chunk": "tutorial_header-param-models-0",
+    "source_page": "tutorial_header-param-models",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Header Parameter Models ¶ If you have a group of related header parameters , you can create a Pydantic model to declare them. This would allow you to re-use the model in multiple places and also to declare validations and metadata for all the parameters at once. 😎 Note This is supported since FastAPI version 0.115.0 . 🤓 Header Parameters with a Pydantic Model ¶ Declare the header parameters that you need in a Pydantic model , and then declare the parameter as Header :"
+  },
+  {
+    "id": "qa-advanced_response-directly-3",
+    "question": "How can you return an XML response in FastAPI?",
+    "answer": "You can return an XML response by creating a Response with the XML string and setting the media_type to application/xml.",
+    "source_chunk": "advanced_response-directly-3",
+    "source_page": "advanced_response-directly",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "cases, you can use the jsonable_encoder to convert your data before passing it to a response: from datetime import datetime from fastapi import FastAPI from fastapi.encoders import jsonable_encoder from fastapi.responses import JSONResponse from pydantic import BaseModel class Item ( BaseModel ): title : str timestamp : datetime description : str | None = None app = FastAPI () @app . put ( \"/items/ {id} \" ) def update_item ( id : str , item : Item ): json_compatible_item_data = jsonable_encoder ( item ) return JSONResponse ( content = json_compatible_item_data ) Technical Details You could also use from starlette.responses import JSONResponse . FastAPI provides the same starlette.responses as fastapi.responses just as a convenience for you, the developer. But most of the available responses come directly from Starlette."
+  },
+  {
+    "id": "qa-reference_staticfiles-0",
+    "question": "Which FastAPI class is used to serve static assets like CSS or JavaScript?",
+    "answer": "StaticFiles",
+    "source_chunk": "reference_staticfiles-0",
+    "source_page": "reference_staticfiles",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Static Files - StaticFiles ¶ You can use the StaticFiles class to serve static files, like JavaScript, CSS, images, etc. Read more about it in the FastAPI docs for Static Files . You can import it directly from fastapi.staticfiles : from fastapi.staticfiles import StaticFiles fastapi.staticfiles.StaticFiles ¶ StaticFiles ( * , directory = None , packages = None , html = False , check_dir = True , follow_symlink = False ) 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56"
+  },
+  {
+    "id": "qa-deployment_https-2",
+    "question": "What extension allows one single server to have several HTTPS certificates?",
+    "answer": "SNI",
+    "source_chunk": "deployment_https-2",
+    "source_page": "deployment_https",
+    "section": "deployment",
+    "category": "endpoints_routing",
+    "source_chunk_text": ", that would mean that you can only have one HTTPS certificate per IP address . No matter how big your server is or how small each application you have on it might be. There is a solution to this, however. There's an extension to the TLS protocol (the one handling the encryption at the TCP level, before HTTP) called SNI . This SNI extension allows one single server (with a single IP address ) to have several HTTPS certificates and serve multiple HTTPS domains/applications . For this to work, a single component (program) running on the server, listening on the public IP address , must have all the HTTPS certificates in the server. After obtaining a secure connection, the communication protocol is still HTTP ."
+  },
+  {
+    "id": "qa-advanced_events-3",
+    "question": "What FastAPI parameter is used to define startup and shutdown logic for the whole application?",
+    "answer": "lifespan",
+    "source_chunk": "advanced_events-3",
+    "source_page": "advanced_events",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "for the model to load before being able to run an independent part of the code. That's what we'll solve, let's load the model before the requests are handled, but only right before the application starts receiving requests, not while the code is being loaded. Lifespan ¶ You can define this startup and shutdown logic using the lifespan parameter of the FastAPI app, and a \"context manager\" (I'll show you what that is in a second). Let's start with an example and then see it in detail. We create an async function lifespan() with yield like this:"
+  },
+  {
+    "id": "qa-tutorial_middleware-3",
+    "question": "When does FastAPI middleware run relative to a path operation and response?",
+    "answer": "before the path operation and after the response",
+    "source_chunk": "qa-tutorial_middleware-3",
+    "source_page": "tutorial_middleware",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-tutorial_response-model-27",
+    "question": "Which parameter omits default values that were not actually set in the stored data?",
+    "answer": "response_model_exclude_unset",
+    "source_chunk": "tutorial_response-model-27",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "values. Use the response_model_exclude_unset parameter ¶ You can set the path operation decorator parameter response_model_exclude_unset=True : and those default values won't be included in the response, only the values actually set. So, if you send a request to that path operation for the item with ID foo , the response (not including default values) will be: { \"name\" : \"Foo\" , \"price\" : 50.2 } You can also use: response_model_exclude_defaults=True response_model_exclude_none=True as described in the Pydantic docs for exclude_defaults and exclude_none . Data with values for fields with defaults ¶ But if your data has values for the model's fields with default values, like the item with ID bar : { \"name\" : \"Bar\" , \"description\" : \"The bartenders\" , \"price\" : 62 , \"tax\" : 20.2 }"
+  },
+  {
+    "id": "qa-tutorial_security-2",
+    "question": "Which specification extends OAuth2 to make some parts more interoperable?",
+    "answer": "OpenID Connect",
+    "source_chunk": "tutorial_security-2",
+    "source_page": "tutorial_security",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "how to encrypt the communication, it expects you to have your application served with HTTPS. Tip In the section about deployment you will see how to set up HTTPS for free, using Traefik and Let's Encrypt. OpenID Connect ¶ OpenID Connect is another specification, based on OAuth2 . It just extends OAuth2 specifying some things that are relatively ambiguous in OAuth2, to try to make it more interoperable. For example, Google login uses OpenID Connect (which underneath uses OAuth2). But Facebook login doesn't support OpenID Connect. It has its own flavor of OAuth2. OpenID (not \"OpenID Connect\") ¶ There was also an \"OpenID\" specification. That tried to solve the same thing as OpenID Connect , but was not based on OAuth2. So, it was a complete additional system."
+  },
+  {
+    "id": "qa-reference_background-0",
+    "question": "Which FastAPI class lets you schedule tasks to run after sending a response?",
+    "answer": "BackgroundTasks",
+    "source_chunk": "qa-reference_background-0",
+    "source_page": "reference_background",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-tutorial_path-params-numeric-validations-0",
+    "question": "What helper lets you add validation rules and metadata to URL parameters in FastAPI?",
+    "answer": "Path",
+    "source_chunk": "tutorial_path-params-numeric-validations-0",
+    "source_page": "tutorial_path-params-numeric-validations",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Path Parameters and Numeric Validations ¶ In the same way that you can declare more validations and metadata for query parameters with Query , you can declare the same type of validations and metadata for path parameters with Path . Import Path ¶ First, import Path from fastapi , and import Annotated :"
+  },
+  {
+    "id": "qa-async-6",
+    "question": "Why is asynchronous code called \"asynchronous\"?",
+    "answer": "because the computer / program doesn't have to be \"synchronized\" with the slow task",
+    "source_chunk": "async-6",
+    "source_page": "async",
+    "section": "general",
+    "category": "endpoints_routing",
+    "source_chunk_text": "execution time is consumed mostly by waiting for I/O operations, they call them \"I/O bound\" operations. It's called \"asynchronous\" because the computer / program doesn't have to be \"synchronized\" with the slow task, waiting for the exact moment that the task finishes, while doing nothing, to be able to take the task result and continue the work. Instead of that, by being an \"asynchronous\" system, once finished, the task can wait in line a little bit (some microseconds) for the computer / program to finish whatever it went to do, and then come back to take the results and continue working with them."
+  },
+  {
+    "id": "qa-how-to_separate-openapi-schemas-0",
+    "question": "Which Pydantic version made FastAPI generate more exact OpenAPI schemas for input and output?",
+    "answer": "Pydantic v2",
+    "source_chunk": "how-to_separate-openapi-schemas-0",
+    "source_page": "how-to_separate-openapi-schemas",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Separate OpenAPI Schemas for Input and Output or Not ¶ Since Pydantic v2 was released, the generated OpenAPI is a bit more exact and correct than before. 😎 In fact, in some cases, it will even have two JSON Schemas in OpenAPI for the same Pydantic model, for input and output, depending on if they have default values . Let's see how that works and how to change it if you need to do that. Pydantic Models for Input and Output ¶ Let's say you have a Pydantic model with default values, like this one: from fastapi import FastAPI from pydantic import BaseModel class Item ( BaseModel ): name : str description : str | None = None # Code below omitted 👇"
+  },
+  {
+    "id": "qa-advanced_websockets-2",
+    "question": "How do you define a WebSocket endpoint in FastAPI?",
+    "answer": "Use the @app.websocket() decorator.",
+    "source_chunk": "advanced_websockets-2",
+    "source_page": "advanced_websockets",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "it's the simplest way to focus on the server-side of WebSockets and have a working example: from fastapi import FastAPI , WebSocket from fastapi.responses import HTMLResponse app = FastAPI () html = \"\"\" <!DOCTYPE html> <html> <head> <title>Chat</title> </head> <body> <h1>WebSocket Chat</h1> <form action=\"\" onsubmit=\"sendMessage(event)\"> <input type=\"text\" id=\"messageText\" autocomplete=\"off\"/> <button>Send</button> </form> <ul id='messages'> </ul> <script> var ws = new WebSocket(\"ws://localhost:8000/ws\"); ws.onmessage = function(event) { var messages = document.getElementById('messages') var message = document.createElement('li') var content = document.createTextNode(event.data) message.appendChild(content) messages.appendChild(message) }; function sendMessage(event) { var input = document.getElementById(\"messageText\") ws.send(input.value) input.value = '' event.preventDefault() } </script> </body> </html> \"\"\" @app . get ( \"/\" ) async def get (): return HTMLResponse ( html ) @app . websocket ( \"/ws\" ) async def websocket_endpoint ( websocket : WebSocket ): await websocket . accept () while True : data = await websocket . receive_text () await websocket . send_text ( f \"Message text was: { data } \" )"
+  },
+  {
+    "id": "qa-reference_encoders-0",
+    "question": "Which FastAPI function converts objects into JSON-compatible data?",
+    "answer": "jsonable_encoder",
+    "source_chunk": "reference_encoders-0",
+    "source_page": "reference_encoders",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Encoders - jsonable_encoder ¶ fastapi.encoders.jsonable_encoder ¶ jsonable_encoder ( obj , include = None , exclude = None , by_alias = True , exclude_unset = False , exclude_defaults = False , exclude_none = False , custom_encoder = None , sqlalchemy_safe = True , ) Convert any object to something that can be encoded in JSON. This is used internally by FastAPI to make sure anything you return can be encoded as JSON before it is sent to the client. You can also use it yourself, for example to convert objects before saving them in a database that supports only JSON. Read more about it in the FastAPI docs for JSON Compatible Encoder . The input object to convert to JSON. TYPE: Any"
+  },
+  {
+    "id": "qa-features-0",
+    "question": "Which standard is used for API creation in FastAPI?",
+    "answer": "OpenAPI",
+    "source_chunk": "features-0",
+    "source_page": "features",
+    "section": "general",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Features ¶ FastAPI features ¶ FastAPI gives you the following: Based on open standards ¶ OpenAPI for API creation, including declarations of path operations , parameters, request bodies, security, etc. Automatic data model documentation with JSON Schema (as OpenAPI itself is based on JSON Schema). Designed around these standards, after a meticulous study. Instead of an afterthought layer on top. This also allows using automatic client code generation in many languages. Automatic docs ¶ Interactive API documentation and exploration web user interfaces. As the framework is based on OpenAPI, there are multiple options, 2 included by default. Swagger UI , with interactive exploration, call and test your API directly from the browser. Alternative API documentation with ReDoc . Just Modern Python ¶"
+  },
+  {
+    "id": "qa-advanced_dataclasses-5",
+    "question": "What can dataclasses be combined with to form complex data structures?",
+    "answer": "Dataclasses can be combined with other type annotations to form complex data structures",
+    "source_chunk": "advanced_dataclasses-5",
+    "source_page": "advanced_dataclasses",
+    "section": "advanced",
+    "category": "endpoints_routing",
+    "source_chunk_text": "\"Lonely Night\" , \"description\" : \"The mostests lonliest nightiest of allest\" , }, ], }, ] We still import field from standard dataclasses . pydantic.dataclasses is a drop-in replacement for dataclasses . The Author dataclass includes a list of Item dataclasses. The Author dataclass is used as the response_model parameter. You can use other standard type annotations with dataclasses as the request body. In this case, it's a list of Item dataclasses. Here we are returning a dictionary that contains items which is a list of dataclasses. FastAPI is still capable of serializing the data to JSON. Here the response_model is using a type annotation of a list of Author dataclasses. Again, you can combine dataclasses with standard type annotations."
+  },
+  {
+    "id": "qa-reference_staticfiles-4",
+    "question": "Which StaticFiles function returns the sanitized filesystem path from an ASGI scope?",
+    "answer": "get_path",
+    "source_chunk": "reference_staticfiles-4",
+    "source_page": "reference_staticfiles",
+    "section": "reference",
+    "category": "endpoints_routing",
+    "source_chunk_text": "{ package !r} could not be found.\" ) directories . append ( package_directory ) return directories get_path ¶ get_path ( scope ) Given the ASGI scope, return the path string to serve up, with OS specific path separators, and any '..', '.' components removed. 101 102 103 104 105 106 107 def get_path ( self , scope : Scope ) -> str : \"\"\" Given the ASGI scope, return the `path` string to serve up, with OS specific path separators, and any '..', '.' components removed. \"\"\" route_path = get_route_path ( scope ) return os . path . normpath ( os . path . join ( * route_path . split ( \"/\" ))) get_response async ¶ get_response ( path , scope )"
+  },
+  {
+    "id": "qa-tutorial_middleware-4",
+    "question": "Which middleware runs first on the request path when multiple middlewares are added?",
+    "answer": "the outermost middleware",
+    "source_chunk": "qa-tutorial_middleware-4",
+    "source_page": "tutorial_middleware",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": null
+  },
+  {
+    "id": "qa-how-to_separate-openapi-schemas-5",
+    "question": "Which Pydantic version made FastAPI generate more exact OpenAPI schemas for input and output?",
+    "answer": "Pydantic v2",
+    "source_chunk": "how-to_separate-openapi-schemas-5",
+    "source_page": "how-to_separate-openapi-schemas",
+    "section": "how_to",
+    "category": "endpoints_routing",
+    "source_chunk_text": "for output it will be required (and possibly None , or in JSON terms, null ) Model for Output in Docs ¶ You can check the output model in the docs too, both name and description are marked as required with a red asterisk : Model for Input and Output in Docs ¶ And if you check all the available Schemas (JSON Schemas) in OpenAPI, you will see that there are two, one Item-Input and one Item-Output . For Item-Input , description is not required , it doesn't have a red asterisk. But for Item-Output , description is required , it has a red asterisk."
+  },
+  {
+    "id": "qa-tutorial_dependencies_sub-dependencies-0",
+    "question": "What is it called when a FastAPI dependencies relies on another dependencies?",
+    "answer": "sub-dependencies",
+    "source_chunk": "tutorial_dependencies_sub-dependencies-0",
+    "source_page": "tutorial_dependencies_sub-dependencies",
+    "section": "tutorial",
+    "category": "endpoints_routing",
+    "source_chunk_text": "Sub-dependencies ¶ You can create dependencies that have sub-dependencies . They can be as deep as you need them to be. FastAPI will take care of solving them. First dependency \"dependable\" ¶ You could create a first dependency (\"dependable\") like:"
+  }
+]

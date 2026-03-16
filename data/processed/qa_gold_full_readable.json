@@ -1,0 +1,614 @@
+[
+  {
+    "id": "gold-seed-0",
+    "question": "How do I start a FastAPI app?",
+    "answer": "Create a FastAPI instance and run it with an ASGI server like Uvicorn.",
+    "source_chunk": "tutorial_first-steps-6",
+    "source_page": "tutorial_first-steps",
+    "section": "tutorial",
+    "provenance": "manual_seed"
+  },
+  {
+    "id": "gold-seed-2",
+    "question": "How can I define path parameters?",
+    "answer": "Include parameters in the path and define matching function arguments.",
+    "source_chunk": "tutorial_path-params-numeric-validations-3",
+    "source_page": "tutorial_path-params-numeric-validations",
+    "section": "tutorial",
+    "provenance": "manual_seed"
+  },
+  {
+    "id": "gold-2",
+    "question": "What does the FastAPI documentation say about Notice that the default values can?",
+    "answer": "Notice that the default values can be anything, not only They can be a list ( ), a of , etc.",
+    "source_chunk": "tutorial_response-model-21",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-3",
+    "question": "What does the FastAPI documentation say about Conversations in the chat systems are?",
+    "answer": "Conversations in the chat systems are also not as easily searchable as in GitHub, so questions and answers might get lost in the conversation.",
+    "source_chunk": "help-fastapi-17",
+    "source_page": "help-fastapi",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-4",
+    "question": "What does the FastAPI documentation say about PR #9313 @piotrszacilowski ✏️ Update highlighted?",
+    "answer": "PR #9313 @piotrszacilowski ✏️ Update highlighted line in docs/en/docs/tutorial/bigger-applications.md #5490 📝 Add External Link: Explore How to Effectively Use JWT With FastAPI.",
+    "source_chunk": "release-notes-98",
+    "source_page": "release-notes",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-5",
+    "question": "What does the FastAPI documentation say about PR #5564 @gusty1g #9221 docs/tutorial/debugging.md #9175?",
+    "answer": "PR #5564 @gusty1g #9221 docs/tutorial/debugging.md #9175 🌐 Initiate Armenian translation setup.",
+    "source_chunk": "release-notes-144",
+    "source_page": "release-notes",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-6",
+    "question": "What does the FastAPI documentation say about Testing WebSockets ¶ You can use?",
+    "answer": "Testing WebSockets ¶ You can use the same TestClient to test WebSockets.",
+    "source_chunk": "advanced_testing-websockets-0",
+    "source_page": "advanced_testing-websockets",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-7",
+    "question": "What does the FastAPI documentation say about These status codes have a name?",
+    "answer": "These status codes have a name associated to recognize them, but the important part is the number.",
+    "source_chunk": "tutorial_response-status-code-2",
+    "source_page": "tutorial_response-status-code",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-8",
+    "question": "What does the FastAPI documentation say about In GitHub Discussions: mark the comment?",
+    "answer": "In GitHub Discussions: mark the comment as the In GitHub Issues: close the issue.",
+    "source_chunk": "help-fastapi-8",
+    "source_page": "help-fastapi",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-9",
+    "question": "What does the FastAPI documentation say about That finishes that step / task?",
+    "answer": "That finishes that step / task of interaction with the counter ⏹.",
+    "source_chunk": "async-14",
+    "source_page": "async",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-10",
+    "question": "What does the FastAPI documentation say about parameter, passed to Pydantic models to?",
+    "answer": "parameter, passed to Pydantic models to define if the output should use the alias names (when provided) or the Python attribute names.",
+    "source_chunk": "reference_encoders-1",
+    "source_page": "reference_encoders",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-11",
+    "question": "What does the FastAPI documentation say about You can also return Pydantic models?",
+    "answer": "You can also return Pydantic models (you'll see more about that later).",
+    "source_chunk": "tutorial_first-steps-11",
+    "source_page": "tutorial_first-steps",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-12",
+    "question": "What does the FastAPI documentation say about So, if you already know or?",
+    "answer": "So, if you already know or use Starlette, most of the functionality will work the same way.",
+    "source_chunk": "features-7",
+    "source_page": "features",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-13",
+    "question": "What does the FastAPI documentation say about Response Headers ¶ Use a Response?",
+    "answer": "Response Headers ¶ Use a Response parameter You can declare a parameter of type in your path operation function (as you can do for cookies).",
+    "source_chunk": "advanced_response-headers-0",
+    "source_page": "advanced_response-headers",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-14",
+    "question": "What does the FastAPI documentation say about both relate to \"different things happening?",
+    "answer": "both relate to \"different things happening more or less at the same time\".",
+    "source_chunk": "async-7",
+    "source_page": "async",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-15",
+    "question": "What does the FastAPI documentation say about Because pydantic data structures are just?",
+    "answer": "Because pydantic data structures are just instances of classes you define; auto-completion, linting, mypy and your intuition should all work properly with your validated data.",
+    "source_chunk": "features-9",
+    "source_page": "features",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-16",
+    "question": "What does the FastAPI documentation say about \", so it's useful to have?",
+    "answer": "\", so it's useful to have clarity about what it means, and what's the difference with the word \" program \".",
+    "source_chunk": "deployment_concepts-4",
+    "source_page": "deployment_concepts",
+    "section": "deployment",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-17",
+    "question": "What does the FastAPI documentation say about There could be other processes listening?",
+    "answer": "There could be other processes listening on other ports in the same IP address, but only one for each combination of IP address and port.",
+    "source_chunk": "deployment_https-8",
+    "source_page": "deployment_https",
+    "section": "deployment",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-18",
+    "question": "What does the FastAPI documentation say about ): super location APIKeyIn cookie model?",
+    "answer": "): super location APIKeyIn cookie model instance-attribute APIKey ** \"in\" }, __name__",
+    "source_chunk": "reference_security-3",
+    "source_page": "reference_security",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-19",
+    "question": "What does the FastAPI documentation say about Tests Make sure you have for?",
+    "answer": "Tests Make sure you have for your app and you run them on continuous integration (CI).",
+    "source_chunk": "how-to_migrate-from-pydantic-v1-to-pydantic-v2-2",
+    "source_page": "how-to_migrate-from-pydantic-v1-to-pydantic-v2",
+    "section": "how_to",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-20",
+    "question": "What does the FastAPI documentation say about , you can include anything from?",
+    "answer": ", you can include anything from this directly in each response inside your parameter.",
+    "source_chunk": "advanced_additional-responses-8",
+    "source_page": "advanced_additional-responses",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-21",
+    "question": "What does the FastAPI documentation say about Maybe it went viral, or maybe?",
+    "answer": "Maybe it went viral, or maybe some other services or bots start using it.",
+    "source_chunk": "deployment_concepts-26",
+    "source_page": "deployment_concepts",
+    "section": "deployment",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-22",
+    "question": "What does the FastAPI documentation say about Here's where it becomes important to?",
+    "answer": "Here's where it becomes important to be able to declare and not just .",
+    "source_chunk": "tutorial_path-params-numeric-validations-5",
+    "source_page": "tutorial_path-params-numeric-validations",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-23",
+    "question": "What does the FastAPI documentation say about The TLS Termination Proxy would have?",
+    "answer": "The TLS Termination Proxy would have access to one or more TLS certificates (HTTPS certificates).",
+    "source_chunk": "deployment_https-9",
+    "source_page": "deployment_https",
+    "section": "deployment",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-24",
+    "question": "What does the FastAPI documentation say about 🤓 Other versions and variants Python?",
+    "answer": "🤓 Other versions and variants Python 3.10+ - non-Annotated Tip Prefer to use the version if possible.",
+    "source_chunk": "advanced_websockets-5",
+    "source_page": "advanced_websockets",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-25",
+    "question": "What does the FastAPI documentation say about Otherwise as Multiple path and query?",
+    "answer": "Otherwise as Multiple path and query parameters You can declare multiple path parameters and query parameters at the same time, knows which is which.",
+    "source_chunk": "tutorial_query-params-3",
+    "source_page": "tutorial_query-params",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-26",
+    "question": "What does the FastAPI documentation say about Full Stack FastAPI Template ¶ Templates,?",
+    "answer": "Full Stack FastAPI Template ¶ Templates, while typically come with a specific setup, are designed to be flexible and customizable.",
+    "source_chunk": "project-generation-0",
+    "source_page": "project-generation",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-27",
+    "question": "What does the FastAPI documentation say about Read more about it in the?",
+    "answer": "Read more about it in the FastAPI docs for Background Tasks .",
+    "source_chunk": "reference_background-0",
+    "source_page": "reference_background",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-28",
+    "question": "What does the FastAPI documentation say about ), and the values are other?",
+    "answer": "), and the values are other s with the information for each of them.",
+    "source_chunk": "advanced_additional-responses-1",
+    "source_page": "advanced_additional-responses",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-29",
+    "question": "What does the FastAPI documentation say about Let's see how that works and?",
+    "answer": "Let's see how that works and how to change it if you need to do that.",
+    "source_chunk": "how-to_separate-openapi-schemas-0",
+    "source_page": "how-to_separate-openapi-schemas",
+    "section": "how_to",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-30",
+    "question": "What does the FastAPI documentation say about will take care of filtering out?",
+    "answer": "will take care of filtering out all the data that is not declared in the output model (using Pydantic).",
+    "source_chunk": "tutorial_response-model-9",
+    "source_page": "tutorial_response-model",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-31",
+    "question": "What does the FastAPI documentation say about For example, Google login uses OpenID?",
+    "answer": "For example, Google login uses OpenID Connect (which underneath uses OAuth2).",
+    "source_chunk": "tutorial_security-3",
+    "source_page": "tutorial_security",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-32",
+    "question": "What does the FastAPI documentation say about And you could do this even?",
+    "answer": "And you could do this even if the data type in the request is not JSON.",
+    "source_chunk": "advanced_path-operation-advanced-configuration-8",
+    "source_page": "advanced_path-operation-advanced-configuration",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-33",
+    "question": "What does the FastAPI documentation say about The OAuth 2 specification doesn't define?",
+    "answer": "The OAuth 2 specification doesn't define the challenge that should be used, because a Bearer token is not really the only option to authenticate.",
+    "source_chunk": "reference_security-15",
+    "source_page": "reference_security",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-34",
+    "question": "What does the FastAPI documentation say about In this case, it's a list?",
+    "answer": "In this case, it's a list of Here we are returning a dictionary that contains which is a list of dataclasses.",
+    "source_chunk": "advanced_dataclasses-4",
+    "source_page": "advanced_dataclasses",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-35",
+    "question": "What does the FastAPI documentation say about Before and after the You can?",
+    "answer": "Before and after the You can add code to be run with the , before any receives it.",
+    "source_chunk": "tutorial_middleware-2",
+    "source_page": "tutorial_middleware",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-36",
+    "question": "What does the FastAPI documentation say about Header Parameters ¶ You can define?",
+    "answer": "Header Parameters ¶ You can define Header parameters the same way you define Query , Path and Cookie parameters.",
+    "source_chunk": "tutorial_header-params-0",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-37",
+    "question": "What does the FastAPI documentation say about PARAMETER DESCRIPTION The function to call?",
+    "answer": "PARAMETER DESCRIPTION The function to call after the response is sent.",
+    "source_chunk": "reference_background-1",
+    "source_page": "reference_background",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-38",
+    "question": "What does the FastAPI documentation say about Middleware ¶ There are several middlewares?",
+    "answer": "Middleware ¶ There are several middlewares available provided by Starlette directly.",
+    "source_chunk": "reference_middleware-0",
+    "source_page": "reference_middleware",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-39",
+    "question": "What does the FastAPI documentation say about Should be called only after all?",
+    "answer": "Should be called only after all routes have been added.",
+    "source_chunk": "advanced_path-operation-advanced-configuration-1",
+    "source_page": "advanced_path-operation-advanced-configuration",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-40",
+    "question": "What does the FastAPI documentation say about ()): will extract the data for?",
+    "answer": "()): will extract the data for each field from the in the request and give you the Pydantic model you defined.",
+    "source_chunk": "tutorial_header-param-models-1",
+    "source_page": "tutorial_header-param-models",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-41",
+    "question": "What does the FastAPI documentation say about This includes , which is no?",
+    "answer": "This includes , which is no longer supported in Python 3.14 and above.",
+    "source_chunk": "how-to_migrate-from-pydantic-v1-to-pydantic-v2-1",
+    "source_page": "how-to_migrate-from-pydantic-v1-to-pydantic-v2",
+    "section": "how_to",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-42",
+    "question": "What does the FastAPI documentation say about Query Parameter Models ¶ If you?",
+    "answer": "Query Parameter Models ¶ If you have a group of query parameters that are related, you can create a Pydantic model to declare them.",
+    "source_chunk": "tutorial_query-param-models-0",
+    "source_page": "tutorial_query-param-models",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-43",
+    "question": "What does the FastAPI documentation say about This response is used when there?",
+    "answer": "This response is used when there is no content to return to the client, and so the response must not have a body.",
+    "source_chunk": "tutorial_response-status-code-3",
+    "source_page": "tutorial_response-status-code",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-44",
+    "question": "What does the FastAPI documentation say about By default, would automatically convert that?",
+    "answer": "By default, would automatically convert that return value to JSON using the jsonable_encoder explained in JSON Compatible Encoder .",
+    "source_chunk": "advanced_response-directly-0",
+    "source_page": "advanced_response-directly",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-45",
+    "question": "What does the FastAPI documentation say about The spec requires the fields to?",
+    "answer": "The spec requires the fields to be exactly named , and to be sent as form fields, not JSON.",
+    "source_chunk": "tutorial_request-forms-1",
+    "source_page": "tutorial_request-forms",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-46",
+    "question": "What does the FastAPI documentation say about General - How To - Recipes?",
+    "answer": "General - How To - Recipes ¶ Here are several pointers to other places in the docs, for general or frequent questions.",
+    "source_chunk": "how-to_general-0",
+    "source_page": "how-to_general",
+    "section": "how_to",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-47",
+    "question": "What does the FastAPI documentation say about Tip itself is a sub-class of?",
+    "answer": "Tip itself is a sub-class of And when you return a , will pass it directly.",
+    "source_chunk": "advanced_response-directly-1",
+    "source_page": "advanced_response-directly",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-48",
+    "question": "What does the FastAPI documentation say about And you don't have to declare?",
+    "answer": "And you don't have to declare them in any specific order.",
+    "source_chunk": "tutorial_query-params-4",
+    "source_page": "tutorial_query-params",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-49",
+    "question": "What does the FastAPI documentation say about OSError as exc # Filename is?",
+    "answer": "OSError as exc # Filename is too long, so it can't be a valid static file.",
+    "source_chunk": "reference_staticfiles-3",
+    "source_page": "reference_staticfiles",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-50",
+    "question": "What does the FastAPI documentation say about # Don't allow misbehaving clients to?",
+    "answer": "# Don't allow misbehaving clients to break out of the static files directory.",
+    "source_chunk": "reference_staticfiles-4",
+    "source_page": "reference_staticfiles",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-51",
+    "question": "What does the FastAPI documentation say about allow_explicit_origin # If we only allow?",
+    "answer": "allow_explicit_origin # If we only allow specific origins, then we have to mirror back # the Origin header in the response.",
+    "source_chunk": "reference_middleware-3",
+    "source_page": "reference_middleware",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-52",
+    "question": "What does the FastAPI documentation say about That will raise the exception, and?",
+    "answer": "That will raise the exception, and all the other clients will receive a message like: Client #1596980209979 left the chat",
+    "source_chunk": "advanced_websockets-6",
+    "source_page": "advanced_websockets",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-53",
+    "question": "What does the FastAPI documentation say about This is used internally by FastAPI?",
+    "answer": "This is used internally by FastAPI to make sure anything you return can be encoded as JSON before it is sent to the client.",
+    "source_chunk": "reference_encoders-0",
+    "source_page": "reference_encoders",
+    "section": "reference",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-54",
+    "question": "What does the FastAPI documentation say about , it will still be used?",
+    "answer": ", it will still be used to filter and convert the object you returned.",
+    "source_chunk": "advanced_response-cookies-1",
+    "source_page": "advanced_response-cookies",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-55",
+    "question": "What does the FastAPI documentation say about But most of the available responses?",
+    "answer": "But most of the available responses come directly from Starlette.",
+    "source_chunk": "advanced_response-headers-2",
+    "source_page": "advanced_response-headers",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-56",
+    "question": "What does the FastAPI documentation say about How To - Recipes ¶ Here?",
+    "answer": "How To - Recipes ¶ Here you will see different recipes or \"how to\" guides for several topics .",
+    "source_chunk": "how-to-0",
+    "source_page": "how-to",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-57",
+    "question": "What does the FastAPI documentation say about By using them, you can take?",
+    "answer": "By using them, you can take advantage of all these standard-based tools, including these interactive documentation systems.",
+    "source_chunk": "tutorial_security-4",
+    "source_page": "tutorial_security",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-58",
+    "question": "What does the FastAPI documentation say about will convert the parameter names characters?",
+    "answer": "will convert the parameter names characters from underscore ( _ ) to hyphen ( ) to extract and document the headers.",
+    "source_chunk": "tutorial_header-params-2",
+    "source_page": "tutorial_header-params",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-59",
+    "question": "What does the FastAPI documentation say about use_cache False )]): \"fresh_value\" Recap Apart?",
+    "answer": "use_cache False )]): \"fresh_value\" Recap Apart from all the fancy words used here, the Dependency Injection system is quite simple.",
+    "source_chunk": "tutorial_dependencies_sub-dependencies-4",
+    "source_page": "tutorial_dependencies_sub-dependencies",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-60",
+    "question": "What does the FastAPI documentation say about And of course, it supports the?",
+    "answer": "And of course, it supports the same: data validation data serialization data documentation, etc.",
+    "source_chunk": "advanced_dataclasses-1",
+    "source_page": "advanced_dataclasses",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-61",
+    "question": "What does the FastAPI documentation say about If a client tries to send?",
+    "answer": "If a client tries to send some data in the , they will receive an error response.",
+    "source_chunk": "tutorial_query-param-models-2",
+    "source_page": "tutorial_query-param-models",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-62",
+    "question": "What does the FastAPI documentation say about , used by FastAPI, for the?",
+    "answer": ", used by FastAPI, for the data validation and settings management.",
+    "source_chunk": "project-generation-1",
+    "source_page": "project-generation",
+    "section": "general",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-63",
+    "question": "What does the FastAPI documentation say about Keep in mind that if you?",
+    "answer": "Keep in mind that if you return a response directly instead of using the parameter, FastAPI will return it directly.",
+    "source_chunk": "advanced_response-cookies-2",
+    "source_page": "advanced_response-cookies",
+    "section": "advanced",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-64",
+    "question": "What does the FastAPI documentation say about Form Data ¶ When you need?",
+    "answer": "Form Data ¶ When you need to receive form fields instead of JSON, you can use Form .",
+    "source_chunk": "tutorial_request-forms-0",
+    "source_page": "tutorial_request-forms",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-65",
+    "question": "What does the FastAPI documentation say about )): It declares an optional query?",
+    "answer": ")): It declares an optional query parameter as a , and then it just returns it.",
+    "source_chunk": "tutorial_dependencies_sub-dependencies-1",
+    "source_page": "tutorial_dependencies_sub-dependencies",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-66",
+    "question": "What does the FastAPI documentation say about in the code, the expected HTTP?",
+    "answer": "in the code, the expected HTTP header will be save-data , and it will show up like that in the docs.",
+    "source_chunk": "tutorial_header-param-models-3",
+    "source_page": "tutorial_header-param-models",
+    "section": "tutorial",
+    "provenance": "candidate_curated"
+  },
+  {
+    "id": "gold-67",
+    "question": "What does the FastAPI documentation say about In that case, you can disable?",
+    "answer": "In that case, you can disable this feature in , with the parameter separate_input_output_schemas=False Info Support for separate_input_output_schemas was added in FastAPI 0.102.0 .",
+    "source_chunk": "how-to_separate-openapi-schemas-5",
+    "source_page": "how-to_separate-openapi-schemas",
+    "section": "how_to",
+    "provenance": "candidate_curated"
+  }
+]

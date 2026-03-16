@@ -21,22 +21,28 @@ def exact_match(prediction: str, reference: str) -> float:
     return float(normalize(prediction) == normalize(reference))
 
 
-def f1_score(prediction: str, reference: str) -> float:
+def f1_components(prediction: str, reference: str) -> tuple[float, float, float]:
     pred_tokens = normalize(prediction).split()
     ref_tokens = normalize(reference).split()
     if not pred_tokens and not ref_tokens:
-        return 1.0
+        return 1.0, 1.0, 1.0
     if not pred_tokens or not ref_tokens:
-        return 0.0
+        return 0.0, 0.0, 0.0
     pred_counts = Counter(pred_tokens)
     ref_counts = Counter(ref_tokens)
     common = pred_counts & ref_counts
     num_same = sum(common.values())
     if num_same == 0:
-        return 0.0
+        return 0.0, 0.0, 0.0
     precision = num_same / len(pred_tokens)
     recall = num_same / len(ref_tokens)
-    return 2 * precision * recall / (precision + recall)
+    f1 = 2 * precision * recall / (precision + recall)
+    return precision, recall, f1
+
+
+def f1_score(prediction: str, reference: str) -> float:
+    _precision, _recall, f1 = f1_components(prediction, reference)
+    return f1
 
 
 _EMBED_MODEL: Optional[SentenceTransformer] = None

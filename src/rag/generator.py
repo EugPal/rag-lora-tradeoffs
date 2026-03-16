@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
@@ -11,8 +12,9 @@ class GenerationConfig:
     max_tokens: int = 256
     temperature: float = 0.0
     top_p: float = 0.9
-    model_name: str = "meta-llama/Llama-3.2-3B-Instruct"
+    model_name: str = os.getenv("RAG_GENERATOR_MODEL", "Qwen/Qwen3-4B")
     lora_adapter_dir: str | None = None
+    use_4bit: bool = True
 
 
 class BaseGenerator:
@@ -33,17 +35,30 @@ class HFGenerator:
     def __init__(self, config: GenerationConfig | None = None) -> None:
         self.config = config or GenerationConfig()
         self.tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
-        quant_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_compute_dtype=torch.bfloat16,
-        )
-        self.model = AutoModelForCausalLM.from_pretrained(
-            self.config.model_name,
-            quantization_config=quant_config,
-            device_map="auto",
-        )
+        # Prefer 4-bit quantization on CUDA when enabled; otherwise use fp16 on GPU.
+        if torch.cuda.is_available() and self.config.use_4bit:
+            quant_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_compute_dtype=torch.bfloat16,
+            )
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.config.model_name,
+                quantization_config=quant_config,
+                device_map="auto",
+            )
+        elif torch.cuda.is_available():
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.config.model_name,
+                torch_dtype=torch.float16,
+                device_map="auto",
+            )
+        else:
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.config.model_name,
+                device_map="cpu",
+            )
         # Optional: attach a PEFT LoRA adapter.
         if self.config.lora_adapter_dir:
             from peft import PeftModel

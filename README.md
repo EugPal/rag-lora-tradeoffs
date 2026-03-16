@@ -1,5 +1,7 @@
 ### Title: Analyzing Quality–Latency–Resource Trade-offs in a Technical Documentation RAG Assistant Using LoRA Adaptation
 
+Dataset building and split protocol is documented in `docs/dataset_build.md` (reproducible, script-based).
+
 ### 1 Introduction
 
 Large language models (LLMs) have recently become a central building block for a wide range of applications, from conversational agents to code assistants and domain-specific question-answering systems. However, their knowledge is inherently bounded by the data and cut-off date of pre-training, and naively fine-tuning large models for every new domain is often prohibitively expensive in terms of computation, memory and engineering effort. Retrieval-augmented generation (RAG) has emerged as a practical way to ground LLMs in external knowledge sources by retrieving relevant documents at inference time and conditioning the model’s responses on this retrieved context. At the same time, parameter-efficient fine-tuning (PEFT) methods such as LoRA (Low-Rank Adaptation) offer a way to adapt LLMs to new domains by training a relatively small number of additional parameters instead of updating the full model.

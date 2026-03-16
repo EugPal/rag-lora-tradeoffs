@@ -1,0 +1,23 @@
+{
+  "mode": "llm_quote",
+  "docs_file": "data\\processed\\docs.jsonl",
+  "max_qa": 50,
+  "seed": 42,
+  "llm_model": "Qwen/Qwen2.5-3B-Instruct",
+  "llm_max_tokens": 384,
+  "llm_max_attempts": 1,
+  "stats": {
+    "scanned_chunks": 108,
+    "kept": 50,
+    "skipped_empty": 0,
+    "skipped_no_sentences": 0,
+    "skipped_no_answer": 0,
+    "llm_failed": 58,
+    "llm_fail_reasons": {
+      "quote_not_substring": 31,
+      "json_parse_error": 6,
+      "bad_answer_length": 10,
+      "bad_text": 11
+    }
+  }
+}

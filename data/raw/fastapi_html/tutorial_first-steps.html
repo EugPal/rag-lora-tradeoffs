@@ -26,18 +26,28 @@
         
           <link rel="alternate" href="/es/" hreflang="en">
         
+          <link rel="alternate" href="/fr/" hreflang="en">
+        
+          <link rel="alternate" href="/ja/" hreflang="en">
+        
           <link rel="alternate" href="/ko/" hreflang="en">
         
           <link rel="alternate" href="/pt/" hreflang="en">
         
           <link rel="alternate" href="/ru/" hreflang="en">
         
+          <link rel="alternate" href="/tr/" hreflang="en">
+        
           <link rel="alternate" href="/uk/" hreflang="en">
+        
+          <link rel="alternate" href="/zh/" hreflang="en">
+        
+          <link rel="alternate" href="/zh-hant/" hreflang="en">
         
       
       
       <link rel="icon" href="../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -45,7 +55,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -330,6 +340,18 @@
           </li>
         
           <li class="md-select__item">
+            <a href="/fr/" hreflang="" class="md-select__link">
+              fr - français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="" class="md-select__link">
+              ja - 日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
             <a href="/ko/" hreflang="" class="md-select__link">
               ko - 한국어
             </a>
@@ -348,8 +370,26 @@
           </li>
         
           <li class="md-select__item">
+            <a href="/tr/" hreflang="" class="md-select__link">
+              tr - Türkçe
+            </a>
+          </li>
+        
+          <li class="md-select__item">
             <a href="/uk/" hreflang="" class="md-select__link">
               uk - українська мова
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="" class="md-select__link">
+              zh - 简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh-hant/" hreflang="" class="md-select__link">
+              zh-hant - 繁體中文
             </a>
           </li>
         
@@ -3024,6 +3064,8 @@
       
         
       
+        
+      
     
     
     
@@ -3979,6 +4021,36 @@
   
     <span class="md-typeset">
       Generating SDKs
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/advanced-python-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Advanced Python Types
     </span>
   
 
@@ -6583,7 +6655,7 @@
 
 <h1 id="first-steps">First Steps<a class="headerlink" data-preview="" href="#first-steps" title="Permanent link">&para;</a></h1>
 <p>The simplest FastAPI file could look like this:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-0-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -6642,7 +6714,7 @@
 <p>In the output, there's a line with something like:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-2-1">INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 </span></code></pre></div>
-<p>That line shows the URL where your app is being served, in your local machine.</p>
+<p>That line shows the URL where your app is being served on your local machine.</p>
 <h3 id="check-it">Check it<a class="headerlink" data-preview="" href="#check-it" title="Permanent link">&para;</a></h3>
 <p>Open your browser at <a href="http://127.0.0.1:8000" class="external-link" target="_blank">http://127.0.0.1:8000</a>.</p>
 <p>You will see the JSON response as:</p>
@@ -6725,7 +6797,7 @@
 <p>That's it! Now you can access your app at that URL. ✨</p>
 <h2 id="recap-step-by-step">Recap, step by step<a class="headerlink" data-preview="" href="#recap-step-by-step" title="Permanent link">&para;</a></h2>
 <h3 id="step-1-import-fastapi">Step 1: import <code>FastAPI</code><a class="headerlink" data-preview="" href="#step-1-import-fastapi" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-7-1"><span class="hll"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -6747,7 +6819,7 @@
 <p>You can use all the <a href="https://www.starlette.dev/" class="external-link" target="_blank">Starlette</a> functionality with <code>FastAPI</code> too.</p>
 </div>
 <h3 id="step-2-create-a-fastapi-instance">Step 2: create a <code>FastAPI</code> "instance"<a class="headerlink" data-preview="" href="#step-2-create-a-fastapi-instance" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-8-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -6807,7 +6879,7 @@
 <p>So, in OpenAPI, each of the HTTP methods is called an "operation".</p>
 <p>We are going to call them "<strong>operations</strong>" too.</p>
 <h4 id="define-a-path-operation-decorator">Define a <em>path operation decorator</em><a class="headerlink" data-preview="" href="#define-a-path-operation-decorator" title="Permanent link">&para;</a></h4>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-11-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -6825,7 +6897,7 @@
 <p>The <code>@app.get("/")</code> tells <strong>FastAPI</strong> that the function right below is in charge of handling requests that go to:</p>
 <ul>
 <li>the path <code>/</code></li>
-<li>using a <abbr title="an HTTP GET method"><code>get</code> operation</abbr></li>
+<li>using a <dfn title="an HTTP GET method"><code>get</code> operation</dfn></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title"><code>@decorator</code> Info</p>
@@ -6862,7 +6934,7 @@
 <li><strong>operation</strong>: is <code>get</code>.</li>
 <li><strong>function</strong>: is the function below the "decorator" (below <code>@app.get("/")</code>).</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-12-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -6882,7 +6954,7 @@
 <p>In this case, it is an <code>async</code> function.</p>
 <hr />
 <p>You could also define it as a normal function instead of <code>async def</code>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-13-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -6902,7 +6974,7 @@
 <p>If you don't know the difference, check the <a class="internal-link" data-preview="" href="../../async/#in-a-hurry" target="_blank">Async: <em>"In a hurry?"</em></a>.</p>
 </div>
 <h3 id="step-5-return-the-content">Step 5: return the content<a class="headerlink" data-preview="" href="#step-5-return-the-content" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Python 3.9+</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Python 3.10+</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span id="__span-14-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
@@ -7103,10 +7175,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../js/termynal.js"></script>
       

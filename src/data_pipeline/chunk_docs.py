@@ -16,6 +16,15 @@ def split_paragraphs(text: str) -> list[str]:
     return paragraphs
 
 
+def tail_words(text: str, count: int) -> str:
+    if count <= 0:
+        return ""
+    words = text.split()
+    if not words:
+        return ""
+    return " ".join(words[-count:])
+
+
 def chunk_text(text: str, chunk_size: int, overlap: int) -> list[str]:
     paragraphs = split_paragraphs(text)
     if not paragraphs:
@@ -26,17 +35,12 @@ def chunk_text(text: str, chunk_size: int, overlap: int) -> list[str]:
     for paragraph in paragraphs:
         para_words = len(paragraph.split())
         if current_words + para_words > chunk_size and current:
-            chunks.append(" ".join(current))
+            chunk = " ".join(current)
+            chunks.append(chunk)
             if overlap > 0:
-                overlap_words = 0
-                overlap_paras: list[str] = []
-                for prev in reversed(current):
-                    overlap_paras.insert(0, prev)
-                    overlap_words += len(prev.split())
-                    if overlap_words >= overlap:
-                        break
-                current = overlap_paras[:]
-                current_words = sum(len(p.split()) for p in current)
+                overlap_text = tail_words(chunk, overlap)
+                current = [overlap_text] if overlap_text else []
+                current_words = len(overlap_text.split())
             else:
                 current = []
                 current_words = 0

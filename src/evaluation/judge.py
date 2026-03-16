@@ -16,6 +16,7 @@ class JudgeConfig:
     temperature: float = 0.0
     top_p: float = 1.0
     log_first_n: int = 3
+    use_4bit: bool = True
 
 
 class LLMJudge:
@@ -23,17 +24,30 @@ class LLMJudge:
         self.config = config or JudgeConfig()
         self._logged = 0
         self.tokenizer = AutoTokenizer.from_pretrained(self.config.model_name)
-        quant_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_compute_dtype=torch.bfloat16,
-        )
-        self.model = AutoModelForCausalLM.from_pretrained(
-            self.config.model_name,
-            quantization_config=quant_config,
-            device_map="auto",
-        )
+        if self.config.use_4bit:
+            quant_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_compute_dtype=torch.bfloat16,
+            )
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.config.model_name,
+                quantization_config=quant_config,
+                device_map="auto",
+            )
+        else:
+            if torch.cuda.is_available():
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    self.config.model_name,
+                    torch_dtype=torch.float16,
+                    device_map="auto",
+                )
+            else:
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    self.config.model_name,
+                    device_map="cpu",
+                )
         if self.tokenizer.pad_token_id is None:
             self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
 

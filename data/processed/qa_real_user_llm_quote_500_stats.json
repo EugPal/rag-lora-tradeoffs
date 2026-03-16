@@ -1,0 +1,30 @@
+{
+  "discussions_file": "data\\raw\\github\\fastapi_questions_answered.jsonl",
+  "docs_file": "data\\processed\\docs.jsonl",
+  "out_file": "data\\processed\\qa_real_user_llm_quote_500.jsonl",
+  "stats": {
+    "answer_mode": "llm_quote",
+    "max_items": 500,
+    "top_k": 5,
+    "scanned_questions": 1000,
+    "retrieved_ok": 1000,
+    "kept": 269,
+    "skipped_duplicate_question": 0,
+    "skipped_no_question": 0,
+    "skipped_no_retrieval": 0,
+    "skipped_no_source_page": 0,
+    "skipped_no_answer": 0,
+    "llm_failed": 731,
+    "llm_fail_reasons": {
+      "source_chunk_not_in_top_k": 582,
+      "quote_not_substring": 254,
+      "no_json_object": 96,
+      "bad_answer_length": 304,
+      "json_parse_error": 110,
+      "bad_text": 116
+    }
+  },
+  "llm_model": "Qwen/Qwen2.5-3B-Instruct",
+  "llm_max_tokens": 256,
+  "llm_max_attempts": 2
+}

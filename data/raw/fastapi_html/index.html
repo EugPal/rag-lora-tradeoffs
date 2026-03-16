@@ -24,18 +24,28 @@
         
           <link rel="alternate" href="/es/" hreflang="en">
         
+          <link rel="alternate" href="/fr/" hreflang="en">
+        
+          <link rel="alternate" href="/ja/" hreflang="en">
+        
           <link rel="alternate" href="/ko/" hreflang="en">
         
           <link rel="alternate" href="/pt/" hreflang="en">
         
           <link rel="alternate" href="/ru/" hreflang="en">
         
+          <link rel="alternate" href="/tr/" hreflang="en">
+        
           <link rel="alternate" href="/uk/" hreflang="en">
+        
+          <link rel="alternate" href="/zh/" hreflang="en">
+        
+          <link rel="alternate" href="/zh-hant/" hreflang="en">
         
       
       
       <link rel="icon" href="img/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -43,7 +53,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
@@ -328,6 +338,18 @@
           </li>
         
           <li class="md-select__item">
+            <a href="/fr/" hreflang="" class="md-select__link">
+              fr - français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="" class="md-select__link">
+              ja - 日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
             <a href="/ko/" hreflang="" class="md-select__link">
               ko - 한국어
             </a>
@@ -346,8 +368,26 @@
           </li>
         
           <li class="md-select__item">
+            <a href="/tr/" hreflang="" class="md-select__link">
+              tr - Türkçe
+            </a>
+          </li>
+        
+          <li class="md-select__item">
             <a href="/uk/" hreflang="" class="md-select__link">
               uk - українська мова
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/" hreflang="" class="md-select__link">
+              zh - 简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh-hant/" hreflang="" class="md-select__link">
+              zh-hant - 繁體中文
             </a>
           </li>
         
@@ -3071,6 +3111,8 @@
       
         
       
+        
+      
     
     
     
@@ -4026,6 +4068,36 @@
   
     <span class="md-typeset">
       Generating SDKs
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced/advanced-python-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Advanced Python Types
     </span>
   
 
@@ -6664,7 +6736,7 @@
 <li><strong>Fast</strong>: Very high performance, on par with <strong>NodeJS</strong> and <strong>Go</strong> (thanks to Starlette and Pydantic). <a data-preview="" href="#performance">One of the fastest Python frameworks available</a>.</li>
 <li><strong>Fast to code</strong>: Increase the speed to develop features by about 200% to 300%. *</li>
 <li><strong>Fewer bugs</strong>: Reduce about 40% of human (developer) induced errors. *</li>
-<li><strong>Intuitive</strong>: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging.</li>
+<li><strong>Intuitive</strong>: Great editor support. <dfn title="also known as auto-complete, autocompletion, IntelliSense">Completion</dfn> everywhere. Less time debugging.</li>
 <li><strong>Easy</strong>: Designed to be easy to use and learn. Less time reading docs.</li>
 <li><strong>Short</strong>: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.</li>
 <li><strong>Robust</strong>: Get production-ready code. With automatic interactive documentation.</li>
@@ -6756,40 +6828,36 @@
 <h2 id="example">Example<a class="headerlink" data-preview="" href="#example" title="Permanent link">&para;</a></h2>
 <h3 id="create-it">Create it<a class="headerlink" data-preview="" href="#create-it" title="Permanent link">&para;</a></h3>
 <p>Create a file <code>main.py</code> with:</p>
-<div class="highlight"><pre><span></span><code><span id="__span-1-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Union</span>
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
 </span><span id="__span-1-2">
-</span><span id="__span-1-3"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
+</span><span id="__span-1-3"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
 </span><span id="__span-1-4">
-</span><span id="__span-1-5"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-</span><span id="__span-1-6">
-</span><span id="__span-1-7">
-</span><span id="__span-1-8"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-</span><span id="__span-1-9"><span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
-</span><span id="__span-1-10">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
-</span><span id="__span-1-11">
-</span><span id="__span-1-12">
-</span><span id="__span-1-13"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-1-14"><span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span><span id="__span-1-15">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
+</span><span id="__span-1-5">
+</span><span id="__span-1-6"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+</span><span id="__span-1-7"><span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
+</span><span id="__span-1-8">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
+</span><span id="__span-1-9">
+</span><span id="__span-1-10">
+</span><span id="__span-1-11"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-1-12"><span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+</span><span id="__span-1-13">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
 </span></code></pre></div>
 <details>
 <summary>Or use <code>async def</code>...</summary>
 <p>If your code uses <code>async</code> / <code>await</code>, use <code>async def</code>:</p>
-<div class="highlight"><pre><span></span><code><span id="__span-2-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Union</span>
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
 </span><span id="__span-2-2">
-</span><span id="__span-2-3"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
+</span><span id="__span-2-3"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
 </span><span id="__span-2-4">
-</span><span id="__span-2-5"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-</span><span id="__span-2-6">
-</span><span id="__span-2-7">
-</span><span id="__span-2-8"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-</span><span id="__span-2-9"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
-</span></span><span id="__span-2-10">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
-</span><span id="__span-2-11">
-</span><span id="__span-2-12">
-</span><span id="__span-2-13"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-2-14"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span></span><span id="__span-2-15">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
+</span><span id="__span-2-5">
+</span><span id="__span-2-6"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+</span><span id="__span-2-7"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
+</span></span><span id="__span-2-8">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
+</span><span id="__span-2-9">
+</span><span id="__span-2-10">
+</span><span id="__span-2-11"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-2-12"><span class="hll"><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+</span></span><span id="__span-2-13">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
 </span></code></pre></div>
 <p><strong>Note</strong>:</p>
 <p>If you don't know, check the <em>"In a hurry?"</em> section about <a href="https://fastapi.tiangolo.com/async/#in-a-hurry" target="_blank"><code>async</code> and <code>await</code> in the docs</a>.</p>
@@ -6851,33 +6919,31 @@
 <h2 id="example-upgrade">Example upgrade<a class="headerlink" data-preview="" href="#example-upgrade" title="Permanent link">&para;</a></h2>
 <p>Now modify the file <code>main.py</code> to receive a body from a <code>PUT</code> request.</p>
 <p>Declare the body using standard Python types, thanks to Pydantic.</p>
-<div class="highlight"><pre><span></span><code><span id="__span-5-1"><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Union</span>
-</span><span id="__span-5-2">
-</span><span id="__span-5-3"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
-</span><span id="__span-5-4"><span class="hll"><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
-</span></span><span id="__span-5-5">
-</span><span id="__span-5-6"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-</span><span id="__span-5-7">
-</span><span id="__span-5-8">
-</span><span id="__span-5-9"><span class="hll"><span class="k">class</span><span class="w"> </span><span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-</span></span><span id="__span-5-10"><span class="hll">    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-</span></span><span id="__span-5-11"><span class="hll">    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
-</span></span><span id="__span-5-12"><span class="hll">    <span class="n">is_offer</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</span></span><span id="__span-5-13">
-</span><span id="__span-5-14">
-</span><span id="__span-5-15"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-</span><span id="__span-5-16"><span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
-</span><span id="__span-5-17">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
-</span><span id="__span-5-18">
-</span><span id="__span-5-19">
-</span><span id="__span-5-20"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-5-21"><span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-</span><span id="__span-5-22">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
-</span><span id="__span-5-23">
-</span><span id="__span-5-24">
-</span><span id="__span-5-25"><span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></span><span id="__span-5-26"><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">update_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
-</span></span><span id="__span-5-27"><span class="hll">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span>
+</span><span id="__span-5-2"><span class="hll"><span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span>
+</span></span><span id="__span-5-3">
+</span><span id="__span-5-4"><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+</span><span id="__span-5-5">
+</span><span id="__span-5-6">
+</span><span id="__span-5-7"><span class="hll"><span class="k">class</span><span class="w"> </span><span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span></span><span id="__span-5-8"><span class="hll">    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+</span></span><span id="__span-5-9"><span class="hll">    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
+</span></span><span id="__span-5-10"><span class="hll">    <span class="n">is_offer</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+</span></span><span id="__span-5-11">
+</span><span id="__span-5-12">
+</span><span id="__span-5-13"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+</span><span id="__span-5-14"><span class="k">def</span><span class="w"> </span><span class="nf">read_root</span><span class="p">():</span>
+</span><span id="__span-5-15">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Hello&quot;</span><span class="p">:</span> <span class="s2">&quot;World&quot;</span><span class="p">}</span>
+</span><span id="__span-5-16">
+</span><span id="__span-5-17">
+</span><span id="__span-5-18"><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-19"><span class="k">def</span><span class="w"> </span><span class="nf">read_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+</span><span id="__span-5-20">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">}</span>
+</span><span id="__span-5-21">
+</span><span id="__span-5-22">
+</span><span id="__span-5-23"><span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></span><span id="__span-5-24"><span class="hll"><span class="k">def</span><span class="w"> </span><span class="nf">update_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
+</span></span><span id="__span-5-25"><span class="hll">    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;item_name&quot;</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">}</span>
 </span></span></code></pre></div>
 <p>The <code>fastapi dev</code> server should reload automatically.</p>
 <h3 id="interactive-api-docs-upgrade">Interactive API docs upgrade<a class="headerlink" data-preview="" href="#interactive-api-docs-upgrade" title="Permanent link">&para;</a></h3>
@@ -6923,7 +6989,7 @@
 <li>Validation even for deeply nested JSON objects.</li>
 </ul>
 </li>
-<li><abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of input data: coming from the network to Python data and types. Reading from:<ul>
+<li><dfn title="also known as: serialization, parsing, marshalling">Conversion</dfn> of input data: coming from the network to Python data and types. Reading from:<ul>
 <li>JSON.</li>
 <li>Path parameters.</li>
 <li>Query parameters.</li>
@@ -6933,7 +6999,7 @@
 <li>Files.</li>
 </ul>
 </li>
-<li><abbr title="also known as: serialization, parsing, marshalling">Conversion</abbr> of output data: converting from Python data and types to network data (as JSON):<ul>
+<li><dfn title="also known as: serialization, parsing, marshalling">Conversion</dfn> of output data: converting from Python data and types to network data (as JSON):<ul>
 <li>Convert Python types (<code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code>, <code>list</code>, etc).</li>
 <li><code>datetime</code> objects.</li>
 <li><code>UUID</code> objects.</li>
@@ -6993,7 +7059,7 @@
 <ul>
 <li>Declaration of <strong>parameters</strong> from other different places as: <strong>headers</strong>, <strong>cookies</strong>, <strong>form fields</strong> and <strong>files</strong>.</li>
 <li>How to set <strong>validation constraints</strong> as <code>maximum_length</code> or <code>regex</code>.</li>
-<li>A very powerful and easy to use <strong><abbr title="also known as components, resources, providers, services, injectables">Dependency Injection</abbr></strong> system.</li>
+<li>A very powerful and easy to use <strong><dfn title="also known as components, resources, providers, services, injectables">Dependency Injection</dfn></strong> system.</li>
 <li>Security and authentication, including support for <strong>OAuth2</strong> with <strong>JWT tokens</strong> and <strong>HTTP Basic</strong> auth.</li>
 <li>More advanced (but equally easy) techniques for declaring <strong>deeply nested JSON models</strong> (thanks to Pydantic).</li>
 <li><strong>GraphQL</strong> integration with <a href="https://strawberry.rocks" class="external-link" target="_blank">Strawberry</a> and other libraries.</li>
@@ -7057,7 +7123,7 @@
 <ul>
 <li><a href="https://www.python-httpx.org" target="_blank"><code>httpx</code></a> - Required if you want to use the <code>TestClient</code>.</li>
 <li><a href="https://jinja.palletsprojects.com" target="_blank"><code>jinja2</code></a> - Required if you want to use the default template configuration.</li>
-<li><a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Required if you want to support form <abbr title="converting the string that comes from an HTTP request into Python data">"parsing"</abbr>, with <code>request.form()</code>.</li>
+<li><a href="https://github.com/Kludex/python-multipart" target="_blank"><code>python-multipart</code></a> - Required if you want to support form <dfn title="converting the string that comes from an HTTP request into Python data">"parsing"</dfn>, with <code>request.form()</code>.</li>
 </ul>
 <p>Used by FastAPI:</p>
 <ul>
@@ -7233,10 +7299,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="js/termynal.js"></script>
       
