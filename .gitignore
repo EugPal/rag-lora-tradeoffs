@@ -62,10 +62,8 @@ data/raw/
 data/embeddings/
 data/embeddings_backup_pre_bgem3/
 
-# Keep only the curated processed backup under data/processed/
-data/processed/*
-!data/processed/fresh_start/
-!data/processed/fresh_start/**
+# Old workspace dirs from earlier iterations (replaced by data/kubernetes/)
+data/processed/
 
 # ---------------- Legacy directories (live in history, not in HEAD) ----------
 archive/

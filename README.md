@@ -33,11 +33,10 @@ once it is assigned an arXiv ID.
 │   ├── lora/                             # LoRA training & inference
 │   ├── evaluation/                       # F1, groundedness, offline LLM-judge
 │   └── utils/
-├── data/processed/fresh_start/           # 21 MB curated processed backup
-│   └── kubernetes/
-│       ├── kubernetes_pages.jsonl        # cleaned corpus pages
-│       ├── docs_kubernetes_semantic_v1.jsonl  # chunked corpus
-│       └── page_split_60_20_20/          # train/eval/test splits + QA
+├── data/kubernetes/                      # 21 MB curated backup of the
+│   │                                     # benchmark (also on HuggingFace)
+│   ├── corpus/                           #   pages.jsonl + chunks.jsonl
+│   └── qa/                               #   train/ eval/ test/ {qa.jsonl, page_ids.txt}
 ├── requirements.txt
 ├── pyproject.toml
 ├── LICENSE
@@ -88,11 +87,11 @@ See the model cards on HuggingFace for a full RAG-style inference example.
    `src/data_pipeline/parse_kubernetes_docs.py` (snapshot date is recorded in
    the dataset card on HuggingFace).
 2. **Chunk** — `src/data_pipeline/build_semantic_kubernetes_corpus.py` produces
-   `docs_kubernetes_semantic_v1.jsonl`.
+   `data/kubernetes/corpus/chunks.jsonl`.
 3. **Build QA splits** — `src/data_pipeline/build_kubernetes_page_split_60_20_20.py`
    and `build_kubernetes_qa_dataset.py`. The curated splits are checked in
-   under `data/processed/fresh_start/kubernetes/page_split_60_20_20/` and
-   are also published in the HuggingFace dataset.
+   under `data/kubernetes/qa/{train,eval,test}/` and are also published in
+   the HuggingFace dataset.
 4. **Index** — dense FAISS index via `src/rag/embeddings.py` + `src/rag/index.py`;
    BGE-M3 native sparse via `src/retrieval/bge_m3_sparse_retriever.py`. The
    main pipeline fuses dense and BGE-M3 sparse with Reciprocal Rank Fusion,
