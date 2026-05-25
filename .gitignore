@@ -56,6 +56,9 @@ judge-api.md
 _find_thesis_chats.py
 _recover_chats.py
 
+# Local-only notes / agent memory (never published)
+.notes/
+
 # ---------------- Large artifact directories (huge / non-reproducible) -------
 actual/
 data/raw/
