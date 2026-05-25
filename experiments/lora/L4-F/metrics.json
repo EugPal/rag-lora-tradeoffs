@@ -1,8 +1,0 @@
-{
-  "preset": "L4-F",
-  "status": "training_completed",
-  "model_name": "meta-llama/Llama-3.2-3B-Instruct",
-  "train_rows": 15,
-  "val_rows": 1,
-  "train_loss": 1.1469932397206624
-}

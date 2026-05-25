@@ -1,0 +1,37 @@
+{
+  "total_pages": 952,
+  "train_pages": 632,
+  "eval_pages": 155,
+  "test_pages": 165,
+  "seed": 42,
+  "train_sections": {
+    "concepts": 103,
+    "contribute": 22,
+    "home": 1,
+    "reference": 321,
+    "root": 1,
+    "setup": 15,
+    "tasks": 140,
+    "test": 1,
+    "tutorials": 28
+  },
+  "eval_sections": {
+    "concepts": 31,
+    "contribute": 7,
+    "reference": 74,
+    "root": 1,
+    "setup": 3,
+    "tasks": 33,
+    "tutorials": 6
+  },
+  "test_sections": {
+    "concepts": 31,
+    "contribute": 5,
+    "reference": 81,
+    "setup": 4,
+    "tasks": 37,
+    "tutorials": 7
+  },
+  "manual_page_rebalance": "manual_wave2_light_70_15_15 + manual_third_pass_eval_test_swaps",
+  "preserved_existing_manual_pairs": true
+}

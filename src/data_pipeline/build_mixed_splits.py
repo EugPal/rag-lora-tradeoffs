@@ -41,8 +41,8 @@ def main() -> None:
 
     out = args.out_dir
     write_jsonl(out / "qa_train_mixed.jsonl", train)
-    write_jsonl(out / "qa_eval_main.jsonl", eval_rows)
-    write_jsonl(out / "qa_test_main.jsonl", test)
+    write_jsonl(out / "qa_eval_mixed.jsonl", eval_rows)
+    write_jsonl(out / "qa_test_mixed.jsonl", test)
     logger.info("Wrote mixed splits: train=%d eval=%d test=%d", len(train), len(eval_rows), len(test))
 
 

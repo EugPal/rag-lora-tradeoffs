@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import re
 from collections import Counter
@@ -46,22 +46,27 @@ def f1_score(prediction: str, reference: str) -> float:
 
 
 _EMBED_MODEL: Optional[SentenceTransformer] = None
+_EMBED_MODEL_NAME: Optional[str] = None
 
 
 def get_embed_model(model_name: str) -> SentenceTransformer:
-    global _EMBED_MODEL
-    if _EMBED_MODEL is None or _EMBED_MODEL.model_card_data.model_id != model_name:
+    global _EMBED_MODEL, _EMBED_MODEL_NAME
+    if _EMBED_MODEL is None or _EMBED_MODEL_NAME != model_name:
         _EMBED_MODEL = SentenceTransformer(model_name)
+        _EMBED_MODEL_NAME = model_name
     return _EMBED_MODEL
 
 
 def embedding_cosine(
     prediction: str,
     reference: str,
-    model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
-) -> float:
+    model_name: str = "BAAI/bge-base-en-v1.5",
+) -> float | None:
     model = get_embed_model(model_name)
-    vectors = model.encode([prediction, reference], normalize_embeddings=True, convert_to_numpy=True)
+    try:
+        vectors = model.encode([prediction, reference], normalize_embeddings=True, convert_to_numpy=True)
+    except ValueError:
+        return None
     return float(np.dot(vectors[0], vectors[1]))
 
 
@@ -80,3 +85,4 @@ def bertscore_f1(
         rescale_with_baseline=rescale_with_baseline,
     )
     return [float(score) for score in f1]
+

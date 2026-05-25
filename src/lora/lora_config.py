@@ -12,12 +12,12 @@ class LoRAConfig:
 
 
 PRESETS = {
-    "L4-S": LoRAConfig(rank=4, target_modules=["attention"], target_layers="top", data_fraction=0.25),
-    "L4-F": LoRAConfig(rank=4, target_modules=["attention"], target_layers="top", data_fraction=1.0),
-    "L8-S": LoRAConfig(rank=8, target_modules=["attention"], target_layers="all", data_fraction=0.25),
-    "L8-F": LoRAConfig(rank=8, target_modules=["attention"], target_layers="all", data_fraction=1.0),
-    "L16-S": LoRAConfig(rank=16, target_modules=["attention", "ffn"], target_layers="top", data_fraction=0.25),
-    "L16-F": LoRAConfig(rank=16, target_modules=["attention", "ffn"], target_layers="all", data_fraction=1.0),
+    "L4-F": LoRAConfig(rank=4, target_modules=["attention_qv"], target_layers="all", data_fraction=1.0),
+    "L8-F": LoRAConfig(rank=8, target_modules=["attention_qv"], target_layers="all", data_fraction=1.0),
+    "L16-F": LoRAConfig(rank=16, target_modules=["attention_qv"], target_layers="all", data_fraction=1.0),
+    "L32-F": LoRAConfig(rank=32, target_modules=["attention"], target_layers="all", data_fraction=1.0),
+    "L64-F": LoRAConfig(rank=64, target_modules=["attention"], target_layers="all", data_fraction=1.0),
+    "L128-F": LoRAConfig(rank=128, target_modules=["attention_qv"], target_layers="all", data_fraction=1.0),
 }
 
 

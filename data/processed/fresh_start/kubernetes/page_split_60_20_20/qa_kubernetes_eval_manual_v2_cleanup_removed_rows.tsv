@@ -1,0 +1,74 @@
+id	original_id	source_page	question
+kubernetes-eval-manualv2-0390	kubernetes-eval-manualv2-0390	home_supported-doc-versions	How many Kubernetes documentation versions does the website contain?
+kubernetes-eval-manualv2-0391	kubernetes-eval-manualv2-0391	home_supported-doc-versions	Is documentation availability the same as Kubernetes support status?
+kubernetes-eval-manualv2-0392	kubernetes-eval-manualv2-0392	home_supported-doc-versions	What is the latest documentation version listed on the site?
+kubernetes-eval-manualv2-0393	kubernetes-eval-manualv2-0393	reference	What does the Kubernetes documentation Reference section contain?
+kubernetes-eval-manualv2-0394	kubernetes-eval-manualv2-0394	reference	What can you use to call the Kubernetes API from a programming language?
+kubernetes-eval-manualv2-0395	kubernetes-eval-manualv2-0395	reference	What is kubectl in the Kubernetes reference?
+kubernetes-eval-manualv2-0396	kubernetes-eval-manualv2-0396	reference	What is kubeadm in the Kubernetes reference?
+kubernetes-eval-manualv2-0397	kubernetes-eval-manualv2-0397	reference	What is kubelet according to the reference page?
+kubernetes-eval-manualv2-0398	kubernetes-eval-manualv2-0398	reference	What are Config APIs in the reference section used for?
+kubernetes-eval-manualv2-0399	kubernetes-eval-manualv2-0399	reference	Are most Config APIs exposed by the API server in a RESTful way?
+kubernetes-eval-manualv2-0400	kubernetes-eval-manualv2-0400	reference	Which encoding is used on the network but not available as a kubectl output format?
+kubernetes-eval-manualv2-0426	kubernetes-eval-manualv2-0426	contribute_advanced	What does the Advanced contributing page assume you already understand?
+kubernetes-eval-manualv2-0427	kubernetes-eval-manualv2-0427	contribute_advanced	Where do proposals for SIG Docs improvements need to be discussed for maximum transparency?
+kubernetes-eval-manualv2-0428	kubernetes-eval-manualv2-0428	contribute_advanced	What is the quickest way to get answers about how Kubernetes documentation currently works?
+kubernetes-eval-manualv2-0429	kubernetes-eval-manualv2-0429	contribute_advanced	Who can coordinate docs for a Kubernetes release?
+kubernetes-eval-manualv2-0430	kubernetes-eval-manualv2-0430	contribute_advanced	How long is coordinating a Kubernetes release typically?
+kubernetes-eval-manualv2-0431	kubernetes-eval-manualv2-0431	contribute_advanced	Who can serve as New Contributor Ambassadors in SIG Docs?
+kubernetes-eval-manualv2-0432	kubernetes-eval-manualv2-0432	contribute_advanced	After how many substantive pull requests can a new contributor apply for Kubernetes organization membership?
+kubernetes-eval-manualv2-0433	kubernetes-eval-manualv2-0433	contribute_advanced	How should a sponsor respond to a contributor's membership application?
+kubernetes-eval-manualv2-0434	kubernetes-eval-manualv2-0434	contribute_advanced	What minimum time commitment is required to serve as a SIG Docs co-chair?
+kubernetes-eval-manualv2-0435	kubernetes-eval-manualv2-0435	contribute_advanced	What is the role of a SIG Docs co-chair described as?
+kubernetes-eval-manualv2-0436	kubernetes-eval-manualv2-0436	contribute_advanced	How do you start recording a SIG Docs meeting on Zoom?
+kubernetes-eval-manualv2-0448	kubernetes-eval-manualv2-0448	contribute_suggesting-improvements	What should you do if you notice an issue with Kubernetes documentation or have an idea for new content?
+kubernetes-eval-manualv2-0449	kubernetes-eval-manualv2-0449	contribute_suggesting-improvements	What do you need to open an issue for Kubernetes documentation?
+kubernetes-eval-manualv2-0450	kubernetes-eval-manualv2-0450	contribute_suggesting-improvements	Where does new work on Kubernetes documentation usually begin?
+kubernetes-eval-manualv2-0451	kubernetes-eval-manualv2-0451	contribute_suggesting-improvements	Can you still file an issue if you have an idea for new content but are not sure where it belongs?
+kubernetes-eval-manualv2-0452	kubernetes-eval-manualv2-0452	contribute_suggesting-improvements	What should a clear Kubernetes docs issue description explain?
+kubernetes-eval-manualv2-0469	kubernetes-eval-manualv2-0469	contribute_participate_pr-wranglers	How long are PR wrangler shifts in SIG Docs?
+kubernetes-eval-manualv2-0470	kubernetes-eval-manualv2-0470	contribute_participate_pr-wranglers	Which PRs should a PR Wrangler review first?
+kubernetes-eval-manualv2-0471	kubernetes-eval-manualv2-0471	contribute_participate_pr-wranglers	What should PR wranglers make sure contributors sign?
+kubernetes-eval-manualv2-0472	kubernetes-eval-manualv2-0472	contribute_participate_pr-wranglers	What comment should PRs have from another member before merging?
+kubernetes-eval-manualv2-0473	kubernetes-eval-manualv2-0473	contribute_participate_pr-wranglers	What kind of issues can style fixups often become?
+kubernetes-eval-manualv2-0474	kubernetes-eval-manualv2-0474	contribute_participate_pr-wranglers	Should PR wranglers review PRs whose authors have not signed the CLA?
+kubernetes-eval-manualv2-0475	kubernetes-eval-manualv2-0475	contribute_participate_pr-wranglers	Who should be assigned if a PR is against a dev- branch?
+kubernetes-eval-manualv2-0476	kubernetes-eval-manualv2-0476	contribute_participate_pr-wranglers	When should PR wranglers close a pull request because of the CLA?
+kubernetes-eval-manualv2-0477	kubernetes-eval-manualv2-0477	contribute_participate_pr-wranglers	What Prow comment closes a pull request?
+kubernetes-eval-manualv2-0478	kubernetes-eval-manualv2-0478	contribute_participate_pr-wranglers	What program did SIG Docs introduce in late 2021 to help new contributors understand PR wrangling?
+kubernetes-eval-manualv2-0479	kubernetes-eval-manualv2-0479	contribute_style_content-guide	Where does the source for the Kubernetes website reside?
+kubernetes-eval-manualv2-0480	kubernetes-eval-manualv2-0480	contribute_style_content-guide	When is third-party project content allowed in Kubernetes docs?
+kubernetes-eval-manualv2-0481	kubernetes-eval-manualv2-0481	contribute_style_content-guide	What does Kubernetes documentation prefer instead of hosting dual-sourced content?
+kubernetes-eval-manualv2-0482	kubernetes-eval-manualv2-0482	contribute_style_content-guide	Why is dual-sourced content discouraged in Kubernetes docs?
+kubernetes-eval-manualv2-0899	kubernetes-eval-manualv2-0899	reference_node_topics-on-dockershim-and-cri-compatible-runtimes	What is the dockershim removal and CRI-compatible runtimes page?
+kubernetes-eval-manualv2-0900	kubernetes-eval-manualv2-0900	reference_node_topics-on-dockershim-and-cri-compatible-runtimes	Which migration guide is listed in the Kubernetes project section for dockershim removal?
+kubernetes-eval-manualv2-0901	kubernetes-eval-manualv2-0901	reference_node_topics-on-dockershim-and-cri-compatible-runtimes	Which Mirantis documentation is listed in the external sources for dockershim removal?
+kubernetes-eval-manualv2-0902	kubernetes-eval-manualv2-0902	reference_setup-tools	Which setup tool is listed on the Setup tools page?
+kubernetes-eval-manualv2-1034	kubernetes-eval-manualv2-1034	reference_setup-tools_kubeadm_generated_readme	What should you do with files in the auto-generated kubeadm directory according to the generated README?
+kubernetes-eval-manualv2-1320	kubernetes-eval-manualv2-1320	tasks_extend-kubernetes	Which topics are listed under Extend Kubernetes on the overview page?
+kubernetes-eval-manualv2-1346	kubernetes-eval-manualv2-1346	tasks_inject-data-application	Which topics are listed under Inject Data Into Applications on the overview page?
+kubernetes-eval-manualv2-1359	kubernetes-eval-manualv2-1359	tasks_administer-cluster_network-policy-provider	Which NetworkPolicy providers are listed on the Install a Network Policy Provider overview page?
+kubernetes-eval-manualv2-1397	kubernetes-eval-manualv2-1397	tasks_administer-cluster_network-policy-provider	Which NetworkPolicy providers are listed on the networking provider overview page?
+kubernetes-eval-manualv2-1444	kubernetes-eval-manualv2-1444	tasks_manage-daemon	Which topics are listed on the Manage Cluster Daemons overview page?
+kubernetes-eval-manualv2-1445	kubernetes-eval-manualv2-1445	tasks_network	Which topics are listed on the Networking overview page?
+kubernetes-eval-manualv2-1458	kubernetes-eval-manualv2-1458	tutorials_cluster-management	Which topics are listed on the Cluster Management overview page?
+kubernetes-eval-manualv2-1510	kubernetes-eval-manualv2-1510	tutorials_services	Which topics are listed on the Services tutorial overview page?
+kubernetes-eval-manualv2-1533	kubernetes-eval-manualv2-1533	tutorials_stateless-application	Which topics are listed on the Stateless Applications overview page?
+kubernetes-test-manualv2-0208	kubernetes-test-manualv2-0208	concepts_configuration	Which topics are listed on the Configuration overview page?
+kubernetes-test-manualv2-0281	kubernetes-test-manualv2-0281	concepts_storage	Which topics are listed on the Storage overview page?
+kubernetes-test-manualv2-0337	kubernetes-test-manualv2-0337	contribute_participate_issue-wrangler	How long are Issue Wrangler shifts?
+kubernetes-test-manualv2-0338	kubernetes-test-manualv2-0338	contribute_participate_issue-wrangler	What command reopens an issue according to the Issue Wranglers page?
+kubernetes-test-manualv2-0339	kubernetes-test-manualv2-0339	contribute_participate_issue-wrangler	What comment closes an issue that the project will not be working on?
+kubernetes-test-manualv2-0340	kubernetes-test-manualv2-0340	contribute_participate_roles-and-responsibilities	Which four community roles are listed on the Roles and responsibilities page?
+kubernetes-test-manualv2-0341	kubernetes-test-manualv2-0341	contribute_participate_roles-and-responsibilities	How many substantial pull requests are needed before applying to become a SIG Docs member?
+kubernetes-test-manualv2-0342	kubernetes-test-manualv2-0342	contribute_participate_roles-and-responsibilities	What two commands are required on pull requests before a reviewer and approver can merge them?
+kubernetes-test-manualv2-0343	kubernetes-test-manualv2-0343	contribute_style_style-guide	Which spelling and grammar variant does the English Kubernetes documentation use?
+kubernetes-test-manualv2-0344	kubernetes-test-manualv2-0344	contribute_style_style-guide	How should placeholders be formatted in the style guide?
+kubernetes-test-manualv2-0345	kubernetes-test-manualv2-0345	contribute_style_style-guide	How should API resource names be formatted according to the style guide?
+kubernetes-test-manualv2-0346	kubernetes-test-manualv2-0346	contribute_style_style-guide	Should code examples include the command prompt according to the style guide?
+kubernetes-test-manualv2-0347	kubernetes-test-manualv2-0347	contribute_style_style-guide	How should ordered lists be numbered according to the style guide?
+kubernetes-test-manualv2-0348	kubernetes-test-manualv2-0348	contribute_style_style-guide	What writing style does the guide recommend instead of passive voice?
+kubernetes-test-manualv2-0349	kubernetes-test-manualv2-0349	contribute_style_style-guide	How should the reader be addressed according to the style guide?
+kubernetes-test-manualv2-0350	kubernetes-test-manualv2-0350	contribute_style_style-guide	What words does the style guide recommend avoiding because they assume a specific level of understanding?
+kubernetes-test-manualv2-0486	kubernetes-test-manualv2-0486	reference_encodings	What content does the Encodings reference page contain in the current corpus?
+kubernetes-test-manualv2-0841	kubernetes-test-manualv2-0841	tasks_configure-pod-container_assign-resources	Which two DRA topics are listed on the assign-devices overview page?

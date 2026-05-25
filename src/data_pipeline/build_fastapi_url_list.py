@@ -17,7 +17,6 @@ SITEMAP_URL = "https://fastapi.tiangolo.com/sitemap.xml"
 SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 CORE_SECTIONS = ("/tutorial/", "/reference/", "/advanced/", "/deployment/", "/how-to/")
 SKIP_EXTENSIONS = (".css", ".js", ".png", ".jpg", ".jpeg", ".svg", ".ico", ".xml", ".txt", ".pdf", ".zip")
-EXCLUDED_PATH_PREFIXES = ("/release-notes",)
 
 
 def load_sitemap_urls(sitemap_url: str) -> list[str]:
@@ -103,9 +102,6 @@ def expand_localized_urls(base_urls: list[str], locales: list[str]) -> list[str]
 
 def keep_url(url: str, scope: str) -> bool:
     if "/_llm-test/" in url:
-        return False
-    parsed = urlparse(url)
-    if any(parsed.path.startswith(prefix) for prefix in EXCLUDED_PATH_PREFIXES):
         return False
     if scope == "all":
         return True

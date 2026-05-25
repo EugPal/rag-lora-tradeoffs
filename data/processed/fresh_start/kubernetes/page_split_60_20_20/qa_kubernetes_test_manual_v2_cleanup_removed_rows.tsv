@@ -1,0 +1,35 @@
+id	original_id	source_page	question
+kubernetes-test-manualv2-0991	kubernetes-test-manualv2-0991	contribute_generate-ref-docs_quickstart	Which script is used to generate Kubernetes reference documentation?
+kubernetes-test-manualv2-0992	kubernetes-test-manualv2-0992	contribute_generate-ref-docs_quickstart	Which operating systems are required for the reference documentation quickstart?
+kubernetes-test-manualv2-0993	kubernetes-test-manualv2-0993	contribute_generate-ref-docs_quickstart	Where is the update-imported-docs.py script located?
+kubernetes-test-manualv2-0994	kubernetes-test-manualv2-0994	contribute_generate-ref-docs_quickstart	Which references does update-imported-docs.py build?
+kubernetes-test-manualv2-0995	kubernetes-test-manualv2-0995	contribute_generate-ref-docs_quickstart	Which repository does update-imported-docs.py clone by default for generating reference docs?
+kubernetes-test-manualv2-0996	kubernetes-test-manualv2-0996	contribute_generate-ref-docs_quickstart	Which two arguments does update-imported-docs.py require to run successfully?
+kubernetes-test-manualv2-0997	kubernetes-test-manualv2-0997	contribute_generate-ref-docs_quickstart	What does the generate-command field in the configuration file define?
+kubernetes-test-manualv2-0998	kubernetes-test-manualv2-0998	contribute_generate-ref-docs_quickstart	Can a configuration file for imported docs contain multiple repositories?
+kubernetes-test-manualv2-0999	kubernetes-test-manualv2-0999	contribute_generate-ref-docs_quickstart	Should you change the generate-command field in reference.yml?
+kubernetes-test-manualv2-1000	kubernetes-test-manualv2-1000	contribute_generate-ref-docs_quickstart	How do you run the update-imported-docs.py tool?
+kubernetes-test-manualv2-1001	kubernetes-test-manualv2-1001	contribute_generate-ref-docs_quickstart	Which property fixes relative links within imported files?
+kubernetes-test-manualv2-0132	kubernetes-test-manualv2-0132	tutorials_kubernetes-basics_update	What operation is highlighted on the Update Your App tutorial overview page?
+kubernetes-test-manualv2-0145	kubernetes-test-manualv2-0145	tasks_tools	What can kubectl be used for according to the Install Tools page?
+kubernetes-test-manualv2-0146	kubernetes-test-manualv2-0146	tasks_tools	Which local Kubernetes tool requires either Docker or Podman?
+kubernetes-test-manualv2-0147	kubernetes-test-manualv2-0147	tasks_tools	Which tool can create and manage Kubernetes clusters in a user friendly way?
+kubernetes-test-manualv2-0234	kubernetes-test-manualv2-0234	concepts_scheduling-eviction	Which three disruption topics are listed under Pod Disruption on the Scheduling, Preemption and Eviction page?
+kubernetes-test-manualv2-0329	kubernetes-test-manualv2-0329	contribute_docs	Which SIG maintains the Kubernetes documentation website?
+kubernetes-test-manualv2-0330	kubernetes-test-manualv2-0330	contribute_docs	Which repository do contributors use for documentation pull requests?
+kubernetes-test-manualv2-0331	kubernetes-test-manualv2-0331	contribute_docs	Where should new contributors preferably reach out to New Contributor Ambassadors?
+kubernetes-test-manualv2-0332	kubernetes-test-manualv2-0332	contribute_generate-ref-docs_kubernetes-api	Which generation code is used to build the Kubernetes API reference documentation?
+kubernetes-test-manualv2-0333	kubernetes-test-manualv2-0333	contribute_generate-ref-docs_kubernetes-api	Which build target creates the versioned build directory and fetches the OpenAPI spec?
+kubernetes-test-manualv2-0334	kubernetes-test-manualv2-0334	contribute_generate-ref-docs_kubernetes-api	Which build target builds the API reference docs and copies them to the website repository?
+kubernetes-test-manualv2-0335	kubernetes-test-manualv2-0335	contribute_generate-ref-docs_kubernetes-api	Where are generated HTML API reference files copied in the website repository for v1.35?
+kubernetes-test-manualv2-0336	kubernetes-test-manualv2-0336	contribute_generate-ref-docs_kubernetes-components	What does the page for generating reference pages for Kubernetes components and tools tell you to start with?
+kubernetes-test-manualv2-0351	kubernetes-test-manualv2-0351	contribute_style_write-new-topic	Which three page types are described on the Writing a new topic page?
+kubernetes-test-manualv2-0352	kubernetes-test-manualv2-0352	contribute_style_write-new-topic	Which command example creates a new concept page with Hugo?
+kubernetes-test-manualv2-0353	kubernetes-test-manualv2-0353	contribute_style_write-new-topic	Which front matter key controls topic ordering within a subdirectory?
+kubernetes-test-manualv2-0354	kubernetes-test-manualv2-0354	contribute_style_write-new-topic	Which shortcode should be used to include a reusable sample file in a topic?
+kubernetes-test-manualv2-0360	kubernetes-test-manualv2-0360	reference_command-line-tools-reference	Which component and tool reference pages are listed on the Component tools overview page?
+kubernetes-test-manualv2-0610	kubernetes-test-manualv2-0610	reference_networking	Which networking reference topics are listed on the overview page?
+kubernetes-test-manualv2-0617	kubernetes-test-manualv2-0617	reference_scheduling	Which two topics are listed on the scheduling reference overview page?
+kubernetes-test-manualv2-0621	kubernetes-test-manualv2-0621	reference_setup-tools_kubeadm_generated	What is the title of the kubeadm generated reference overview page?
+kubernetes-test-manualv2-0683	kubernetes-test-manualv2-0683	reference_using-api	Which Kubernetes API version does the API reference list on the overview page?
+kubernetes-test-manualv2-0743	kubernetes-test-manualv2-0743	setup_production-environment_tools_kubeadm	Which topic list appears on the kubeadm bootstrapping overview page?

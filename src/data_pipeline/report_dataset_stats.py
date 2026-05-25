@@ -56,8 +56,8 @@ def main() -> None:
     parser.add_argument("--real-user-val-file", type=Path, default=Path("data/processed/qa_real_user_val.jsonl"))
     parser.add_argument("--real-user-test-file", type=Path, default=Path("data/processed/qa_real_user_test.jsonl"))
     parser.add_argument("--mixed-train-file", type=Path, default=Path("data/processed/qa_train_mixed.jsonl"))
-    parser.add_argument("--mixed-eval-file", type=Path, default=Path("data/processed/qa_eval_main.jsonl"))
-    parser.add_argument("--mixed-test-file", type=Path, default=Path("data/processed/qa_test_main.jsonl"))
+    parser.add_argument("--mixed-eval-file", type=Path, default=Path("data/processed/qa_eval_mixed.jsonl"))
+    parser.add_argument("--mixed-test-file", type=Path, default=Path("data/processed/qa_test_mixed.jsonl"))
     parser.add_argument("--silver-pages-file", type=Path, default=Path("data/processed/silver_pages.txt"))
     parser.add_argument("--gold-pages-file", type=Path, default=Path("data/processed/gold_pages.txt"))
     parser.add_argument("--page-split-summary", type=Path, default=Path("data/processed/page_split_summary.json"))
@@ -105,8 +105,8 @@ def main() -> None:
             "qa_real_user_val": jsonl_count(args.real_user_val_file),
             "qa_real_user_test": jsonl_count(args.real_user_test_file),
             "qa_train_mixed": jsonl_count(args.mixed_train_file),
-            "qa_eval_main": jsonl_count(args.mixed_eval_file),
-            "qa_test_main": jsonl_count(args.mixed_test_file),
+            "qa_eval_mixed": jsonl_count(args.mixed_eval_file),
+            "qa_test_mixed": jsonl_count(args.mixed_test_file),
             "silver_pages": count_lines(args.silver_pages_file),
             "gold_pages": count_lines(args.gold_pages_file),
         },
@@ -119,8 +119,8 @@ def main() -> None:
             "gold_sha256": sha256_file(args.gold_file),
             "real_user_sha256": sha256_file(args.real_user_full_file),
             "mixed_train_sha256": sha256_file(args.mixed_train_file),
-            "eval_main_sha256": sha256_file(args.mixed_eval_file),
-            "test_main_sha256": sha256_file(args.mixed_test_file),
+            "mixed_eval_sha256": sha256_file(args.mixed_eval_file),
+            "mixed_test_sha256": sha256_file(args.mixed_test_file),
             "silver_pages_sha256": sha256_file(args.silver_pages_file),
             "gold_pages_sha256": sha256_file(args.gold_pages_file),
         },

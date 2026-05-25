@@ -1,1 +1,0 @@
-Baseline evaluation logs will be stored here.

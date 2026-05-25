@@ -1,38 +1,99 @@
-﻿# Python
+﻿## ============================================================================
+## rag-lora-tradeoffs — .gitignore
+##
+## Public repo contains: src/, paper/ (LaTeX sources + final PDF),
+## data/processed/fresh_start/ (21 MB curated backup), root README.md,
+## requirements.txt, pyproject.toml.
+##
+## Large artifacts (training runs, raw corpora, embeddings, HF mirrors) are
+## kept out of git. The corpus / QA / LoRA adapters are published on
+## HuggingFace; see README for links.
+## ============================================================================
+
+# ---------------- Python -----------------------------------------------------
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.so
+*.egg-info/
+build/
+dist/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.ipynb_checkpoints/
 
-# Virtual environments
+# ---------------- Virtual envs -----------------------------------------------
 .venv/
 venv/
 env/
 
-# IDE/editor
+# ---------------- IDE / OS ---------------------------------------------------
 .vscode/
 .idea/
 .cursor/
-
-# OS files
 .DS_Store
 Thumbs.db
+*.swp
 
-# Logs and temp files
+# ---------------- Logs / temp ------------------------------------------------
 *.log
 *.tmp
 *.temp
-
-# DataSphere local job logs/artifacts
 .dslogs_*/
+debug-*.log
 
-# Local experiment outputs (regenerable)
-experiments/datasphere/
-experiments/pilot/
+# ---------------- Secrets & local agent / scratch ----------------------------
+.env
+.env.*
+*.pem
+*.key
+hf_token*
+openai_token*
+AGENTS.md
+judge-api.md
+_find_thesis_chats.py
+_recover_chats.py
 
-# Project configs
-config*.yaml
-recommendations/
+# ---------------- Large artifact directories (huge / non-reproducible) -------
+actual/
+data/raw/
+data/embeddings/
+data/embeddings_backup_pre_bgem3/
+
+# Keep only the curated processed backup under data/processed/
+data/processed/*
+!data/processed/fresh_start/
+!data/processed/fresh_start/**
+
+# ---------------- Legacy directories (live in history, not in HEAD) ----------
+archive/
+notebooks/
+experiments/
+notes/
+development/
+epoch_eval/
+tools/
+scripts/
+
+# Empty / unused directories
+docs/
+
+# ---------------- Legacy root-level runners & build files --------------------
+/run_datasphere_*.py
+/run_all.ps1
+/Makefile
+/requirements.silver_job.txt
+/article-1.md
+/article_draft.md
+/summary.md
+/dataset_notes.md
+
+# ---------------- Paper: temporarily excluded from public repo ---------------
+# Will be re-added together with the arXiv submission. See the open PR/branch
+# that adds LaTeX sources + final PDF in a follow-up commit.
+paper/
+
+# ---------------- Internal scratch files -------------------------------------
+.untrack_list.txt

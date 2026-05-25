@@ -1,5 +1,0 @@
-rank: 4
-target_modules:
-- attention
-target_layers: top
-data_fraction: 0.25

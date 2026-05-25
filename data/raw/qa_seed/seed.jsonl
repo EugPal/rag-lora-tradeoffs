@@ -1,4 +1,0 @@
-{"id": "q1", "question": "How do I start a FastAPI app?", "answer": "Create a FastAPI instance and run it with an ASGI server like Uvicorn."}
-{"id": "q2", "question": "What does the @app.get decorator do?", "answer": "It registers a GET endpoint for the given path."}
-{"id": "q3", "question": "How can I define path parameters?", "answer": "Include parameters in the path and define matching function arguments."}
-{"id": "q4", "question": "Where are request bodies defined?", "answer": "Request bodies are defined using Pydantic models as function parameters."}

@@ -1,0 +1,12 @@
+{
+  "scanned_chunks": 7908,
+  "kept_rows": 901,
+  "by_split": {
+    "train": 565,
+    "eval": 177,
+    "test": 159
+  },
+  "by_pattern": {
+    "anchor": 901
+  }
+}

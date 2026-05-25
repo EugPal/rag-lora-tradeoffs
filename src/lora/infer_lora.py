@@ -13,6 +13,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run RAG inference with LoRA config.")
     parser.add_argument("--preset", type=str, required=True)
     parser.add_argument("--query", type=str, required=True)
+    parser.add_argument(
+        "--answer-mode",
+        type=str,
+        choices=["none", "auto", "exact", "normal"],
+        default="none",
+        help="Answer mode to use when building the generation prompt; none uses the neutral mainline prompt, auto uses the built-in router.",
+    )
     parser.add_argument("--docs", type=Path, default=Path("data/processed/docs.jsonl"))
     parser.add_argument("--index", type=Path, default=Path("data/embeddings/docs_embeddings.faiss"))
     parser.add_argument("--embeddings", type=Path, default=Path("data/embeddings/docs_embeddings.npy"))
@@ -34,7 +41,7 @@ def main() -> None:
     )
     generator = HFGenerator(GenerationConfig(lora_adapter_dir=str(adapter_dir)))
     pipeline = RagPipeline(rag_config, generator=generator)
-    answer = pipeline.answer(args.query)
+    answer = pipeline.answer(args.query, answer_mode=args.answer_mode)
     logger.info("LoRA preset %s answer: %s", args.preset, answer)
 
 

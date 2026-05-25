@@ -10,7 +10,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 @dataclass
 class JudgeConfig:
-    model_name: str = "Qwen/Qwen2-1.5B-Instruct"
+    model_name: str = "Qwen/Qwen3-4B-Instruct-2507"
     max_tokens: int = 256
     # Default to deterministic scoring for reproducibility.
     temperature: float = 0.0
@@ -56,21 +56,21 @@ class LLMJudge:
         return (
             "You are a strict evaluator for a RAG system.\n"
             "Important rules:\n"
-            "- Score 5 is rare and given ONLY if every claim is explicitly supported.\n"
-            "- If ANY claim is not supported, correctness <= 3.\n"
-            "- Evidence MUST be a non-empty verbatim quote copied from one of the Contexts.\n"
-            "- If you cannot provide a verbatim quote, set groundedness=1.\n"
-            "- If evidence is empty, set groundedness=1 and correctness<=3.\n"
+            "- Score 5 is rare and given ONLY if every claim is explicitly supported by the contexts.\n"
+            "- If ANY key claim is unsupported, correctness should be <= 3.\n"
+            "- Evidence should be a short supporting span (quote or near-verbatim phrase) from contexts when possible.\n"
+            "- If exact quote is unavailable but support is clear in contexts, do NOT force groundedness=1.\n"
+            "- Use groundedness=1 only when support is largely missing.\n"
             "- When in doubt, choose the LOWER score.\n\n"
             "Examples:\n"
             "Bad answer:\n"
             "Answer: \"FastAPI runs on Django.\"\n"
-            "Score: correctness=1, groundedness=1, evidence=\"FastAPI is a modern, fast...\"  # if present; otherwise groundedness=1\n"
+            "Score: correctness=1, groundedness=1, evidence=\"...\"\n"
             "Rationale: Not supported by contexts.\n\n"
             "Partial answer:\n"
             "Answer: \"FastAPI is installed with pip.\"\n"
-            "Score: correctness=3, groundedness=1, evidence=\"...\"  # only if the quote exists in Contexts\n"
-            "Rationale: Context does not mention installation.\n\n"
+            "Score: correctness=3, groundedness=2 or 3, evidence=\"...\"\n"
+            "Rationale: Some support may exist, but key details are missing.\n\n"
             f"Question:\n{question}\n\n"
             f"Answer:\n{answer}\n\n"
             f"{context_block}\n\n"
@@ -84,7 +84,7 @@ class LLMJudge:
             "Return ONLY JSON (no markdown, no extra text) with keys:\n"
             "- correctness: integer 1-5\n"
             "- groundedness: integer 1-5\n"
-            "- evidence: a short NON-EMPTY verbatim quote from the Contexts\n"
+            "- evidence: a short supporting span from the Contexts (quote or near-verbatim)\n"
             "- rationale: short string\n"
         )
 
@@ -126,6 +126,16 @@ class LLMJudge:
         return parse_judge_output(text)
 
 
+def _safe_short_text(value: object, max_len: int = 200) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        value = " ".join(str(v) for v in value)
+    else:
+        value = str(value)
+    return value[:max_len]
+
+
 def parse_judge_output(text: str) -> dict:
     fenced_match = re.search(r"```json\\s*(\\{.*?\\})\\s*```", text, flags=re.DOTALL | re.IGNORECASE)
     if fenced_match:
@@ -139,8 +149,8 @@ def parse_judge_output(text: str) -> dict:
         return {
             "correctness": int(correctness_match.group(1)) if correctness_match else None,
             "groundedness": int(grounded_match.group(1)) if grounded_match else None,
-            "evidence": (evidence_match.group(1) if evidence_match else "")[:200],
-            "rationale": (rationale_match.group(1) if rationale_match else text)[:200],
+            "evidence": _safe_short_text(evidence_match.group(1) if evidence_match else ""),
+            "rationale": _safe_short_text(rationale_match.group(1) if rationale_match else text),
         }
     try:
         raw = match.group(0)
@@ -150,8 +160,8 @@ def parse_judge_output(text: str) -> dict:
         return {
             "correctness": data.get("correctness"),
             "groundedness": data.get("groundedness"),
-            "evidence": data.get("evidence", "")[:200],
-            "rationale": data.get("rationale", "")[:200],
+            "evidence": _safe_short_text(data.get("evidence", "")),
+            "rationale": _safe_short_text(data.get("rationale", "")),
         }
     except json.JSONDecodeError:
         # Fallback: parse scalar fields even if JSON is malformed/truncated.
@@ -162,6 +172,6 @@ def parse_judge_output(text: str) -> dict:
         return {
             "correctness": int(correctness_match.group(1)) if correctness_match else None,
             "groundedness": int(grounded_match.group(1)) if grounded_match else None,
-            "evidence": (evidence_match.group(1) if evidence_match else "")[:200],
-            "rationale": (rationale_match.group(1) if rationale_match else text)[:200],
+            "evidence": _safe_short_text(evidence_match.group(1) if evidence_match else ""),
+            "rationale": _safe_short_text(rationale_match.group(1) if rationale_match else text),
         }

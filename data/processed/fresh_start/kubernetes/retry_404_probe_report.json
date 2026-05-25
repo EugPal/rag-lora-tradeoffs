@@ -1,0 +1,4807 @@
+{
+  "total_404_urls": 320,
+  "recovered_count": 0,
+  "recovered": [],
+  "results": [
+    {
+      "url": "https://kubernetes.io/docs/contribute/blog/buddying/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/blog/buddying/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/blog/buddying",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/contribute/blog/mirroring/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/blog/mirroring/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/blog/mirroring",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/contribute/blog/submission/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/blog/submission/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/blog/submission",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/contribute/style/hugo-shortcodes/example1/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/style/hugo-shortcodes/example1/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/style/hugo-shortcodes/example1",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/contribute/style/hugo-shortcodes/example2/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/style/hugo-shortcodes/example2/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/contribute/style/hugo-shortcodes/example2",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/doc-contributor-tools/linkchecker/README/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/doc-contributor-tools/linkchecker/README/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/doc-contributor-tools/linkchecker/README",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIListChunking/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIListChunking/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIListChunking",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIPriorityAndFairness/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIPriorityAndFairness/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIPriorityAndFairness",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIResponseCompression/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIResponseCompression/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIResponseCompression",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APISelfSubjectReview/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APISelfSubjectReview/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APISelfSubjectReview",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServerIdentity/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServerIdentity/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServerIdentity",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServerTracing/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServerTracing/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServerTracing",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServingWithRoutine/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServingWithRoutine/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/APIServingWithRoutine",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/Accelerators/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/Accelerators/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/Accelerators",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AdmissionWebhookMatchConditions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AdmissionWebhookMatchConditions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AdmissionWebhookMatchConditions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AdvancedAuditing/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AdvancedAuditing/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AdvancedAuditing",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AffinityInAnnotations/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AffinityInAnnotations/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AffinityInAnnotations",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AggregatedDiscoveryEndpoint/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AggregatedDiscoveryEndpoint/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AggregatedDiscoveryEndpoint",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowDNSOnlyNodeCSR/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowDNSOnlyNodeCSR/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowDNSOnlyNodeCSR",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowExtTrafficLocalEndpoints/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowExtTrafficLocalEndpoints/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowExtTrafficLocalEndpoints",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowInsecureBackendProxy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowInsecureBackendProxy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowInsecureBackendProxy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowInsecureKubeletCertificateSigningRequests/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowInsecureKubeletCertificateSigningRequests/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowInsecureKubeletCertificateSigningRequests",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowParsingUserUIDFromCertAuth/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowParsingUserUIDFromCertAuth/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowParsingUserUIDFromCertAuth",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowServiceLBStatusOnNonLB/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowServiceLBStatusOnNonLB/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowServiceLBStatusOnNonLB",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowUnsafeMalformedObjectDeletion/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowUnsafeMalformedObjectDeletion/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AllowUnsafeMalformedObjectDeletion",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AnonymousAuthConfigurableEndpoints/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AnonymousAuthConfigurableEndpoints/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AnonymousAuthConfigurableEndpoints",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AnyVolumeDataSource/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AnyVolumeDataSource/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AnyVolumeDataSource",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AppArmor/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AppArmor/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AppArmor",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AppArmorFields/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AppArmorFields/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AppArmorFields",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AttachVolumeLimit/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AttachVolumeLimit/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AttachVolumeLimit",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizeNodeWithSelectors/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizeNodeWithSelectors/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizeNodeWithSelectors",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizePodWebsocketUpgradeCreatePermission/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizePodWebsocketUpgradeCreatePermission/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizePodWebsocketUpgradeCreatePermission",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizeWithSelectors/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizeWithSelectors/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/AuthorizeWithSelectors",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BalanceAttachedNodeVolumes/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BalanceAttachedNodeVolumes/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BalanceAttachedNodeVolumes",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BlockVolume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BlockVolume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BlockVolume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BoundServiceAccountTokenVolume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BoundServiceAccountTokenVolume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BoundServiceAccountTokenVolume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BtreeWatchCache/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BtreeWatchCache/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/BtreeWatchCache",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CBORServingAndStorage/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CBORServingAndStorage/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CBORServingAndStorage",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManager/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManager/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManager",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyAlphaOptions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyAlphaOptions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyAlphaOptions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyBetaOptions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyBetaOptions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyBetaOptions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyOptions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyOptions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CPUManagerPolicyOptions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRDObservedGenerationTracking/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRDObservedGenerationTracking/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRDObservedGenerationTracking",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRDValidationRatcheting/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRDValidationRatcheting/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRDValidationRatcheting",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRIContainerLogRotation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRIContainerLogRotation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CRIContainerLogRotation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIBlockVolume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIBlockVolume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIBlockVolume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIDriverRegistry/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIDriverRegistry/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIDriverRegistry",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIInlineVolume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIInlineVolume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIInlineVolume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigration/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigration/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigration",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAWS/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAWS/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAWS",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAWSComplete/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAWSComplete/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAWSComplete",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDisk/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDisk/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDisk",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDiskComplete/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDiskComplete/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureDiskComplete",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureFile/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureFile/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureFile",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureFileComplete/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureFileComplete/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationAzureFileComplete",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationGCE/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationGCE/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationGCE",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationGCEComplete/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationGCEComplete/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationGCEComplete",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationOpenStack/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationOpenStack/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationOpenStack",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationOpenStackComplete/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationOpenStackComplete/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationOpenStackComplete",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationPortworx/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationPortworx/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationPortworx",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationRBD/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationRBD/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationRBD",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationvSphere/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationvSphere/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationvSphere",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationvSphereComplete/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationvSphereComplete/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIMigrationvSphereComplete",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSINodeExpandSecret/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSINodeExpandSecret/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSINodeExpandSecret",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSINodeInfo/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSINodeInfo/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSINodeInfo",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIPersistentVolume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIPersistentVolume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIPersistentVolume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIServiceAccountToken/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIServiceAccountToken/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIServiceAccountToken",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIServiceAccountTokenSecrets/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIServiceAccountTokenSecrets/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIServiceAccountTokenSecrets",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIStorageCapacity/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIStorageCapacity/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIStorageCapacity",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIVolumeFSGroupPolicy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIVolumeFSGroupPolicy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIVolumeFSGroupPolicy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIVolumeHealth/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIVolumeHealth/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSIVolumeHealth",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSRDuration/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSRDuration/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CSRDuration",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ChangeContainerStatusOnKubeletRestart/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ChangeContainerStatusOnKubeletRestart/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ChangeContainerStatusOnKubeletRestart",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClearingNominatedNodeNameAfterBinding/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClearingNominatedNodeNameAfterBinding/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClearingNominatedNodeNameAfterBinding",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudControllerManagerWatchBasedRoutesReconciliation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudControllerManagerWatchBasedRoutesReconciliation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudControllerManagerWatchBasedRoutesReconciliation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudControllerManagerWebhook/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudControllerManagerWebhook/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudControllerManagerWebhook",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudDualStackNodeIPs/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudDualStackNodeIPs/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CloudDualStackNodeIPs",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClusterTrustBundle/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClusterTrustBundle/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClusterTrustBundle",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClusterTrustBundleProjection/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClusterTrustBundleProjection/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ClusterTrustBundleProjection",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentFlagz/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentFlagz/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentFlagz",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentSLIs/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentSLIs/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentSLIs",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentStatusz/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentStatusz/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ComponentStatusz",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConcurrentWatchObjectDecode/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConcurrentWatchObjectDecode/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConcurrentWatchObjectDecode",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConfigurableFSGroupPolicy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConfigurableFSGroupPolicy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConfigurableFSGroupPolicy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConsistentHTTPGetHandlers/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConsistentHTTPGetHandlers/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConsistentHTTPGetHandlers",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConsistentListFromCache/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConsistentListFromCache/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConsistentListFromCache",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConstrainedImpersonation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConstrainedImpersonation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ConstrainedImpersonation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerCheckpoint/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerCheckpoint/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerCheckpoint",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerRestartRules/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerRestartRules/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerRestartRules",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerStopSignals/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerStopSignals/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContainerStopSignals",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContextualLogging/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContextualLogging/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ContextualLogging",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ControllerManagerLeaderMigration/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ControllerManagerLeaderMigration/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ControllerManagerLeaderMigration",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CoordinatedLeaderElection/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CoordinatedLeaderElection/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CoordinatedLeaderElection",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobControllerV2/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobControllerV2/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobControllerV2",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobTimeZone/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobTimeZone/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobTimeZone",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobsScheduledAnnotation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobsScheduledAnnotation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CronJobsScheduledAnnotation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CrossNamespaceVolumeDataSource/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CrossNamespaceVolumeDataSource/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CrossNamespaceVolumeDataSource",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomCPUCFSQuotaPeriod/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomCPUCFSQuotaPeriod/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomCPUCFSQuotaPeriod",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomPodDNS/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomPodDNS/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomPodDNS",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceDefaulting/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceDefaulting/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceDefaulting",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceFieldSelectors/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceFieldSelectors/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceFieldSelectors",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourcePublishOpenAPI/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourcePublishOpenAPI/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourcePublishOpenAPI",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceSubresources/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceSubresources/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceSubresources",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceValidation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceValidation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceValidation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceValidationExpressions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceValidationExpressions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceValidationExpressions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceWebhookConversion/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceWebhookConversion/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/CustomResourceWebhookConversion",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAAdminAccess/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAAdminAccess/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAAdminAccess",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAConsumableCapacity/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAConsumableCapacity/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAConsumableCapacity",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAControlPlaneController/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAControlPlaneController/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAControlPlaneController",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceBindingConditions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceBindingConditions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceBindingConditions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceTaintRules/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceTaintRules/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceTaintRules",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceTaints/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceTaints/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRADeviceTaints",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAExtendedResource/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAExtendedResource/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAExtendedResource",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAPartitionableDevices/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAPartitionableDevices/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAPartitionableDevices",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAPrioritizedList/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAPrioritizedList/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAPrioritizedList",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAResourceClaimDeviceStatus/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAResourceClaimDeviceStatus/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRAResourceClaimDeviceStatus",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRASchedulerFilterTimeout/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRASchedulerFilterTimeout/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DRASchedulerFilterTimeout",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DaemonSetUpdateSurge/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DaemonSetUpdateSurge/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DaemonSetUpdateSurge",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeclarativeValidation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeclarativeValidation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeclarativeValidation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeclarativeValidationTakeover/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeclarativeValidationTakeover/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeclarativeValidationTakeover",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DefaultHostNetworkHostPortsInPodTemplates/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DefaultHostNetworkHostPortsInPodTemplates/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DefaultHostNetworkHostPortsInPodTemplates",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DefaultPodTopologySpread/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DefaultPodTopologySpread/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DefaultPodTopologySpread",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DelegateFSGroupToCSIDriver/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DelegateFSGroupToCSIDriver/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DelegateFSGroupToCSIDriver",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeploymentReplicaSetTerminatingReplicas/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeploymentReplicaSetTerminatingReplicas/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DeploymentReplicaSetTerminatingReplicas",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DetectCacheInconsistency/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DetectCacheInconsistency/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DetectCacheInconsistency",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DevicePluginCDIDevices/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DevicePluginCDIDevices/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DevicePluginCDIDevices",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DevicePlugins/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DevicePlugins/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DevicePlugins",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableAcceleratorUsageMetrics/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableAcceleratorUsageMetrics/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableAcceleratorUsageMetrics",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableAllocatorDualWrite/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableAllocatorDualWrite/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableAllocatorDualWrite",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableCPUQuotaWithExclusiveCPUs/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableCPUQuotaWithExclusiveCPUs/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableCPUQuotaWithExclusiveCPUs",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableCloudProviders/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableCloudProviders/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableCloudProviders",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableKubeletCloudCredentialProviders/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableKubeletCloudCredentialProviders/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableKubeletCloudCredentialProviders",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableNodeKubeProxyVersion/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableNodeKubeProxyVersion/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DisableNodeKubeProxyVersion",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DownwardAPIHugePages/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DownwardAPIHugePages/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DownwardAPIHugePages",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DryRun/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DryRun/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DryRun",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicAuditing/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicAuditing/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicAuditing",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicKubeletConfig/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicKubeletConfig/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicKubeletConfig",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicProvisioningScheduling/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicProvisioningScheduling/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicProvisioningScheduling",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicResourceAllocation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicResourceAllocation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicResourceAllocation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicVolumeProvisioning/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicVolumeProvisioning/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/DynamicVolumeProvisioning",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EfficientWatchResumption/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EfficientWatchResumption/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EfficientWatchResumption",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ElasticIndexedJob/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ElasticIndexedJob/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ElasticIndexedJob",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnableAggregatedDiscoveryTimeout/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnableAggregatedDiscoveryTimeout/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnableAggregatedDiscoveryTimeout",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnableEquivalenceClassCache/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnableEquivalenceClassCache/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnableEquivalenceClassCache",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSlice/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSlice/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSlice",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceNodeName/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceNodeName/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceNodeName",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceProxying/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceProxying/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceProxying",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceTerminatingCondition/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceTerminatingCondition/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EndpointSliceTerminatingCondition",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnvFiles/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnvFiles/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EnvFiles",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EphemeralContainers/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EphemeralContainers/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EphemeralContainers",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EvenPodsSpread/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EvenPodsSpread/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EvenPodsSpread",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EventedPLEG/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EventedPLEG/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/EventedPLEG",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/addons/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/addons/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/addons",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/admission-controller/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/admission-controller/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/admission-controller",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/affinity/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/affinity/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/affinity",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/aggregation-layer/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/aggregation-layer/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/aggregation-layer",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/annotation/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/annotation/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/annotation",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/api-eviction/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/api-eviction/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/api-eviction",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/api-group/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/api-group/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/api-group",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/api-resource/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/api-resource/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/api-resource",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/app-container/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/app-container/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/app-container",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/application-architect/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/application-architect/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/application-architect",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/application-developer/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/application-developer/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/application-developer",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/applications/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/applications/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/applications",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/approver/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/approver/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/approver",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cadvisor/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cadvisor/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cadvisor",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cel/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cel/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cel",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/certificate/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/certificate/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/certificate",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cgroup/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cgroup/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cgroup",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cidr/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cidr/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cidr",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cla/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cla/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cla",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cloud-controller-manager/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cloud-controller-manager/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cloud-controller-manager",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cloud-provider/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cloud-provider/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cloud-provider",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cluster-architect/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-architect/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-architect",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cluster-infrastructure/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-infrastructure/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-infrastructure",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cluster-operations/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-operations/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-operations",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cluster-operator/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-operator/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster-operator",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cluster/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cluster",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cncf/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cncf/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cncf",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cni/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cni/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cni",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/code-contributor/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/code-contributor/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/code-contributor",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/condition/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/condition/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/condition",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/configmap/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/configmap/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/configmap",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/container-env-variables/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container-env-variables/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container-env-variables",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/container-lifecycle-hooks/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container-lifecycle-hooks/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container-lifecycle-hooks",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/container-runtime/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container-runtime/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container-runtime",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/container/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/container",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/containerd/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/containerd/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/containerd",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/contributor/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/contributor/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/contributor",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/control-plane/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/control-plane/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/control-plane",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/controller/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/controller/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/controller",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cri-o/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cri-o/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cri-o",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cri/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cri/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cri",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/cronjob/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cronjob/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/cronjob",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/csi/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/csi/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/csi",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/customresourcedefinition/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/customresourcedefinition/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/customresourcedefinition",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/daemonset/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/daemonset/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/daemonset",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/data-plane/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/data-plane/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/data-plane",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/deployment/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/deployment/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/deployment",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/developer/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/developer/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/developer",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/device-plugin/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/device-plugin/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/device-plugin",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/device/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/device/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/device",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/deviceclass/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/deviceclass/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/deviceclass",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/disruption/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/disruption/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/disruption",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/docker/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/docker/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/docker",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/dockershim/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/dockershim/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/dockershim",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/downstream/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/downstream/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/downstream",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/downward-api/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/downward-api/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/downward-api",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/dra/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/dra/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/dra",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/drain/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/drain/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/drain",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/duration/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/duration/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/duration",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/dynamic-volume-provisioning/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/dynamic-volume-provisioning/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/dynamic-volume-provisioning",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/endpoint-slice/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/endpoint-slice/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/endpoint-slice",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/endpoint/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/endpoint/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/endpoint",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/ephemeral-container/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/ephemeral-container/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/ephemeral-container",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/etcd/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/etcd/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/etcd",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/event/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/event/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/event",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/eviction/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/eviction/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/eviction",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/extensions/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/extensions/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/extensions",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/feature-gates/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/feature-gates/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/feature-gates",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/finalizer/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/finalizer/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/finalizer",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/flexvolume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/flexvolume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/flexvolume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/garbage-collection/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/garbage-collection/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/garbage-collection",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/gateway/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/gateway/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/gateway",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/group-version-resource/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/group-version-resource/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/group-version-resource",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/helm-chart/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/helm-chart/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/helm-chart",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/horizontal-pod-autoscaler/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/horizontal-pod-autoscaler/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/horizontal-pod-autoscaler",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/host-aliases/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/host-aliases/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/host-aliases",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/image/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/image/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/image",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/immutable-infrastructure/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/immutable-infrastructure/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/immutable-infrastructure",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/infrastructure-resource/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/infrastructure-resource/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/infrastructure-resource",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/ingress/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/ingress/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/ingress",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/init-container/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/init-container/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/init-container",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/istio/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/istio/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/istio",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/job/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/job/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/job",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/jwt/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/jwt/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/jwt",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kops/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kops/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kops",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kube-apiserver/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-apiserver/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-apiserver",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kube-controller-manager/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-controller-manager/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-controller-manager",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kube-proxy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-proxy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-proxy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kube-scheduler/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-scheduler/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kube-scheduler",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kubeadm/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubeadm/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubeadm",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kubectl/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubectl/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubectl",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kubelet/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubelet/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubelet",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/kubernetes-api/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubernetes-api/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/kubernetes-api",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/label/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/label/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/label",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/limitrange/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/limitrange/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/limitrange",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/logging/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/logging/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/logging",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/managed-service/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/managed-service/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/managed-service",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/manifest/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/manifest/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/manifest",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/master/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/master/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/master",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/member/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/member/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/member",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/minikube/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/minikube/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/minikube",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/mirror-pod/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/mirror-pod/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/mirror-pod",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/mixed-version-proxy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/mixed-version-proxy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/mixed-version-proxy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/name/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/name/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/name",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/namespace/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/namespace/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/namespace",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/network-policy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/network-policy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/network-policy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/node-pressure-eviction/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/node-pressure-eviction/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/node-pressure-eviction",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/node/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/node/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/node",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/object/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/object/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/object",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/operator-pattern/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/operator-pattern/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/operator-pattern",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/persistent-volume-claim/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/persistent-volume-claim/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/persistent-volume-claim",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/persistent-volume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/persistent-volume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/persistent-volume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/platform-developer/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/platform-developer/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/platform-developer",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod-disruption-budget/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-disruption-budget/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-disruption-budget",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod-disruption/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-disruption/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-disruption",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod-lifecycle/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-lifecycle/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-lifecycle",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod-priority/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-priority/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-priority",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod-security-policy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-security-policy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-security-policy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod-template/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-template/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod-template",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/pod/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/pod",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/preemption/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/preemption/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/preemption",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/priority-class/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/priority-class/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/priority-class",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/probe/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/probe/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/probe",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/proxy/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/proxy/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/proxy",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/qos-class/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/qos-class/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/qos-class",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/quantity/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/quantity/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/quantity",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/rbac/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/rbac/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/rbac",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/replica-set/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/replica-set/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/replica-set",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/replica/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/replica/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/replica",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/replication-controller/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/replication-controller/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/replication-controller",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/resource-quota/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resource-quota/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resource-quota",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/resourceclaim/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resourceclaim/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resourceclaim",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/resourceclaimtemplate/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resourceclaimtemplate/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resourceclaimtemplate",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/resourceslice/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resourceslice/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/resourceslice",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/reviewer/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/reviewer/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/reviewer",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/secret/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/secret/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/secret",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/security-context/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/security-context/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/security-context",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/selector/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/selector/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/selector",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/service-account/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/service-account/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/service-account",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/service-catalog/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/service-catalog/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/service-catalog",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/service/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/service/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/service",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/shuffle-sharding/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/shuffle-sharding/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/shuffle-sharding",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/sidecar-container/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/sidecar-container/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/sidecar-container",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/sig/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/sig/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/sig",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/spec/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/spec/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/spec",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/statefulset/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/statefulset/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/statefulset",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/static-pod/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/static-pod/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/static-pod",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/storage-class/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/storage-class/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/storage-class",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/sysctl/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/sysctl/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/sysctl",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/taint/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/taint/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/taint",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/toleration/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/toleration/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/toleration",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/uid/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/uid/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/uid",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/upstream/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/upstream/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/upstream",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/userns/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/userns/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/userns",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/volume-plugin/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/volume-plugin/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/volume-plugin",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/volume/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/volume/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/volume",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/watch/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/watch/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/watch",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/wg/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/wg/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/wg",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/reference/glossary/workload/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/workload/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/reference/glossary/workload",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/kubectl-convert-overview/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/kubectl-convert-overview/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/kubectl-convert-overview",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/kubectl-whats-next/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/kubectl-whats-next/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/kubectl-whats-next",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-linux/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-linux/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-linux",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-mac/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-mac/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-bash-mac",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-fish/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-fish/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-fish",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-pwsh/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-pwsh/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-pwsh",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "url": "https://kubernetes.io/docs/tasks/tools/included/verify-kubectl/",
+      "attempts": [
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/verify-kubectl/",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "candidate": "https://kubernetes.io/docs/tasks/tools/included/verify-kubectl",
+          "status": 404,
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    }
+  ]
+}

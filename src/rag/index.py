@@ -7,12 +7,7 @@ from pathlib import Path
 import faiss
 import numpy as np
 
-from src.rag.embeddings import (
-    embed_docs,
-    get_retriever_embedding_dim,
-    get_retriever_model_name,
-    text_to_embedding,
-)
+from src.rag.embeddings import embed_docs, text_to_embedding
 from src.utils.io_utils import ensure_dir
 
 
@@ -56,7 +51,7 @@ def build_index(
     docs_path: Path,
     out_index_path: Path,
     out_embeddings_path: Path,
-    dim: int | None = None,
+    dim: int = 384,
 ) -> FaissIndex:
     embeddings, ids = embed_docs(docs_path)
     ensure_dir(out_index_path.parent)
@@ -65,13 +60,13 @@ def build_index(
     if embeddings.size:
         index_dim = embeddings.shape[1]
     else:
-        index_dim = int(dim or get_retriever_embedding_dim())
+        index_dim = dim
     index = faiss.IndexFlatIP(index_dim)
     if embeddings.size:
         index.add(embeddings)
     faiss.write_index(index, str(out_index_path))
 
-    # Persist ids alongside the FAISS index to prevent silent idв†”vector order mismatches.
+    # Persist ids alongside the FAISS index to prevent silent id↔vector order mismatches.
     _ids_path(out_index_path).write_text(
         json.dumps(ids, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -81,8 +76,6 @@ def build_index(
             {
                 "docs_path": str(docs_path),
                 "docs_sha256": _sha256_file(docs_path),
-                "embedding_model": get_retriever_model_name(),
-                "embedding_dim": int(index_dim),
                 "ntotal": int(index.ntotal),
             },
             indent=2,
@@ -100,22 +93,4 @@ def load_index(index_path: Path) -> FaissIndex:
     ids = json.loads(ids_file.read_text(encoding="utf-8"))
     if index.ntotal != len(ids):
         raise ValueError("Index/id mismatch; rebuild index.")
-
-    # Guard against stale index built with a different embedding model.
-    meta_file = _meta_path(index_path)
-    if meta_file.exists():
-        meta = json.loads(meta_file.read_text(encoding="utf-8"))
-        built_with = str(meta.get("embedding_model") or "")
-        current = get_retriever_model_name()
-        if built_with and built_with != current:
-            raise ValueError(
-                f"Index embedding model mismatch: built_with={built_with}, current={current}. Rebuild required."
-            )
-
-    expected_dim = get_retriever_embedding_dim()
-    if int(index.d) != int(expected_dim):
-        raise ValueError(
-            f"Index dimension mismatch: index.d={index.d}, expected={expected_dim}. Rebuild required."
-        )
-
     return FaissIndex(index=index, ids=ids)

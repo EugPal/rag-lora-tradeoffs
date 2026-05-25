@@ -1,9 +1,0 @@
-numpy>=1.24,<2.0
-pyyaml>=6.0
-tqdm>=4.66
-transformers>=4.40,<5.0
-torch>=2.1,<2.8
-accelerate>=0.29
-bitsandbytes>=0.43
-beautifulsoup4>=4.12
-
