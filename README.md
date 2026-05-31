@@ -1,18 +1,18 @@
 # RAG + LoRA Trade-offs on Kubernetes Docs
 
+[![arXiv](https://img.shields.io/badge/arXiv-2605.28222-b31b1b.svg)](https://arxiv.org/abs/2605.28222)
+
 Code and benchmark backups for the study:
 
-> **"Quality–Latency–Resource Trade-offs in a Technical-Documentation RAG
-> Assistant with LoRA Adaptation"**
+> **"Analyzing Quality–Latency–Resource Trade-offs in a Technical Documentation
+> RAG Assistant Using LoRA Adaptation"**
 > Evgenii Palnikov, Elizaveta Gavrilova. HSE University, 2026.
+> arXiv: [2605.28222](https://arxiv.org/abs/2605.28222)
 
 The work studies how different LoRA configurations (rank, target modules,
 training data size) interact with a retrieval-augmented generation pipeline
 over the Kubernetes documentation corpus, and where they sit on the
 Quality–Latency–Resource Pareto frontier.
-
-The arXiv preprint will be added to this repository in a follow-up commit
-once it is assigned an arXiv ID.
 
 ## Artifacts on HuggingFace
 
@@ -103,8 +103,20 @@ See the model cards on HuggingFace for a full RAG-style inference example.
 
 ## Citing
 
-If this code or data is useful, please cite the paper (BibTeX coming after
-arXiv assignment) and the HuggingFace artifacts.
+If this code or data is useful, please cite the paper and the HuggingFace
+artifacts:
+
+```bibtex
+@misc{palnikov2026analyzing,
+  title         = {Analyzing Quality-Latency-Resource Trade-offs in a Technical Documentation RAG Assistant Using LoRA Adaptation},
+  author        = {Evgenii Palnikov and Elizaveta Gavrilova},
+  year          = {2026},
+  eprint        = {2605.28222},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2605.28222}
+}
+```
 
 ## License
 
